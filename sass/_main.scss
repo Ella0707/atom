@@ -1,0 +1,99 @@
+.header {
+
+    
+    &__inner {
+    padding-top: 1.8rem;
+    
+    }
+    
+    &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    }
+    
+    &__logo {
+    width: 25rem;
+    height: 7.6rem;
+    }
+    
+    &__contact-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__social {
+    width: 3.1rem;
+    height: 3.1rem;
+
+    margin-right: 2.5rem;
+    }
+    
+    &__email-wrap {
+        color: $textColor;
+        margin-right: 3.2rem;
+    }
+    
+    &__email {
+    font-size: 1.8rem;
+    font-weight: 600;
+    }
+    
+    &__email-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+    
+    }
+    
+    &__phone-number {
+    color: $textColorLight;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24.6rem;
+    height: 6.9rem;
+    background-color: $brendColor;
+    }
+    
+    &__bottom {
+    background-color: rgba(249, 249, 249, 1);
+    }
+    
+    
+    &__nav {
+    
+    }
+    
+    &__nav-inner {
+    
+    }
+    
+    &__nav-list {
+    
+    }
+    
+    &__search-wrap {
+    
+    }
+    
+    &__search {
+    
+    }
+    
+    &__search-input {
+    
+    }
+    
+    &__search-btn {
+    
+    }
+
+
+
+}
+
