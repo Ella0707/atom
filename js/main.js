@@ -22,3 +22,23 @@ new Swiper('.banner__slider', {
 });
 
 
+
+
+new Swiper('.services__slider', {
+    slidesPerView: 5,
+    speed: 800,
+    navigation: {
+        nextEl: '.services__arrow-next',
+        prevEl: '.services__arrow-prev',
+    },
+
+    // on: {
+    //     init: sliderNumber,
+    //     slideChange: sliderNumber
+    // },
+
+    pagination: {
+            el: '.swiper-progressbar',
+            type: "progressbar",
+        },
+});
