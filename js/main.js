@@ -7,38 +7,101 @@ new Swiper('.banner__slider', {
     },
     navigation: {
         nextEl: '.banner__arrow-next',
-        prevEl: '.banner__arrow-prev',
+        prevEl: '.banner__arrow-prew',
     },
 
-    // on: {
-    //     init: sliderNumber,
-    //     slideChange: sliderNumber
-    // },
-
     pagination: {
-            el: '.swiper-progressbar',
-            type: "progressbar",
+        el: '.swiper-pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
         },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
 });
 
 
 
 
+
 new Swiper('.services__slider', {
-    slidesPerView: 5,
+    slidesPerView: 4.5,
     speed: 800,
     navigation: {
-        nextEl: '.services__arrow-next',
         prevEl: '.services__arrow-prev',
+        nextEl: '.services__arrow-next',
     },
 
-    // on: {
-    //     init: sliderNumber,
-    //     slideChange: sliderNumber
-    // },
+    pagination: {
+        el: '.services__pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+
+
+
+
+new Swiper('.distributor__our-distr-slider', {
+    slidesPerView: 1,
+    speed: 800,
+    spaceBetween: 28,
+    navigation: {
+        prevEl: '.distributor__arrow-prev',
+        nextEl: '.distributor__arrow-next',
+    },
 
     pagination: {
-            el: '.swiper-progressbar',
-            type: "progressbar",
+        el: '.distributor__our-disr-pagin',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
         },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+
+
+new Swiper('.distributor__photo', {
+    slidesPerView: 1,
+    speed: 800,
+    spaceBetween: 40,
+
+    pagination: {
+        el: '.distributor__photo-pagin',
+        clickable: true,
+        spaceBetween: 50,
+    },
 });
