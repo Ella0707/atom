@@ -102,7 +102,6 @@ new Swiper('.distributor__photo', {
     pagination: {
         el: '.distributor__photo-pagin',
         clickable: true,
-        spaceBetween: 50,
     },
 });
 

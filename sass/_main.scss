@@ -75,7 +75,11 @@
     }
 
 
-    &__nav {}
+    &__nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 
     // &__nav-inner {
     //     display: flex;
@@ -550,7 +554,7 @@
     &__slider-control-wrap {
         display: flex;
         margin-right: 17.5rem;
-        width: 25rem;
+        width: 26rem;
     }
 
     &__pagination {
@@ -756,6 +760,7 @@
         padding: 5.9rem 5.7rem 4.3rem 5.8rem;
         position: relative;
         background-color: rgba(249, 249, 249, 1);
+        z-index: -1;
     }
 
     &__background{
@@ -928,16 +933,17 @@
 
     &__our-distr-box-hover {
         position: absolute;
-        width: 23.3rem;
-        height: 14rem;
-        top: 0;
-        left: 0;
+        width: 26.7rem;
+        height: 17.1rem;
+        top: -1.5rem;
+        left: -1.5rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         background: #ffffff;
+        box-shadow: 0rem 2rem 2rem rgba(27, 36, 49, 0.16);
         opacity: 0;
         transition: 0.8s;
 

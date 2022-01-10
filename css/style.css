@@ -290,6 +290,15 @@ input[type=number] {
   background-color: #f9f9f9;
   height: 5.3rem;
 }
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
 .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,7 +739,7 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
   margin-right: 17.5rem;
-  width: 25rem;
+  width: 26rem;
 }
 .services__pagination {
   margin-right: 5.65rem;
@@ -900,6 +909,7 @@ input[type=number] {
   padding: 5.9rem 5.7rem 4.3rem 5.8rem;
   position: relative;
   background-color: #f9f9f9;
+  z-index: -1;
 }
 .distributor__background {
   position: absolute;
@@ -1051,10 +1061,10 @@ input[type=number] {
 }
 .distributor__our-distr-box-hover {
   position: absolute;
-  width: 23.3rem;
-  height: 14rem;
-  top: 0;
-  left: 0;
+  width: 26.7rem;
+  height: 17.1rem;
+  top: -1.5rem;
+  left: -1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,6 +1075,8 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
   background: #ffffff;
+  -webkit-box-shadow: 0rem 2rem 2rem rgba(27, 36, 49, 0.16);
+          box-shadow: 0rem 2rem 2rem rgba(27, 36, 49, 0.16);
   opacity: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
