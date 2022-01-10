@@ -97,11 +97,41 @@ new Swiper('.distributor__our-distr-slider', {
 new Swiper('.distributor__photo', {
     slidesPerView: 1,
     speed: 800,
-    spaceBetween: 40,
+    // spaceBetween: 40,
 
     pagination: {
         el: '.distributor__photo-pagin',
         clickable: true,
         spaceBetween: 50,
+    },
+});
+
+
+
+new Swiper('.clients__content', {
+    slidesPerView: 5,
+    spaceBetween: 183,
+    speed: 800,
+    navigation: {
+        prevEl: '.clients__arrow-prev',
+        nextEl: '.clients__arrow-next',
+    },
+
+    pagination: {
+        el: '.clients__pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
     },
 });

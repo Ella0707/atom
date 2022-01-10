@@ -20,13 +20,14 @@
                             <img src="./img/logo.svg" alt="">
                         </a>
                         <div class="header__contact-info">
-                            <a href="" class="header__social">
-                                <img src="./img/WhatsApp_black.svg" alt="">
-                            </a>
-                            <a href="" class="header__social">
-                                <img src="./img/Telegram_black.svg" alt="">
-                            </a>
-
+                            <div class="header__social-wrap">
+                                <a href="" class="header__social">
+                                    <img src="./img/WhatsApp_black.svg" alt="">
+                                </a>
+                                <a href="" class="header__social">
+                                    <img src="./img/Telegram_black.svg" alt="">
+                                </a>
+                            </div>
                             <div class="header__email-wrap">
                                 <a href="mailto:zakaz@auradv.com" class="header__email">zakaz@auradv.com</a>
                                 <div class="header__email-text">Отдел продаж</div>
@@ -39,24 +40,34 @@
             </div>
             <div class="header__bottom">
                 <nav class="header__nav">
-                    <div class="header__nav-inner">
-                        <div class="header__nav-list">
-                            <a href="">Каталог
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Каталог
                                 <img src="./img/catalog-burger.svg" alt="">
                             </a>
-                            <a href="">Услуги</a>
-                            <a href="">Бренды</a>
-                            <a href="">О компании</a>
-                            <a href="">Доставка и оплата</a>
-                            <a href="">Контакты</a>
-                        </div>
-                        <div class="header__search-wrap">
-                            <div class="header__search">
-                                <button class="header__search-btn">
-                                    <img src="./img/loup.svg" alt="">
-                                </button>
-                                <input type="text" class="header__search-input" placeholder="Поиск">
-                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Услуги</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Бренды</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">О компании</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Доставка и оплата</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__search-wrap">
+                        <div class="header__search">
+                            <button class="header__search-btn">
+                                <img src="./img/loup.svg" alt="">
+                            </button>
+                            <input type="text" class="header__search-input" placeholder="Поиск">
                         </div>
                     </div>
                 </nav>
@@ -578,219 +589,336 @@
 
 
             <section class="distributor">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="distributor__content">
-                    <div class="distributor__photo swiper">
-                        <img class="distributor__background" src="./img/substrate-servis.svg" alt="">
-                        <div class="distributor__photo-pagin swiper-pagination"></div>
-                        <div class="distributor__photo-wrap swiper-wrapper">
-                            <div class="distributor__photo-slide swiper-slide">
-                                <div class="distributor__photo-slide-top">
-                                    <div class="distributor__photo-slide-new">
-                                        <img src="./img/lightning.svg" alt="">
-                                        <span>Новинка</span>
+                        <div class="distributor__photo swiper">
+                            <div class="distributor__photo-wrap swiper-wrapper">
+                                <div class="distributor__photo-pagin swiper-pagination"></div>
+                                <div class="distributor__photo-slide swiper-slide">
+                                <img class="distributor__background" src="./img/substrate-servis.svg" alt="">
+                                    <div class="distributor__photo-slide-top">
+                                        <div class="distributor__photo-slide-new">
+                                            <img src="./img/lightning.svg" alt="">
+                                            <span>Новинка</span>
+                                        </div>
                                     </div>
-                                    <div class="distributor__photo-slide-pagin swiper-pagination"></div>
-                                </div>
-                                <div class="distributor__photo-slide-img">
-                                    <img src="./img/distr-photo2.png" alt="">
-                                </div>
-                                <div class="distributor__photo-slide-text">
-                                    <div class="distributor__photo-slide-articul">PQM-703 арт</div>
-                                    <div class="distributor__photo-slide-down">
-                                        <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
-                                        <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                    <div class="distributor__photo-slide-img">
+                                        <img src="./img/distr-photo2.png" alt="">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="distributor__photo-slide swiper-slide">
-                                <div class="distributor__photo-slide-top">
-                                    <div class="distributor__photo-slide-new">
-                                        <img src="./img/lightning.svg" alt="">
-                                        <span>Новинка</span>
-                                    </div>
-                                    <div class="distributor__photo-slide-pagin swiper-pagination"></div>
-                                </div>
-                                <div class="distributor__photo-slide-img">
-                                    <img src="./img/distr-photo2.png" alt="">
-                                </div>
-                                <div class="distributor__photo-slide-text">
-                                    <div class="distributor__photo-slide-articul">PQM-703 арт</div>
-                                    <div class="distributor__photo-slide-down">
-                                        <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
-                                        <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                    <div class="distributor__photo-slide-text">
+                                        <div class="distributor__photo-slide-articul">PQM-703 арт</div>
+                                        <div class="distributor__photo-slide-down">
+                                            <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
+                                            <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="distributor__photo-slide swiper-slide">
-                                <div class="distributor__photo-slide-top">
-                                    <div class="distributor__photo-slide-new">
-                                        <img src="./img/lightning.svg" alt="">
-                                        <span>Новинка</span>
+                                <div class="distributor__photo-slide swiper-slide">
+                                <img class="distributor__background" src="./img/substrate-servis.svg" alt="">
+                                    <div class="distributor__photo-slide-top">
+                                        <div class="distributor__photo-slide-new">
+                                            <img src="./img/lightning.svg" alt="">
+                                            <span>Новинка</span>
+                                        </div>
                                     </div>
-                                    <div class="distributor__photo-slide-pagin swiper-pagination"></div>
-                                </div>
-                                <div class="distributor__photo-slide-img">
-                                    <img src="./img/distr-photo2.png" alt="">
-                                </div>
-                                <div class="distributor__photo-slide-text">
-                                    <div class="distributor__photo-slide-articul">PQM-703 арт</div>
-                                    <div class="distributor__photo-slide-down">
-                                        <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
-                                        <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                    <div class="distributor__photo-slide-img">
+                                        <img src="./img/distr-photo2.png" alt="">
+                                    </div>
+                                    <div class="distributor__photo-slide-text">
+                                        <div class="distributor__photo-slide-articul">PQM-703 арт</div>
+                                        <div class="distributor__photo-slide-down">
+                                            <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
+                                            <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="distributor__our-distr">
-                        <div class="distributor__our-distr-title">Мы дистрибьюторы</div>
-                        <div class="distributor__our-distr-control">
-                            <div class="distributor__our-disr-pagin swiper-pagination">
-                            </div>
-                            <div class="distributor__arrow btn-slider-wrap">
-                                <div class="distributor__arrow-prev btn-prev">
-                                    <img src="./img/arrow-black.svg" alt="">
-                                </div>
-                                <div class="distributor__arrow-next btn-next">
-                                    <img src="./img/arrow-black.svg" alt="">
+                                <div class="distributor__photo-slide swiper-slide">
+                                <img class="distributor__background" src="./img/substrate-servis.svg" alt="">
+                                    <div class="distributor__photo-slide-top">
+                                        <div class="distributor__photo-slide-new">
+                                            <img src="./img/lightning.svg" alt="">
+                                            <span>Новинка</span>
+                                        </div>
+                                    </div>
+                                    <div class="distributor__photo-slide-img">
+                                        <img src="./img/distr-photo2.png" alt="">
+                                    </div>
+                                    <div class="distributor__photo-slide-text">
+                                        <div class="distributor__photo-slide-articul">PQM-703 арт</div>
+                                        <div class="distributor__photo-slide-down">
+                                            <div class="distributor__photo-slide-name">Индикатор чередования фаз Fluke</div>
+                                            <div class="distributor__photo-slide-price">26 946<sup> ₽</sup></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
             
-                        <div class="distributor__our-distr-slider swiper">
-                            <div class="distributor__our-distr-slider-wrap swiper-wrapper">
-
-                                <div class="distributor__our-distr-slide swiper-slide">
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
+                        <div class="distributor__our-distr">
+                            <div class="distributor__our-distr-title">Мы дистрибьюторы</div>
+                            <div class="distributor__our-distr-control">
+                                <div class="distributor__our-disr-pagin swiper-pagination">
+                                </div>
+                                <div class="distributor__arrow btn-slider-wrap">
+                                    <div class="distributor__arrow-prev btn-prev">
+                                        <img src="./img/arrow-black.svg" alt="">
                                     </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr1.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
+                                    <div class="distributor__arrow-next btn-next">
+                                        <img src="./img/arrow-black.svg" alt="">
                                     </div>
                                 </div>
-
-                                <div class="distributor__our-distr-slide swiper-slide">
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                            </div>
+            
+                            <div class="distributor__our-distr-slider swiper">
+                                <div class="distributor__our-distr-slider-wrap swiper-wrapper">
+            
+                                    <div class="distributor__our-distr-slide swiper-slide">
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr1.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+            
+                                    <div class="distributor__our-distr-slide swiper-slide">
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr1.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="distributor__our-distr-box">
+                                            <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
+                                            <div class="distributor__our-distr-box-hover">
+                                                <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr1.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr2.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr3.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="distributor__our-distr-box">
-                                        <img class="distributor__box-img-start" src="./img/distr4.svg" alt="">
-                                        <div class="distributor__our-distr-box-hover">
-                                            <img class="distributor__box-img-hover" src="./img/distr-hover1.svg" alt="">
-                                        </div>
-                                    </div>
+            
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </section>
 
+            <section class="clients">
+                <div class="clients__title-wrap">
+                    <div class="clients__title">Наши клиенты</div>
+                    <div class="clients__control-wrap">
+                        <div class="clients__pagination"></div>
+                        <div class="clients__arrow btn-slider-wrap">
+                            <div class="clients__arrow-prev btn-prev">
+                                <img src="./img/arrow-black.svg" alt="">
+                            </div>
+                            <div class="clients__arrow-next btn-next">
+                                <img src="./img/arrow-black.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="clients__content swiper">
+                    <div class="clients__content-wrap swiper-wrapper">
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client1.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client2.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client3.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client4.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client5.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client1.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client2.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client3.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="clients__slide swiper-slide">
+                            <div class="clients__slide-img">
+                                <img src="./img/client4.png" alt="">
+                            </div>
+                        </div> 
+                    </div>
                 </div>
-            </section>
-
-            <section class="clients">
-                
             </section>
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                
+                    <div class="footer__top">
+                        <div class="footer__top-left">
+                            <div class="footer__top-left-logo">
+                                <img src="./img/logo.svg" alt="">
+                            </div>
+                            <div class="footer__top-left-social">
+                                <a href="footer__social-link">
+                                    <img src="./img/inst.svg" alt="">
+                                </a>
+                                <a href="footer__social-link">
+                                    <img src="./img/fb.svg" alt="">
+                                </a>
+                                <a href="footer__social-link">
+                                    <img src="./img/vk.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer__top-right">
+                            <nav class="footer__top-nav">
+                                <ul class="footer__top-list">
+                                    <li class="footer__top-item">
+                                        <a href="">Каталог</a>
+                                    </li>
+                                    <li class="footer__top-item">
+                                        <a href="">Услуги</a>
+                                    </li>
+                                    <li class="footer__top-item">
+                                        <a href="">Бренды</a>
+                                    </li>
+                                    <li class="footer__top-item">
+                                        <a href="">О компании</a>
+                                    </li>
+                                    <li class="footer__top-item">
+                                        <a href="">Доставка и оплата</a>
+                                    </li>
+                                    <li class="footer__top-item">
+                                        <a href="">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="footer__top-contact">
+                                <div class="footer__email-wrap">
+                                    <a href="mailto:zakaz@auradv.com" class="footer__email">zakaz@auradv.com</a>
+                                    <div class="footer__email-text">Отдел продаж</div>
+                                </div>
+                                <a href="tel:88008008888" class="footer__phone-number">8 800 800 88 88
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__down">
+                        <div class="">О© Copyright 2021 Аура-М. Измерительное оборудование</div>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
                 </div>
             </div>
         </footer>

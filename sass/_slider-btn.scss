@@ -11,14 +11,16 @@
 
 .btn-slider-wrap {
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 
     img {
         width: 1.4rem;
         height: 1.4rem;
         position: relative;
-        z-index: 2;
+        z-index: 15;
     }
 }
 
