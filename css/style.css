@@ -407,11 +407,8 @@ input[type=number] {
 }
 
 .banner {
-  margin-bottom: 6.2rem;
-}
-.banner__inner {
-  width: 100%;
-  height: 66rem;
+  margin-bottom: 12.3rem;
+  overflow: hidden;
 }
 .banner__slider-wrap {
   display: -webkit-box;
@@ -422,14 +419,21 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 65.5rem;
 }
 .banner__slide-box-left {
   width: 51.5rem;
-  padding: 28.5rem 0 22.5rem 17.9rem;
+  padding: 28.5rem 1rem 10.5rem 1rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .banner__slide-left-text {
-  width: 33.7rem;
+  width: 32.5rem;
 }
 .banner__subtitle-small {
   font-size: 1.8rem;
@@ -444,7 +448,7 @@ input[type=number] {
 }
 .banner__slide-box-right {
   width: 140rem;
-  padding: 19.2rem 27.7rem 10.8rem 8rem;
+  padding: 19.2rem 17.7rem 10.8rem 8rem;
   position: relative;
 }
 .banner__slide-img-left {
@@ -453,7 +457,7 @@ input[type=number] {
   left: 0;
   bottom: 0;
   z-index: -1;
-  height: 65.6rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -463,14 +467,25 @@ input[type=number] {
   right: 0;
   bottom: 0;
   z-index: -1;
-  height: 65.6rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.banner__slide-box-right-wrap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .banner__slide-top {
-  padding-bottom: 4.4rem;
-  border-bottom: 1px solid rgba(242, 242, 242, 0.3);
-  margin-bottom: 6rem;
+  margin-bottom: 4.5rem;
 }
 .banner__subtitle {
   font-size: 1.8rem;
@@ -495,11 +510,28 @@ input[type=number] {
   font-size: 5rem;
   font-weight: 600;
   color: #ffffff;
-  width: 50rem;
+  width: 60rem;
+}
+.banner__arrow-next {
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
 }
 .banner__arrow-next img {
   width: 2rem;
   height: 1.5rem;
+}
+.banner__arrow-prew {
+  cursor: pointer;
+}
+.banner__arrow-prew img {
+  width: 2rem;
+  height: 1.5rem;
+}
+.banner__pagination {
+  width: 10rem;
+  color: #ffffff;
 }
 .banner__more-wrap {
   display: -webkit-box;
@@ -548,6 +580,10 @@ input[type=number] {
   width: 2rem;
   height: 1.5rem;
 }
+.banner__slide-down {
+  padding-top: 6rem;
+  border-top: 1px solid rgba(242, 242, 242, 0.3);
+}
 .banner__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,11 +607,16 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 3.8rem;
+  position: relative;
 }
-.banner__item img {
-  width: 2rem;
-  height: 1.5rem;
-  margin-right: 1.1rem;
+.banner__item::before {
+  content: "";
+  height: 0.1rem;
+  width: 2.6rem;
+  background-color: #F2F2F2;
+  position: absolute;
+  left: 0;
 }
 .banner__slide-box-left-big {
   position: relative;
@@ -595,9 +636,9 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 7rem;
 }
 .categories__title {
@@ -606,12 +647,21 @@ input[type=number] {
   color: #292729;
   margin-right: 7.5rem;
 }
+.categories__sort-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  line-height: 2;
+}
 .categories__sort-link {
   font-size: 1.7rem;
   font-weight: 600;
 }
 .categories__sort-link:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 .categories__sort-link.active {
   color: #285f5b;
@@ -636,7 +686,18 @@ input[type=number] {
   margin-bottom: 4rem;
 }
 .categories__box-start {
-  padding: 19.2rem 5rem 2rem 4rem;
+  padding: 4rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .categories__box-img {
   position: absolute;
@@ -650,7 +711,7 @@ input[type=number] {
   font-size: 1.8rem;
   font-weight: 600;
   color: #FFBC3A;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .categories__box-title {
   font-size: 3.2rem;
@@ -715,8 +776,6 @@ input[type=number] {
 }
 
 .services {
-  margin-left: 18rem;
-  overflow: auto;
   margin-bottom: 6rem;
   overflow: hidden;
 }
@@ -758,7 +817,6 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 0;
 }
 .services__slider-wrap {
   display: -webkit-box;
@@ -773,6 +831,38 @@ input[type=number] {
 .services__slide-start {
   border: 1px solid #E4E4E4;
   padding: 5rem 5rem 6.6rem 5rem;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.services__slide-start:hover {
+  width: 55.2rem;
+  height: 49.4rem;
+  opacity: 1;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
+          box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
+  padding: 5.5rem 4.2rem 4.2rem 4.2rem;
+  border: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  z-index: 10;
+}
+.services__slide-start:hover .services__slide-link-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.services__slide-start:hover .services__slide-title {
+  color: #285f5b;
+}
+.services__slide-start:hover .services__slide-subtitle {
+  margin-bottom: 4.2rem;
+}
+.services__slide-start:hover .services__img-bg {
+  display: block;
 }
 .services__slide-img-wrap {
   width: 10.8rem;
@@ -792,39 +882,10 @@ input[type=number] {
   color: #292729;
   margin-bottom: 2.2rem;
 }
-.services__slide-title .hover {
-  color: #285f5b;
-}
 .services__slide-subtitle {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.3;
-}
-.services__slide-hover {
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  background-color: #ffffff;
-  padding: 5rem;
-  border: none;
-  position: absolute;
-  top: -4rem;
-  left: 0;
-}
-.services__slide-hover:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-  -webkit-box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
-          box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
-  padding: 5.5rem 4.2rem 4.2rem 4.2rem;
-}
-.services__slide-hover .services__slide-title {
-  color: #285f5b;
-}
-.services__slide-hover .services__slide-subtitle {
-  margin-bottom: 4.2rem;
 }
 .services__img-bg {
   position: absolute;
@@ -834,6 +895,7 @@ input[type=number] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: none;
 }
 .services__slide-link-hover {
   font-size: 1.6rem;
@@ -845,6 +907,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 .services__slide-arrow {
   width: 5.2rem;
@@ -965,6 +1028,9 @@ input[type=number] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  mix-blend-mode: multiply;
+  -webkit-transform: rotate(3.18deg);
+          transform: rotate(3.18deg);
 }
 .distributor__photo-slide-articul {
   font-size: 1.46rem;
@@ -1097,8 +1163,8 @@ input[type=number] {
 }
 
 .clients {
-  margin-left: 18rem;
   margin-bottom: 22.5rem;
+  overflow: hidden;
 }
 .clients__title-wrap {
   display: -webkit-box;
@@ -1110,7 +1176,6 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 18rem;
   margin-bottom: 10rem;
 }
 .clients__title {
@@ -1126,10 +1191,6 @@ input[type=number] {
 .clients__pagination {
   margin-right: 5rem;
   font-size: 1.8rem;
-}
-.clients__content {
-  overflow: hidden;
-  margin-right: 11rem;
 }
 .clients__content-wrap {
   display: -webkit-inline-box;

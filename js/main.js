@@ -11,7 +11,7 @@ new Swiper('.banner__slider', {
     },
 
     pagination: {
-        el: '.swiper-pagination',
+        el: '.banner__pagination',
         type: "fraction",
 
         formatFractionCurrent: function (number) {
@@ -34,7 +34,7 @@ new Swiper('.banner__slider', {
 
 
 new Swiper('.services__slider', {
-    slidesPerView: 4.5,
+    slidesPerView: 3,
     speed: 800,
     navigation: {
         prevEl: '.services__arrow-prev',
