@@ -1,6 +1,9 @@
 new Swiper('.banner__slider', {
     slidesPerView: 1,
-    speed: 800,
+    speed: 1500,
+    autoplay: {
+        delay: 5000,
+    },
     effect: "fade",
     fadeEffect: {
         crossFade: true
@@ -134,3 +137,11 @@ new Swiper('.clients__content', {
         },
     },
 });
+
+
+
+
+
+$('.catalog__select-title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(300);
+  });

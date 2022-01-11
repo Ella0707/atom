@@ -577,13 +577,13 @@
     }
 
     &__slider-wrap {
-        display: flex;
         cursor: pointer;
     }
 
     &__slide {
         height: 57rem;
         position: relative;
+        width: 52rem !important;
     }
 
 
@@ -712,32 +712,64 @@
     &__photo {
         overflow: hidden;
         width: 76rem;
+        position: relative;
     }
     
 
     &__photo-pagin {
+       
+
+        display: flex;
+        align-items: center;
+
         position: absolute;
         right: 8rem;
         top: 6rem;
+        z-index: 10;
+        
 
-        .swiper-pagination {
-            bottom: 0;
-        }
 
         .swiper-pagination-bullet {
-            // background-color: rgba(229, 229, 229, 1);
-            background-color: rgb(243, 13, 13);
+            width: 0.9rem;
+            height: 0.9rem;
+            background-color: rgba(229, 229, 229, 1);
+
+            &:not(:last-child) {
+                margin-right: 1.9rem;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            width:40px;
+            height:40px;
+            cursor:pointer;
+            background-color: rgba(249, 249, 249, 1);
             width: 2rem;
             height: 2rem;
+            // border-top: 0.3rem solid #1F4845;
+            // border-left: 0.3rem solid #1F4845;
+            // border-bottom: 0.3rem solid #1F4845;
+            // border-right: 0.3rem solid #d6e4e2;
+            // transform: rotate(50deg);
+            background-image: linear-gradient(279deg, transparent 50%, #285f5b 50%), linear-gradient(17deg, #c4c4c4 50%, #285f5b 50%);
+            position: relative;
 
+            &::after {
+                content: "";
+                // width: 1.5rem;
+                // height: 1.5rem;
+                border-radius: inherit;
+                inset: 0.3rem;
+                background-color: #ffffff;
+
+                position: absolute;
+            }
         }
     }
 
     &__photo-wrap {
     position: relative;
     z-index: 2;
-
-    display: inline-flex;
     }
     
     &__photo-slide {
@@ -898,6 +930,7 @@
         justify-content: center;
 
         background-color: #1F4845;
+        cursor: pointer;
 
         &:not(:nth-child(3n)) {
             margin-right: 2.8rem;
