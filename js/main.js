@@ -145,3 +145,32 @@ new Swiper('.clients__content', {
 $('.catalog__select-title').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
   });
+
+
+  new Swiper('.catalog__cotnent-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 800,
+    navigation: {
+        prevEl: '.catalog__arrow-prev',
+        nextEl: '.catalog__arrow-next',
+    },
+
+    pagination: {
+        el: '.catalog__pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
