@@ -716,57 +716,6 @@
     }
     
 
-    &__photo-pagin {
-       
-
-        display: flex;
-        align-items: center;
-
-        position: absolute;
-        right: 8rem;
-        top: 6rem;
-        z-index: 10;
-        
-
-
-        .swiper-pagination-bullet {
-            width: 0.9rem;
-            height: 0.9rem;
-            background-color: rgba(229, 229, 229, 1);
-
-            &:not(:last-child) {
-                margin-right: 1.9rem;
-            }
-        }
-
-        .swiper-pagination-bullet-active {
-            width:40px;
-            height:40px;
-            cursor:pointer;
-            background-color: rgba(249, 249, 249, 1);
-            width: 2rem;
-            height: 2rem;
-            // border-top: 0.3rem solid #1F4845;
-            // border-left: 0.3rem solid #1F4845;
-            // border-bottom: 0.3rem solid #1F4845;
-            // border-right: 0.3rem solid #d6e4e2;
-            // transform: rotate(50deg);
-            background-image: linear-gradient(279deg, transparent 50%, #285f5b 50%), linear-gradient(17deg, #c4c4c4 50%, #285f5b 50%);
-            position: relative;
-
-            &::after {
-                content: "";
-                // width: 1.5rem;
-                // height: 1.5rem;
-                border-radius: inherit;
-                inset: 0.3rem;
-                background-color: #ffffff;
-
-                position: absolute;
-            }
-        }
-    }
-
     &__photo-wrap {
     position: relative;
     z-index: 2;
@@ -1190,7 +1139,48 @@
     font-size: 1.6rem;
     font-weight: 300;
     }
-
-
 }
+
+
+.pagination {
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 8rem;
+    top: 6rem;
+    z-index: 10;
+    
+
+
+    .swiper-pagination-bullet {
+        width: 0.9rem;
+        height: 0.9rem;
+        background-color: rgba(229, 229, 229, 1);
+
+        &:not(:last-child) {
+            margin-right: 1.9rem;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        cursor:pointer;
+        background-color: rgba(249, 249, 249, 1);
+        width: 2rem;
+        height: 2rem;
+        background-image: linear-gradient(279deg, transparent 50%, #285f5b 50%), linear-gradient(17deg, #c4c4c4 50%, #285f5b 50%);
+        position: relative;
+
+        &::after {
+            content: "";
+            border-radius: inherit;
+            inset: 0.3rem;
+            background-color: #ffffff;
+
+            position: absolute;
+        }
+    }
+}
+
 

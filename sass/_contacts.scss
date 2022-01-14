@@ -1,0 +1,200 @@
+.contacts {
+
+    position: relative;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        padding-top: 5rem;
+        width: 50%;
+        height: 80.7rem;
+    }
+    
+    &__breadcrumbs {
+        margin-bottom: 5rem;
+    
+    }
+   
+    
+    &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFBC3A;
+
+    margin-bottom: 1rem;
+    }
+    
+    &__title {
+    font-size: 5rem;
+    font-weight: 600;
+    color: $textColor;
+    margin-bottom: 5.5rem;
+    }
+    
+    &__wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6rem;
+    }
+    
+    &__item {
+    width: 19.8rem;
+    height: 9rem;
+
+    &:first-child {
+        margin-right: 6.5rem;
+    }
+
+    &:nth-child(2n) {
+        margin-right: 4.5rem;
+    }
+    }
+    
+    &__item-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    &__item-img {
+    width: 2.9rem;
+    height: 2.9rem;
+
+    margin-right: 1.5rem;
+
+    img {
+        height: 100%;
+        object-fit: contain;
+    }
+    }
+    
+    &__item-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #292729;
+    }
+    
+    &__item-value {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #292729;
+        align-self: start;
+
+        &:hover {
+            color: $brendColor;
+        }
+    }
+    
+    &__details {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10.7rem;
+    }
+    
+    &__details-img {
+        width: 4.2rem;
+        height: 4.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $brendColor;
+
+        margin-right: 2rem;
+
+        img {
+            width: 1.58rem;
+            height: 2rem;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__details-title {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #292729;
+    }
+    
+    &__managers-block {
+        padding: 5rem 3rem 4.6rem 18rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 95.8rem;
+        background-color: $brendColor;
+    
+    }
+    
+    &__managers-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #ffffff;
+
+        margin-bottom: 4.2rem;
+    }
+    
+    &__managers-wrap {
+        display: flex;
+    }
+    
+    &__manager {
+        display: flex;
+        align-items: flex-start;
+
+        &:first-child {
+            margin-right: 7rem;
+        }
+    }
+    
+    &__manager-ava {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+
+        margin-right: 1.5rem;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    
+    }
+    
+    &__manager-contacts {
+    
+    }
+    
+    &__manager-name {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+    }
+    
+    &__manager-tel {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+    }
+    
+    &__manager-email {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    &__map {
+        position: absolute;
+        right: 0;
+        width: 96.2rem;
+        height: 80.7rem;
+    }
+
+}
+
+

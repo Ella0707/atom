@@ -1,0 +1,481 @@
+.catalog {
+
+   &__wrapper {
+       display: flex;
+   }
+
+   &__filter-block {
+       width: 39.4rem;
+   }
+
+   &__filter-sort {
+    border: 1px solid rgba(228, 228, 228, 1);
+    padding: 4rem;
+   }
+
+   &__filter-sort-title{
+       font-size: 1.8rem;
+       font-weight: 600;
+       color: rgba(41, 39, 41, 1);
+
+       margin-bottom: 0.6rem;
+   }
+   &__sort-catalog-sel {
+       width: 40rem;
+       font-size: 1.6rem;
+       font-weight: 400;
+       border: none;
+       font-family: "Euclid Circular A", sans-serif;
+       outline: none;
+       color: rgba(197, 197, 197, 1);
+       cursor: pointer;
+
+       appearance: none; 
+       overflow: hidden;
+       background: url('./../img/arrow-black-down.svg') no-repeat;
+       background-position-x: 50%;
+       padding: 0.5rem;
+       padding-bottom: 2rem;
+
+       option {
+           color: black;
+           padding: 0.5rem;
+           cursor: pointer;
+           width: 35rem;
+       }
+    }
+   &__filter-selection {
+       padding: 4rem;
+       border-right: 1px solid rgba(228, 228, 228, 1);
+       border-left: 1px solid rgba(228, 228, 228, 1);
+       border-bottom: 1px solid rgba(228, 228, 228, 1);
+       background: rgba(249, 249, 249, 1);
+   }
+
+   
+   &__search-wrap {
+
+    margin-bottom: 4rem;
+
+   }
+
+
+   &__search {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background-image: url(./../img/loup-black.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 1.3rem;
+        transform: translateY(-50%);
+    }
+
+   }
+
+   &__search-input {
+       height: 5rem;
+       width: 25.4rem;
+       background: rgba(255, 255, 255, 1);
+       border:none;
+       outline: none;
+       padding: 1.5rem 1.5rem 1.5rem 5.1rem;
+       font-size: 2rem;
+       margin-right: 1rem;
+
+
+       &::placeholder {
+           color: rgba(197, 197, 197, 1);
+           font-size: 1.6rem;
+           font-weight: 400;
+       }
+
+      
+
+
+   }
+
+   &__search-btn {
+       width: 5rem;
+       height: 5rem;
+       background-color: $brendColor;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       img {
+           width: 1.5rem;
+           height: 1.5rem;
+           object-fit: contain;
+       }
+   }
+
+   
+   &__filter-title-wrap {
+       display: flex;
+       align-items: center;
+
+       margin-bottom: 2.4rem;
+
+}
+
+&__filter-title-img {
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $brendColor;
+    margin-right: 2.1rem;
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+    }
+}
+
+&__filter-title {
+font-size: 1.8rem;
+font-weight: 600;
+color: rgba(41, 39, 41, 1);
+}
+
+
+&__checkbox-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &:last-child {
+        margin-bottom: 7.8rem;
+    }
+
+}
+
+&__checkbox-label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #292729;
+    padding-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+&__checkbox-input {
+    outline: none;
+    border: none;
+    position: relative;
+    margin-right: 3.4rem;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 0.3rem;
+    transform: translate(-50%,-50%);
+    }
+
+    &:checked:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.3rem;
+        background-image: url(./../img/check.svg);
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: 1.5rem;
+        background-color: $brendColor;
+        transform: translate(-50%,-50%);
+        visibility: visible;
+    }
+}
+
+
+&__products {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+&__product-slider {
+    width: 29.1rem;
+    height: 41.7rem;
+
+    overflow: hidden;
+
+    &:hover {
+        height: 50.6rem;
+        transform: scale(1.1);
+        position: relative;
+        // z-index: 99;
+        box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
+
+        .catalog__product-bottom {
+            margin-bottom: 3rem;
+        }
+
+        // .catalog__product-link-hover {
+        //     opacity: 1;
+        // }
+
+        .catalog__product-hover {
+            opacity: 1;
+        }
+
+
+}
+
+
+&__product-slide-wrap {
+    width: 29.1rem;
+    height: 41.7rem;
+    border: 1px solid #E4E4E4;
+    padding: 3rem;
+    background-color: #ffffff;
+
+    position: relative;
+    transition: 0.8s;
+
+    &:hover {
+        height: 50.6rem;
+        transform: scale(1.1);
+        position: relative;
+        // z-index: 99;
+        box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
+
+        .catalog__product-bottom {
+            margin-bottom: 3rem;
+        }
+
+        // .catalog__product-link-hover {
+        //     opacity: 1;
+        // }
+
+        .catalog__product-hover {
+            opacity: 1;
+        }
+
+    }
+
+
+    &:hover {
+        height: 50.6rem;
+        // transform: scale(1.8);
+        position: relative;
+        // z-index: 99;
+        box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
+
+        .catalog__product-bottom {
+            margin-bottom: 3rem;
+        }
+
+        .catalog__product-link-hover {
+            opacity: 1;
+        }
+
+    }
+}
+
+&__product-slide {
+   
+
+ 
+
+}
+
+
+&__product-brend {
+width: 6rem;
+height: 3rem;
+
+position: absolute;
+top: 2rem;
+right: 2rem;
+
+img {
+    height: 100%;
+    object-fit: contain;
+}
+}
+
+&__product-title {
+font-size: 2.2rem;
+font-weight: 700;
+color: $brendColor;
+
+margin-bottom: 1rem;
+}
+
+&__product-subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9D9D9D;
+
+
+}
+
+&__product-img {
+    mix-blend-mode: multiply;
+    transform: rotate(3.18deg);
+}
+
+&__product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+&__product-pagination {
+
+}
+
+&__product-price {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #232323;
+}
+
+&__product-hover {
+    width: 29.1rem;
+    height: 10rem;
+    // opacity: 0;
+    transition: 1s;
+
+    position: absolute;
+    bottom: -2rem;
+}
+
+&__product-link-hover {
+    width: 23.2rem;
+    height: 5.9rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    background-color: $brendColor;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+ 
+    
+}
+
+}
+
+
+
+
+.filter {
+
+    &__input-label {
+        display: flex;
+
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: -1rem;
+    }
+
+    &__input-wrap {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__slider-value {
+        font-size: 1.8rem;
+        font-weight: 400;
+        border: none;
+        width: 5.5rem;
+
+        padding: 0 0.3rem;
+    }
+
+    &__slider-text {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+}
+
+
+
+// стилизация JS КЛАССОВ 
+
+.irs--flat .irs-bar {
+    background-color: #FFBC3A;
+
+    height: 0.4rem;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+
+    background-image: url(./../img/runner.png);
+
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    &::before {
+        content: none;
+    }
+}
+
+.irs--flat .irs-line {
+    height: 0.4rem;
+
+    background-color: #e1e4e9;
+    // background-image: url(./../img/runner.png);
+
+}
+
+.irs--flat .irs-handle>i:first-child {
+    width: 2.1rem;
+    height: 2.1rem;
+    top: -0.4rem;
+    left: 30%;
+    background-image: url(./../img/runner.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: transparent;
+
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
+}

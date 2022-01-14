@@ -1,7 +1,11 @@
 .catalog {
 
+    &__title-wrap {
+        margin-bottom: 6rem;
+    }
+
     &__content {
-        margin-bottom: 13rem;
+        margin-bottom: 12.5rem;
     }
 
     &__cotnent-slider {
@@ -47,8 +51,8 @@
             font-size: 2.3rem;
         }
 
-        &__hover {
-            padding: 3rem 7.5rem 3rem 1.5rem;
+        &__box-hover {
+            padding: 3rem 7rem 3rem 2.5rem;
         }
 
         &__hover-subtitle {
@@ -72,15 +76,6 @@
         }
     }
 
-    &__slider-more {
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: $brendColor;
-        border-bottom: 1px solid $brendColor; 
-        width: max-content;
-        margin: 0 auto;
-        margin-bottom: 6rem;
-    }
 
     &__arrow {
         justify-content: center;
@@ -88,11 +83,33 @@
 
     &__arrow-prev {
         margin-right: 6.9rem;
+        width: 4.57rem;
+        height: 4.57rem;
+    }
+
+    &__arrow-next {
+        width: 4.57rem;
+        height: 4.57rem;
     }
 
     &__pagination {
         width: max-content;
         margin-right: 6.9rem;
+        font-size: 1.25rem;
+
+        .swiper-pagination-current {
+            font-size: 3.2rem;
+        }
     }
+}
+
+.more {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $brendColor;
+    border-bottom: 1px solid $brendColor; 
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
 

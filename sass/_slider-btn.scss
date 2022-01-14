@@ -39,7 +39,6 @@
         content: "";
         width: 85%;
         height: 85%;
-        inset: 0.4rem;
         background-color: #ffffff;
         position: absolute;
     }
@@ -66,7 +65,6 @@
         content: "";
         width: 85%;
         height: 85%;
-        inset: 0.4rem;
         background-color: #ffffff;
         position: absolute;
     }
@@ -74,5 +72,110 @@
     &.swiper-button-disabled {
         background-image: linear-gradient(165deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
             linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+    }
+}
+
+
+
+
+
+
+
+.number-page-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-prew-custom {
+    width: 4rem;
+    height: 4rem;
+    background-image: linear-gradient(165deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
+            linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+    transform: rotate(-180deg);
+    margin-right: 7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        width: 89%;
+        height: 89%;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    img {
+        width: 1.4rem;
+        height: 1.4rem;
+        position: relative;
+        z-index: 15;
+    }
+
+    &.active {
+        background-image: linear-gradient(165deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
+        linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
+    }
+}
+
+.pagination-custom {
+    width: 7rem;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 7rem;
+
+    span {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #292729;
+        line-height: 1.5;
+    }
+}
+
+.curent {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #292729;
+    margin-right: 0.5rem;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #292729;
+    line-height: 1.5;
+}
+
+.arrow-next-custom {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(165deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
+            linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 89%;
+        height: 89%;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    &.active {
+        background-image: linear-gradient(165deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
+        linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
+    }
+
+    img {
+        width: 1.4rem;
+        height: 1.4rem;
+        position: relative;
+        z-index: 15;
     }
 }
