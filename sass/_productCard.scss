@@ -18,7 +18,7 @@
     &__slide {
         width: 29.3rem;
         height: 41.7rem;
-        padding: 3rem;
+        padding: 3.2rem 3rem 3rem 2.9rem;
 
         display: flex;
         flex-direction: column;
@@ -47,20 +47,19 @@
     }
     
     &__img {
-        width: 21.8rem;
+        width: 22.8rem;
         height: 20.5rem;
 
         img {
             height: 100%;
             object-fit: contain;
             mix-blend-mode: multiply;
-            transform: rotate(3.18deg);
         }
     
     }
     
     &__bottom {
-        display: flex;
+        text-align: end;
     
     }
     
@@ -69,15 +68,17 @@
         .swiper-pagination-bullet {
             width: 0.7rem;
             height: 0.7rem;
+
+    
     
             &:not(:last-child) {
-                margin-right: 1.47rem;
+                margin-right: 1.2rem;
             }
         }
         
         &.pagination {
             top: 80%;
-            left: 3rem;
+            left: 2.3rem;
         }
         .swiper-pagination-bullet-active {
             width: 1.5rem;

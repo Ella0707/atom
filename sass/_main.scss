@@ -1157,7 +1157,8 @@
     .swiper-pagination-bullet {
         width: 0.9rem;
         height: 0.9rem;
-        background-color: rgba(229, 229, 229, 1);
+        background: #c4c4c4;
+
 
         &:not(:last-child) {
             margin-right: 1.9rem;
