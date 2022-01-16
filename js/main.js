@@ -1,9 +1,18 @@
+// мобильное меню
+$('.header__burger').on('click', function (e) {
+    e.preventDefault();
+    $('.header__burger').toggleClass("active");
+    $('.header__bottom').toggleClass("active");
+});
+
+
+// слайдеры
 new Swiper('.banner__slider', {
     slidesPerView: 1,
     speed: 1500,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     effect: "fade",
     fadeEffect: {
         crossFade: true
@@ -30,6 +39,13 @@ new Swiper('.banner__slider', {
             return number;
         },
     },
+
+    breakpoints: {
+
+        // 769: {
+        //     direction: 'vertical',
+        // }
+    }
 });
 
 
@@ -37,7 +53,7 @@ new Swiper('.banner__slider', {
 
 
 new Swiper('.services__slider', {
-    slidesPerView: 3,
+    slidesPerView: 3.5,
     speed: 800,
     navigation: {
         prevEl: '.services__arrow-prev',
@@ -151,69 +167,6 @@ $('.catalog__select-title').click(function (event) {
 });
 
 
-// $(".catalog__option").click(function(e) {
-//     e.preventDefault();
-//     $(".catalog__option").removeClass('active');
-//     $(this).addClass('active');
-//   })
-
-// new Swiper('.catalog__cotnent-slider', {
-//     slidesPerView: 1,
-//     spaceBetween: 20,
-//     speed: 800,
-//     navigation: {
-//         prevEl: '.catalog__arrow-prev',
-//         nextEl: '.catalog__arrow-next',
-//     },
-
-//     pagination: {
-//         el: '.catalog__pagination',
-//         type: "fraction",
-
-//         formatFractionCurrent: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//         formatFractionTotal: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//     },
-// });
-
-
-// new Swiper('.catalog__products-slider', {
-//     slidesPerView: 1,
-//     spaceBetween: 20,
-//     speed: 800,
-//     navigation: {
-//         prevEl: '.catalog__arrow-prev',
-//         nextEl: '.catalog__arrow-next',
-//     },
-
-//     pagination: {
-//         el: '.catalog__pagination',
-//         type: "fraction",
-
-//         formatFractionCurrent: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//         formatFractionTotal: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//     },
-// });
-
 let textSlider = new Swiper('.command__about-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -310,6 +263,37 @@ $(".arrow-custom").click(function(e) {
     $(".arrow-custom").removeClass('active');
     $(this).addClass('active');
   })
+
+
+
+  let reviewsSlider = new Swiper('.reviews__slider', {
+    slidesPerView: 2.5,
+    spaceBetween: 60,
+    speed: 800,
+    loop: true,
+    navigation: {
+        prevEl: '.reviews__slide-arrow-prev',
+        nextEl: '.reviews__slide-arrow-next',
+    },
+
+    pagination: {
+        el: '.reviews__slide-pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
 
 
 

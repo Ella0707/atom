@@ -1,0 +1,79 @@
+.select {
+    
+    position: relative;
+
+    width: 30rem;
+
+    &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgba(41, 39, 41, 1);
+    margin-bottom: 0.6rem;
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding-bottom: 2rem;
+    
+    }
+    
+    &__current {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(197, 197, 197, 1);
+    
+    }
+    
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__body {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        // top: 130%;
+        z-index: 1;
+
+        display: none;
+
+
+    
+    }
+
+    &__item {
+        font-size: 1.6rem;
+        height: 2rem;
+        justify-self: center;
+        color: $textColor;
+        cursor: pointer;
+
+        &:hover {
+            background-color: violet;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.select.is-active .select__body {
+    display: flex;
+}
