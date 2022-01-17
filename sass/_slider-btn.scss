@@ -1,26 +1,49 @@
 .swiper-pagination-current {
     font-size: 4rem;
     font-weight: 600;
+
+    @media (max-width: 48em) {
+        font-size: 8rem;
+        margin-right: 1rem;
+    }
 }
 
 .swiper-pagination-total {
     font-size: 1.5rem;
     font-weight: 400;
+
+    @media (max-width: 48em) {
+        font-size: 3rem;
+    }
 }
 
 
 .btn-slider-wrap {
     display: flex;
+    align-items: flex-end;;
+    justify-content: space-between;
 
     cursor: pointer;
     position: relative;
     z-index: 10;
+
+    
 
     img {
         width: 1.4rem;
         height: 1.4rem;
         position: relative;
         z-index: 15;
+    }
+
+    @media (max-width: 48em) {
+        width: 100%;
+        justify-content: space-between;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 }
 
@@ -31,8 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(165deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
-        linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
+    background-image: linear-gradient(180deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
+        linear-gradient(90deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
     position: relative;
 
     &::after {
@@ -44,16 +67,22 @@
     }
 
     &.swiper-button-disabled {
-        background-image: linear-gradient(165deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
-            linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+        background-image: linear-gradient(180deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
+            linear-gradient(90deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+    }
+
+
+    @media (max-width: 48em) {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
 .btn-prev {
     width: 5rem;
     height: 5rem;
-    background-image: linear-gradient(165deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
-        linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
+    background-image: linear-gradient(180deg, transparent 50%, rgba(40, 95, 91, 1) 50%),
+        linear-gradient(90deg, rgba(196, 196, 196, 1) 50%, rgba(40, 95, 91, 1) 50%);
     transform: rotate(-180deg);
     margin-right: 2rem;
 
@@ -70,8 +99,13 @@
     }
 
     &.swiper-button-disabled {
-        background-image: linear-gradient(165deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
-            linear-gradient(89deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+        background-image: linear-gradient(180deg, transparent 50%, rgba(196, 196, 196, 1) 50%),
+            linear-gradient(90deg, rgba(196, 196, 196, 1) 50%, rgba(196, 196, 196, 1) 50%);
+    }
+
+    @media (max-width: 48em) {
+        width: 10rem;
+        height: 10rem;
     }
 }
 

@@ -49,11 +49,49 @@ new Swiper('.banner__slider', {
 });
 
 
+new Swiper('.categories__content', {
 
+    slidesPerView: 1,
+    speed: 800,
+    slidesPerColumn: 2,
+    spaceBetween: 16,
+    // enabled: false,
 
+    navigation: {
+        nextEl: '.categories__arrow-next',
+        prevEl: '.categories__arrow-prev',
+    },
+
+    pagination: {
+        el: '.categories__pagination',
+        type: "fraction",
+
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+
+    breakpoints: {
+
+        769: {
+            // enabled: true,
+        }
+    }
+
+});
 
 new Swiper('.services__slider', {
-    slidesPerView: 3.5,
+    slidesPerView: 1,
+    slidesOffsetAfter: 0,
     speed: 800,
     navigation: {
         prevEl: '.services__arrow-prev',
@@ -77,6 +115,14 @@ new Swiper('.services__slider', {
             return number;
         },
     },
+
+    breakpoints: {
+
+        769: {
+            slidesOffsetAfter: 120,
+            slidesPerView: 3.5,
+        }
+    }
 });
 
 
