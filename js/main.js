@@ -42,9 +42,9 @@ new Swiper('.banner__slider', {
 
     breakpoints: {
 
-        // 769: {
-        //     direction: 'vertical',
-        // }
+        769: {
+            verticalSwiping: true,
+        }
     }
 });
 
