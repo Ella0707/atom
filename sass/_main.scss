@@ -276,6 +276,9 @@
 
     &__arrow-prew {
         cursor: pointer;
+        align-self: flex-end;
+        padding-bottom: 2rem;
+        transform: rotateY(180deg);
         img {
             width: 2rem;
             height: 1.5rem;
@@ -604,7 +607,7 @@
                 opacity: 1;
                 transform: scale(1.01);
                 box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
-                padding: 5.5rem 4.2rem 4.2rem 4.2rem;
+                padding: 5.5rem 4.2rem 4.2rem 3.2rem;
                 border: none;
                 background-color: #ffffff;
     
@@ -622,7 +625,7 @@
                 }
     
                 .services__slide-subtitle {
-                    margin-bottom: 4.2rem;
+                    margin-bottom: 3.5rem;
                     width: 90%;
                 }
     
@@ -754,6 +757,17 @@
     &__photo-slide-top {
     
     }
+
+    &__photo-pagin {
+
+        &.pagination {
+            right: 2.3rem;
+            top: 3rem;
+            left: auto;
+            width: 10rem;
+            height: 5rem;
+        }
+    }
     
     &__photo-slide-new {
         width: 14.43rem;
@@ -833,6 +847,10 @@
     
     &__our-distr {
         width: 79rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     &__our-distr-title {
@@ -847,16 +865,18 @@
     &__our-distr-control {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
 
-        margin-bottom: 2.4rem;
+        position: absolute;
+        top: 9rem;
         width: 96%;
-        margin-left: 3.3rem;
     }
     
-    &__our-disr-pagin {
-    
-    }
+    // &__our-disr-pagin {
+    // position: absolute;
+    // top: 9rem;
+    // left: 3rem;
+    // }
     
     &__arrow {
 
@@ -987,10 +1007,17 @@
         font-weight: 600;
         color: $textColor;
     }
+
+    &__content {
+        position: relative;
+    }
     
 
     &__control-wrap {
         display: flex;
+        position: absolute;
+        top: -15rem;
+        right: 0;
     
     }
     
@@ -1177,52 +1204,5 @@
 }
 
 
-.pagination {
-
-    display: flex;
-    align-items: center;
-
-    &.distributor__photo-pagin {
-        right: 2.3rem;
-        top: 3rem;
-        left: auto;
-        width: 10rem;
-        height: 5rem;
-    }
-    position: absolute;
-  
-    z-index: 10;
-    
-
-
-    .swiper-pagination-bullet {
-        width: 0.9rem;
-        height: 0.9rem;
-        background: #c4c4c4;
-
-
-        &:not(:last-child) {
-            margin-right: 1.9rem;
-        }
-    }
-
-    .swiper-pagination-bullet-active {
-        cursor:pointer;
-        background-color: rgba(249, 249, 249, 1);
-        width: 2rem;
-        height: 2rem;
-        background-image: linear-gradient(279deg, transparent 50%, #285f5b 50%), linear-gradient(17deg, #c4c4c4 50%, #285f5b 50%);
-        position: relative;
-
-        &::after {
-            content: "";
-            border-radius: inherit;
-            inset: 0.3rem;
-            background-color: #ffffff;
-
-            position: absolute;
-        }
-    }
-}
 
 

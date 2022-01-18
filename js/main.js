@@ -8,6 +8,8 @@ $('.header__burger').on('click', function (e) {
 
 // слайдеры
 new Swiper('.banner__slider', {
+    verticalSwiping: true,
+
     slidesPerView: 1,
     speed: 1500,
     // autoplay: {
@@ -41,9 +43,8 @@ new Swiper('.banner__slider', {
     },
 
     breakpoints: {
-
         769: {
-            verticalSwiping: true,
+            verticalSwiping: false,
         }
     }
 });
@@ -54,7 +55,7 @@ new Swiper('.categories__content', {
     slidesPerView: 1,
     speed: 800,
     slidesPerColumn: 2,
-    spaceBetween: 16,
+    spaceBetween: 30,
     // enabled: false,
 
     navigation: {
@@ -91,6 +92,7 @@ new Swiper('.categories__content', {
 
 new Swiper('.services__slider', {
     slidesPerView: 1,
+    spaceBetween: 15,
     slidesOffsetAfter: 0,
     speed: 800,
     navigation: {
@@ -132,7 +134,7 @@ new Swiper('.services__slider', {
 new Swiper('.distributor__our-distr-slider', {
     slidesPerView: 1,
     speed: 800,
-    spaceBetween: 28,
+    spaceBetween: 30,
     navigation: {
         prevEl: '.distributor__arrow-prev',
         nextEl: '.distributor__arrow-next',
@@ -155,14 +157,18 @@ new Swiper('.distributor__our-distr-slider', {
             return number;
         },
     },
-});
 
+    breakpoints: {
+        769: {
+            spaceBetween: 28,
+        }
+    }
+});
 
 
 new Swiper('.distributor__photo', {
     slidesPerView: 1,
     speed: 800,
-    // spaceBetween: 40,
 
     pagination: {
         el: '.distributor__photo-pagin',
@@ -173,8 +179,8 @@ new Swiper('.distributor__photo', {
 
 
 new Swiper('.clients__content', {
-    slidesPerView: 5,
-    spaceBetween: 183,
+    slidesPerView: 1,
+    spaceBetween: 35,
     speed: 800,
     navigation: {
         prevEl: '.clients__arrow-prev',
@@ -198,11 +204,25 @@ new Swiper('.clients__content', {
             return number;
         },
     },
+
+    breakpoints: {
+        769: {
+            slidesPerView: 5,
+            spaceBetween: 183,
+        }
+    }
 });
 
 $(".categories__sort-link").click(function(e) {
     e.preventDefault();
     $(".categories__sort-link").removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+  $(".catalog__option").click(function(e) {
+    e.preventDefault();
+    $(".catalog__option").removeClass('active');
     $(this).addClass('active');
   })
 
