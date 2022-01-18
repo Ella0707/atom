@@ -1966,6 +1966,9 @@ input[type=number] {
   margin-bottom: 6rem;
 }
 
+.catalog .catalog__title-wrap {
+  margin-bottom: 4.7rem;
+}
 .catalog__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2199,27 +2202,14 @@ input[type=number] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 117.2rem;
 }
 .catalog__product-slider {
   width: 29.1rem;
   height: 41.7rem;
   overflow: hidden;
 }
-.catalog__product-slider:hover {
-  height: 50.6rem;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  position: relative;
-  -webkit-box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
-          box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
-}
-.catalog__product-slider:hover .catalog__product-bottom {
-  margin-bottom: 3rem;
-}
-.catalog__product-slider:hover .catalog__product-hover {
-  opacity: 1;
-}
-.catalog__product-slider__product-slide-wrap {
+.catalog__product-slide-wrap {
   width: 29.1rem;
   height: 41.7rem;
   border: 1px solid #E4E4E4;
@@ -2229,7 +2219,7 @@ input[type=number] {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-.catalog__product-slider__product-slide-wrap:hover {
+.catalog__product-slide-wrap:hover {
   height: 50.6rem;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -2237,53 +2227,41 @@ input[type=number] {
   -webkit-box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
           box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
 }
-.catalog__product-slider__product-slide-wrap:hover .catalog__product-bottom {
+.catalog__product-slide-wrap:hover .catalog__product-bottom {
   margin-bottom: 3rem;
 }
-.catalog__product-slider__product-slide-wrap:hover .catalog__product-hover {
+.catalog__product-slide-wrap:hover .catalog__product-hover {
   opacity: 1;
 }
-.catalog__product-slider__product-slide-wrap:hover {
-  height: 50.6rem;
-  position: relative;
-  -webkit-box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
-          box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
-}
-.catalog__product-slider__product-slide-wrap:hover .catalog__product-bottom {
-  margin-bottom: 3rem;
-}
-.catalog__product-slider__product-slide-wrap:hover .catalog__product-link-hover {
-  opacity: 1;
-}
-.catalog__product-slider__product-brend {
+.catalog__product-brend {
   width: 6rem;
   height: 3rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
 }
-.catalog__product-slider__product-brend img {
+.catalog__product-brend img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.catalog__product-slider__product-title {
+.catalog__product-title {
   font-size: 2.2rem;
   font-weight: 700;
   color: #285f5b;
   margin-bottom: 1rem;
 }
-.catalog__product-slider__product-subtitle {
+.catalog__product-subtitle {
   font-size: 1.6rem;
   font-weight: 400;
   color: #9D9D9D;
 }
-.catalog__product-slider__product-img {
+.catalog__product-img {
   mix-blend-mode: multiply;
   -webkit-transform: rotate(3.18deg);
           transform: rotate(3.18deg);
 }
-.catalog__product-slider__product-bottom {
+.catalog__product-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2294,12 +2272,12 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.catalog__product-slider__product-price {
+.catalog__product-price {
   font-size: 3rem;
   font-weight: 600;
   color: #232323;
 }
-.catalog__product-slider__product-hover {
+.catalog__product-hover {
   width: 29.1rem;
   height: 10rem;
   -webkit-transition: 1s;
@@ -2307,7 +2285,7 @@ input[type=number] {
   position: absolute;
   bottom: -2rem;
 }
-.catalog__product-slider__product-link-hover {
+.catalog__product-link-hover {
   width: 23.2rem;
   height: 5.9rem;
   display: -webkit-box;
@@ -2325,7 +2303,8 @@ input[type=number] {
   font-size: 1.8rem;
   font-weight: 400;
 }
-.catalog .filter__input-label {
+
+.filter__input-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2333,7 +2312,7 @@ input[type=number] {
   font-weight: 400;
   margin-bottom: -1rem;
 }
-.catalog .filter__input-wrap {
+.filter__input-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2341,14 +2320,14 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.catalog .filter__slider-value {
+.filter__slider-value {
   font-size: 1.8rem;
   font-weight: 400;
   border: none;
   width: 5.5rem;
   padding: 0 0.3rem;
 }
-.catalog .filter__slider-text {
+.filter__slider-text {
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -2389,6 +2368,69 @@ input[type=number] {
 .irs--flat .irs-handle.state_hover > i:first-child,
 .irs--flat .irs-handle:hover > i:first-child {
   background-color: transparent;
+}
+
+.catalog__products .product-card__brend {
+  width: 5.6rem;
+  height: 2.6rem;
+  position: absolute;
+  top: 1.7rem;
+  right: 2rem;
+}
+.catalog__products .product-card__brend img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.catalog__products .product-card__slide {
+  padding: 0;
+  height: 41.7rem;
+  position: relative;
+  z-index: 1;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  border-top: 1px solid red;
+}
+.catalog__products .product-card__slide:hover {
+  overflow: visible;
+  z-index: 2;
+}
+.catalog__products .product-card__slide:hover .product-card__bottom-hover {
+  visibility: visible;
+}
+.catalog__products .product-card__slide:hover.product-card__slide-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 50rem;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(41, 39, 41, 0.1);
+          box-shadow: rgba(41, 39, 41, 0.1);
+}
+.catalog__products .product-card__slide-start {
+  padding: 3rem;
+}
+.catalog__products .product-card__img {
+  height: 20.1rem;
+}
+.catalog__products .product-card__slide-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.catalog__products .product-card__bottom-hover {
+  padding-top: 4rem;
+  height: 10rem;
+  width: 100%;
+  background-color: sandybrown;
+  visibility: hidden;
+}
+.catalog__products .product-card__bottom-hover a {
+  width: 6rem;
+  height: 3rem;
+  background-color: red;
 }
 
 .card-product {

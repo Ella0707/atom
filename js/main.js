@@ -213,6 +213,17 @@ new Swiper('.clients__content', {
     }
 });
 
+
+new Swiper('.product-card__slider', {
+    slidesPerView: 1,
+    speed: 800,
+
+    pagination: {
+        el: '.distributor__photo-pagin',
+        clickable: true,
+    },
+});
+
 $(".categories__sort-link").click(function(e) {
     e.preventDefault();
     $(".categories__sort-link").removeClass('active');
@@ -360,6 +371,3 @@ $(".arrow-custom").click(function(e) {
         },
     },
 });
-
-
-
