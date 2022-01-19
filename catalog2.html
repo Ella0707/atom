@@ -15,10 +15,25 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
+                    <div class="header__top-mob-left mobile">
+                        <button class="header__burger  mobile">
+                        </button>
+                        <a href="" class="header__search-mob">
+                            <img src="./img/menu-mob3.svg" alt="">
+                        </a>
+                    </div>
                     <a href="" class="header__logo">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <div class="header__contact-info">
+                    <div class="header__contact-mob mobile">
+                        <a href="" class="header__email-mob">
+                            <img src="./img/menu-mob1.svg" alt="">
+                        </a>
+                        <a href="" class="header__tel-mob">
+                            <img src="./img/menu-mob4.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__contact-info desctop">
                         <div class="header__social-wrap">
                             <a href="" class="header__social">
                                 <img src="./img/WhatsApp_black.svg" alt="">
@@ -37,12 +52,13 @@
                 </div>
             </div>
         </div>
+      
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="">Каталог
-                            <img src="./img/catalog-burger.svg" alt="">
+                            <img class="desctop" src="./img/catalog-burger.svg" alt="">
                         </a>
                     </li>
                     <li class="header__nav-item">
@@ -61,7 +77,7 @@
                         <a class="header__nav-link" href="">Контакты</a>
                     </li>
                 </ul>
-                <div class="header__search-wrap">
+                <div class="header__search-wrap desctop">
                     <div class="header__search">
                         <button class="header__search-btn">
                             <img src="./img/loup.svg" alt="">
@@ -73,91 +89,32 @@
         </div>
     </header>
     <main class="main">
-        <section class="catalog">
+        <section class="catalog catalog2">
             <div class="container">
-                <div class="catalog__breadcrumbs">
+                <div class="catalog__breadcrumbs breadcrumbs ">
                     <a href="">Главная</a>
                     <a href="">Контрольно-измерительное оборудование</a>
                 </div>
                 <div class="catalog__number">10 категорий</div>
-                <div class="catalog__title-wrap">
+                <div class="catalog__title-wrap catalog2">
                     <div class="catalog__title">Электроизмерительные приборы</div>
                     <a class="catalog__link-wrap">
                         <div class="catalog__link-text">Оставить заявку</div>
-                        <div class="catalog__limk-img">
+                        <div class="catalog__link-img">
                             <img src="./img/arrow-white.svg" alt="">
                         </div>
                     </a>
                 </div>
                 <div class="catalog__content">
-                    <div class="catalog__cotnent-slider swiper-slider">
-                        <div class="catalog__cotnent-slider-wrapper swiper-wrapper">
-                            <div class="catalog__slide swiper-slide">
+                   
+                        <div class="catalog__content-wrapper">
                                 <div class="categories__box">
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img1.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img11.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают
-                                            вам выполнять производственные планы
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img2.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Анализаторы спектра и электромагнитного поля</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Анализаторы спектра и электромагнитного поля</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img3.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Анализаторы качества электроэнергии</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Анализаторы качества электроэнергии</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -169,176 +126,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img4.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img5.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Амперметры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Амперметры</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img6.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Вольтамперфазометры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Вольтамперфазометры</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img7.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Генераторы сигналов</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Генераторы сигналов</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img8.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Измерители сопротивления заземления и изоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители сопротивления заземления и изоляции</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img9.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Видеодиагностика</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Видеодиагностика</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img10.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Лабораторное оборудование</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Лабораторное оборудование</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img11.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title"> Мультиметры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title"> Мультиметры</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__slide swiper-slide">
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img1.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
-                                        </div>
-                                        <a class="categories__hover-link" href="">
-                                            <img src="./img/arrow-black.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="categories__box">
-                                    <div class="categories__box-start">
-                                        <img class="categories__box-img" src="./img/catalog-img11.png" alt="">
-                                        <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
-                                        <div class="categories__hover-text">Надежные регулирующие клапаны помогают
-                                            вам выполнять производственные планы
+                                            производственные планы
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -349,14 +138,10 @@
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img2.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Анализаторы спектра и электромагнитного поля</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Анализаторы спектра и электромагнитного поля</div>
+                                        <div class="categories__box-title desctop">Анализаторы спектра и электромагнитного поля</div>
+                                        <div class="categories__box-title mobile">Анализаторы спектра и электро-магнитного поля</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -368,13 +153,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img3.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Анализаторы качества электроэнергии</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Анализаторы качества электроэнергии</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -386,13 +166,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img4.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Измерители параметров электроизоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители параметров электроизоляции</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -404,13 +179,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img5.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Амперметры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Амперметры</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -421,14 +191,10 @@
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img6.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Вольтамперфазометры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Вольтамперфазометры</div>
+                                        <div class="categories__box-title desctop">Вольтамперфазометры</div>
+                                        <div class="categories__box-title mobile">Вольтампер-фазометры</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -440,13 +206,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img7.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Генераторы сигналов</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Генераторы сигналов</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -457,14 +218,10 @@
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img8.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Измерители сопротивления заземления и изоляции</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Измерители сопротивления заземления и изоляции</div>
+                                        <div class="categories__box-title desctop">Измерители сопротивления заземления и изоляции</div>
+                                        <div class="categories__box-title mobile">Измерители сопротивления заземления/ изоляции</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -475,14 +232,10 @@
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img9.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title">Видеодиагностика</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Видеодиагностика</div>
+                                        <div class="categories__box-title desctop">Видеодиагностика</div>
+                                        <div class="categories__box-title mobile">Видео-диагностика</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -494,13 +247,8 @@
                                         <img class="categories__box-img" src="./img/catalog-img10.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
                                         <div class="categories__box-title">Лабораторное оборудование</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title">Лабораторное оборудование</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
@@ -511,38 +259,36 @@
                                     <div class="categories__box-start">
                                         <img class="categories__box-img" src="./img/catalog-img11.png" alt="">
                                         <div class="categories__box-subtitle">Более 145 товаров</div>
-                                        <div class="categories__box-title"> Мультиметры</div>
-                                    </div>
-                                    <div class="categories__box-hover">
-                                        <div class="categories__hover-subtitle">Более 145 товаров</div>
-                                        <div class="categories__hover-title"> Мультиметры</div>
+                                        <div class="categories__box-title">Мультиметры</div>
                                         <div class="categories__hover-text">Надежные регулирующие клапаны помогают вам выполнять
-                                            производственные планы,
-                                            поддерживать качество продукции и повышать эффективность вашего предприятия.
+                                            производственные планы.
                                         </div>
                                         <a class="categories__hover-link" href="">
                                             <img src="./img/arrow-black.svg" alt="">
                                         </a>
                                     </div>
                                 </div>
+                                
+                        </div>
+                    
+                        <div class="catalog__bottom">
+                            <div class="catalog__product-more more">
+                                <a href="" class="">Показать еще</a>
+                            </div>
+                            <div class="catalog__number-page-wrap number-page-wrap desctop">
+                                <a class="catalog__page-arrow-prew arrow-custom arrow-prew-custom" href="#">
+                                    <img src="./img/arrow-black.svg" alt="">
+                                </a>
+                                <div class="catalog__page-pagination pagination-custom">
+                                    <div class="catalog__page-pagination-curent curent">01</div>
+                                    <span>/</span>
+                                    <div class="catalog__page-pagination-total total">02</div>
+                                </div>
+                                <a class="catalog__page-arrow-next arrow-custom arrow-next-custom active" href="#">
+                                    <img src="./img/arrow-black.svg" alt="">
+                                </a>
                             </div>
                         </div>
-                    </div>
-                        <div class="catalog__slider-more">
-                            <a href="" class="">Показать еще</a>
-                        </div>
-                    <div class="catalog__slider-controll">
-                        <div class="catalog__arrow btn-slider-wrap">
-                            <div class="catalog__arrow-prev btn-prev">
-                                <img src="./img/arrow-black.svg" alt="">
-                            </div>
-                            <div class="catalog__pagination">
-                            </div>
-                            <div class="catalog__arrow-next btn-next">
-                                <img src="./img/arrow-black.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

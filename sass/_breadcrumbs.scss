@@ -1,0 +1,66 @@
+
+.breadcrumbs {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba(206, 206, 206, 1);
+
+    margin-bottom: 9.5rem;
+
+
+    a {
+    position: relative;
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+
+            &::after {
+                content: "";
+                width: 0.1rem;
+                height: 1.6rem;
+                background-color: #285F5B;
+
+                position: absolute;
+                right: -2.4rem;
+            }
+        }
+
+        &:last-child {
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 48em) {
+
+    .breadcrumbs {
+        display: inline-block;
+        font-size: 3rem;
+        margin-bottom: 15.8rem;
+    
+        a {
+        position: relative;
+    
+            &:not(:last-child) {
+                margin-right: 4rem;
+    
+                &::after {
+                    content: "";
+                    width: 0.1rem;
+                    position: absolute;
+                    background-color: #285F5B;
+                    height: 3.2rem;
+                    right: -2rem;
+                }
+            }
+        }
+    }
+    
+}

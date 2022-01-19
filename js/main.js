@@ -6,6 +6,53 @@ $('.header__burger').on('click', function (e) {
 });
 
 
+const activitySlider = new Swiper('#activity-slider', {
+    slidesPerView: 1,
+    speed: 800,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+    // spaceBetween: 10,
+    // grid: {
+    //   rows: 3,
+    //   fill: 'row',
+    // },
+    navigation: {
+      nextEl: '.categories__arrow-next',
+      prevEl: '.categories__arrow-prev',
+    },
+  
+    pagination: {
+      el: '.categories__pagination',
+      type: 'fraction',
+      formatFractionCurrent: function (number) {
+        if (number < 10) {
+            number = "0" + number;
+        }
+        return number;
+    },
+    formatFractionTotal: function (number) {
+        if (number < 10) {
+            number = "0" + number;
+        }
+        return number;
+    },
+},
+  });
+  
+  if ($('#activity-slider').length) {
+    if ($(window).width() >= 769) {
+      activitySlider.destroy();
+    }
+  }
+
+
+
+  $(".arrow-custom").click(function(e) {
+    e.preventDefault();
+    $(".arrow-custom").removeClass('active');
+    $(this).addClass('active');
+  })
+
 // слайдеры
 new Swiper('.banner__slider', {
     verticalSwiping: true,
@@ -50,45 +97,45 @@ new Swiper('.banner__slider', {
 });
 
 
-new Swiper('.categories__content', {
+// new Swiper('.categories__content', {
 
-    slidesPerView: 1,
-    speed: 800,
-    slidesPerColumn: 2,
-    spaceBetween: 30,
-    // enabled: false,
+//     slidesPerView: 1,
+//     speed: 800,
+//     slidesPerColumn: 2,
+//     spaceBetween: 30,
+//     // enabled: false,
 
-    navigation: {
-        nextEl: '.categories__arrow-next',
-        prevEl: '.categories__arrow-prev',
-    },
+//     navigation: {
+//         nextEl: '.categories__arrow-next',
+//         prevEl: '.categories__arrow-prev',
+//     },
 
-    pagination: {
-        el: '.categories__pagination',
-        type: "fraction",
+//     pagination: {
+//         el: '.categories__pagination',
+//         type: "fraction",
 
-        formatFractionCurrent: function (number) {
-            if (number < 10) {
-                number = "0" + number;
-            }
-            return number;
-        },
-        formatFractionTotal: function (number) {
-            if (number < 10) {
-                number = "0" + number;
-            }
-            return number;
-        },
-    },
+//         formatFractionCurrent: function (number) {
+//             if (number < 10) {
+//                 number = "0" + number;
+//             }
+//             return number;
+//         },
+//         formatFractionTotal: function (number) {
+//             if (number < 10) {
+//                 number = "0" + number;
+//             }
+//             return number;
+//         },
+//     },
 
-    breakpoints: {
+//     breakpoints: {
 
-        769: {
-            // enabled: true,
-        }
-    }
+//         769: {
+//             // enabled: true,
+//         }
+//     }
 
-});
+// });
 
 new Swiper('.services__slider', {
     slidesPerView: 1,
@@ -335,11 +382,7 @@ $(".card-product__about-item").click(function(e) {
 });
 
 
-$(".arrow-custom").click(function(e) {
-    e.preventDefault();
-    $(".arrow-custom").removeClass('active');
-    $(this).addClass('active');
-  })
+
 
 
 
@@ -371,3 +414,7 @@ $(".arrow-custom").click(function(e) {
         },
     },
 });
+
+
+
+

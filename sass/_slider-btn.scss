@@ -122,6 +122,24 @@
     justify-content: center;
 }
 
+
+.more {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #285F5B;
+    display: block;
+    width: 13rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #285F5B;
+    text-align: center;
+    margin: 0 auto 5.3rem auto;
+
+    @media (max-width: 48em) {
+        font-size: 3.6rem;
+        width: 25rem;
+    }
+}
+
 .arrow-prew-custom {
     width: 4rem;
     height: 4rem;
