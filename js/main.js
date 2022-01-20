@@ -11,11 +11,6 @@ const activitySlider = new Swiper('#activity-slider', {
     speed: 800,
     slidesPerColumn: 2,
     spaceBetween: 30,
-    // spaceBetween: 10,
-    // grid: {
-    //   rows: 3,
-    //   fill: 'row',
-    // },
     navigation: {
       nextEl: '.categories__arrow-next',
       prevEl: '.categories__arrow-prev',
@@ -96,46 +91,6 @@ new Swiper('.banner__slider', {
     }
 });
 
-
-// new Swiper('.categories__content', {
-
-//     slidesPerView: 1,
-//     speed: 800,
-//     slidesPerColumn: 2,
-//     spaceBetween: 30,
-//     // enabled: false,
-
-//     navigation: {
-//         nextEl: '.categories__arrow-next',
-//         prevEl: '.categories__arrow-prev',
-//     },
-
-//     pagination: {
-//         el: '.categories__pagination',
-//         type: "fraction",
-
-//         formatFractionCurrent: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//         formatFractionTotal: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//     },
-
-//     breakpoints: {
-
-//         769: {
-//             // enabled: true,
-//         }
-//     }
-
-// });
 
 new Swiper('.services__slider', {
     slidesPerView: 1,
@@ -259,6 +214,21 @@ new Swiper('.clients__content', {
         }
     }
 });
+
+
+new Swiper('.product__box-slider', {
+    slidesPerView: 1,
+    speed: 800,
+    spaceBetween: 30,
+
+
+    pagination: {
+        el: '.product__slide-pagination',
+        clickable: true,
+    },
+});
+
+
 
 
 new Swiper('.product-card__slider', {
