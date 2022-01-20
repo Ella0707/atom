@@ -1034,9 +1034,6 @@
     }
 
 
-
-
-
     .catalog {
 
         .catalog1 {
@@ -1061,7 +1058,7 @@
         }
 
         padding-top: 6.5rem;
-        padding-bottom: 50rem;
+        padding-bottom: 0;
         position: relative;
 
 
@@ -1071,13 +1068,6 @@
             font-size: 3.6rem;
             margin-bottom: 1.5rem;
         }
-
-        // &__title-wrap {
-        // margin-bottom: 10.6rem;
-
-        // }
-
-        
 
         &__title {
             font-size: 5.2rem;
@@ -1372,6 +1362,371 @@
 }
 }
 
+
+
+.catalog {
+
+    &.catalog3 {
+        margin-bottom: 17.5rem;
+        
+        .catalog__title-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 4.5rem;
+
+        .catalog__bottom {
+            padding-left: 40rem;
+        }
+        }
+
+        .breadcrumbs {
+            font-size: 2.5rem;
+            margin-bottom: 15.8rem;
+        }
+    }
+
+    &__wrapper {
+        flex-direction: column;
+      
+    }
+
+    &__filter-block {
+        width: 100%;
+        margin-bottom: 15rem;
+    }
+
+    .select {
+    
+        position: relative;
+    
+        width: 100%;
+    
+        &__title {
+        font-size: 3.6rem;
+        margin-bottom: 1.2rem;
+        }
+        
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding-bottom: 2rem;
+        
+        }
+        
+        &__current {
+            font-size: 3.2rem;
+        }
+        
+        &__icon {
+            width: 3rem;
+            height: 3rem;
+        }
+        
+    
+        &__item {
+            padding: 1rem;
+            font-size: 3rem;
+            height: 7rem;
+            color: $textColor;
+        }
+    }
+
+    &__filter-selection {
+        padding: 3.5rem 4rem 4rem 4rem;
+        border-right: 1px solid rgba(228, 228, 228, 1);
+        border-left: 1px solid rgba(228, 228, 228, 1);
+        border-bottom: 1px solid rgba(228, 228, 228, 1);
+        background: rgba(249, 249, 249, 1);
+        height: 100%;
+    }
+
+    
+    &__filter-open {
+        background: rgba(249, 249, 249, 1);
+        border: 1px solid rgba(228, 228, 228, 1);
+        color: $textColor;
+       
+        font-size: 3.6rem;
+        font-weight: 600;
+       
+        border-bottom: transparent;
+        padding: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.8s;
+
+        &.active {
+            background: $brendColor;
+            color: rgba(255, 255, 255, 1);
+
+            .catalog__filter-open-icon {
+                stroke: #fff;
+            }
+
+            .catalog__filter-open-arrow {
+                stroke: #fff;
+                transform: rotateX(180deg);
+            }
+        }
+    }
+    
+    
+    &__filter-open-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__filter-open-icon {
+        stroke: #285F5B;
+        margin-right: 3rem;
+    }
+    
+    &__filter-open-arrow {
+        stroke: #285F5B;
+
+    }
+
+
+    &__search-wrap {
+        margin-bottom: 4rem;
+    }
+
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 4rem;
+            height: 5rem;
+            background-image: url(./../img/loup-black.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 1.3rem;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    &__search-input {
+        height: 9.6rem;
+        width: 49rem;
+     
+        padding: 1.5rem 1.5rem 1.5rem 10rem;
+        font-size: 3rem;
+        margin-right: 1rem;
+
+
+        &::placeholder {
+            color: rgba(197, 197, 197, 1);
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+
+    &__search-btn {
+        width: 9.6rem;
+        height: 9.6rem;
+        flex-grow: 0;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            object-fit: contain;
+        }
+    }
+
+
+    &__filter-title-wrap {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 2.2rem;
+
+    }
+
+    &__filter-title-img {
+        width: 10rem;
+        height: 10rem;
+
+        margin-right: 2.1rem;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            object-fit: contain;
+        }
+    }
+
+    &__filter-title {
+        font-size: 3.6rem;
+    }
+
+
+    &__checkbox-item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 1.85rem;
+        }
+
+        &:last-child {
+            margin-bottom: 7.8rem;
+        }
+
+    }
+
+    &__checkbox-label {
+        font-size: 3.6rem;
+    
+        padding-left: 1.5rem;
+    }
+
+    &__checkbox-input {
+
+        margin-right: 4rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 0.3rem;
+            transform: translate(-50%, -50%);
+        }
+
+        &:checked:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 0.3rem;
+            background-image: url(./../img/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 3rem;
+            background-color: $brendColor;
+            transform: translate(-50%, -50%);
+            visibility: visible;
+        }
+    }
+
+
+    &__products {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+.filter {
+
+    
+
+    &__input-label {
+        display: flex;
+
+        font-size: 3.6rem;
+        font-weight: 400;
+        margin-bottom: -1rem;
+    }
+
+    &__input-wrap {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__slider-value {
+        font-size: 3.6rem;
+        font-weight: 400;
+        border: none;
+        width: 10rem;
+
+        padding: 0 0.3rem;
+    }
+
+    &__slider-text {
+        font-size: 3.2rem;
+        font-weight: 400;
+    }
+}
+
+
+
+
+// стилизация JS КЛАССОВ 
+
+.filter__dropdown-content.range-slider {
+    width: 75%;
+    margin-left: auto;
+}
+
+.irs--flat .irs-bar {
+    background-color: #FFBC3A;
+
+    height: 1rem;
+}
+
+.filter__input-label {
+    margin-bottom: 0;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+
+    background-image: url(./../img/runner.png);
+
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    &::before {
+        content: none;
+    }
+}
+
+.irs--flat .irs-line {
+    height: 1rem;
+
+    background-color: #e1e4e9;
+    // background-image: url(./../img/runner.png);
+
+}
+
+.irs--flat .irs-handle>i:first-child {
+    width: 4rem;
+    height: 4rem;
+    top: -0.4rem;
+    left: 30%;
+    background-image: url(./../img/runner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
+}
 
 
 

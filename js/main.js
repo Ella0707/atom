@@ -219,8 +219,6 @@ new Swiper('.clients__content', {
 new Swiper('.product__box-slider', {
     slidesPerView: 1,
     speed: 800,
-    spaceBetween: 30,
-
 
     pagination: {
         el: '.product__slide-pagination',
@@ -257,6 +255,10 @@ $(".categories__sort-link").click(function(e) {
 
 
 $('.catalog__select-title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(300);
+});
+
+$('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
 

@@ -91,7 +91,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="catalog">
+        <section class="catalog catalog3">
             <div class="container">
                 <div class="catalog__breadcrumbs breadcrumbs">
                     <a href="">Главная</a>
@@ -112,11 +112,11 @@
                     <div class="catalog__filter-block">
                         <div class="catalog__filter-sort">
                             <div class="select">
-                                <div class="select__title">Сортировать по</div>
+                                <div class="select__title">Сортировать</div>
                                 <div class="select__header">
                                     <div class="select__current">По возрастанию цены </div>
                                     <div class="select__icon">
-                                        <img src="./img/arrow-black.svg" alt="">
+                                        <img src="./img/arrow-black-down.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="select__body">
@@ -125,20 +125,26 @@
                                     <div class="select__item">Дорогие</div>
                                     <div class="select__item">Новинки</div>
                                 </div>
-
                             </div>
-                            <!-- <div class="catalog__filter-sort-title">Сортировать</div>
-                            <div class="catalog__sort-select">
-                                <select class="catalog__sort-catalog-sel">
-                                    <option value="">Новинки</option>
-                                    <option value="" selected="">По возрастанию цены</option>
-                                    <option value="">Дешевые</option>
-                                    <option value="">Дорогие</option>
-                                </select>
-                            </div> -->
                         </div>
-                        <div class="catalog__filter-selection">
 
+                        <div class="catalog__filter-open mobile">
+                            <div class="catalog__filter-open-left">
+                                <svg class="catalog__filter-open-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 20V10" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 20V4" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6 20V14" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="catalog__filter-open-title">Фильтр</div>
+                            </div>
+                            <svg class="catalog__filter-open-arrow" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 8L8 2L2 8" stroke="" stroke-width="2" stroke-linecap="square" />
+                            </svg>
+                        </div>
+
+                        <div class="catalog__filter-selection">
                             <div class="catalog__search-wrap">
                                 <div class="catalog__search">
                                     <input type="text" class="catalog__search-input" placeholder="Поиск  товара">
@@ -246,7 +252,7 @@
                     </div>
                     <div class="catalog__content-block">
                         <div class="catalog__products">
-<!-- 1 -->
+                            <!-- 1 -->
                             <div class="product">
                                 <div class="product__content">
                                     <div class="product__box">
@@ -257,7 +263,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -275,7 +281,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -293,7 +299,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -308,77 +314,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
-<!-- 2 -->
-<div class="product">
-    <div class="product__content">
-        <div class="product__box">
-            <div class="product__box-slider swiper-slider">
-                <div class="product__box-slider-wrapper swiper-wrapper">
-                    <div class="product__box-slide swiper-slide">
-                        <div class="product__brend-img">
-                            <img src="./img/brend-logo.png" alt="">
-                        </div>
-                        <div class="product__title">PQM-703 арт</div>
-                        <div class="product__subtitle">Анализатор параметров качества 
-                            электрической энергии</div>
-                        <div class="product__img">
-                            <img src="./img/card1.png" alt="">
-                        </div>
-                        <div class="product__bottom">
-                            <div class="product__slide-pagination pagination"></div>
-                            <div class="product__price">26 946<sup>₽</sup></div>
-                        </div>
-                        <div class="product__hover-box">
-                            <a href="product__hover-box-link">Подробнее о товаре</a>
-                        </div>
-                    </div>
-                    <div class="product__box-slide swiper-slide">
-                        <div class="product__brend-img">
-                            <img src="./img/brend-logo.png" alt="">
-                        </div>
-                        <div class="product__title">PQM-703 арт</div>
-                        <div class="product__subtitle">Анализатор параметров качества 
-                            электрической энергии</div>
-                        <div class="product__img">
-                            <img src="./img/card1.png" alt="">
-                        </div>
-                        <div class="product__bottom">
-                            <div class="product__slide-pagination pagination"></div>
-                            <div class="product__price">26 946<sup>₽</sup></div>
-                        </div>
-                        <div class="product__hover-box">
-                            <a href="product__hover-box-link">Подробнее о товаре</a>
-                        </div>
-                    </div>
-                    <div class="product__box-slide swiper-slide">
-                        <div class="product__brend-img">
-                            <img src="./img/brend-logo.png" alt="">
-                        </div>
-                        <div class="product__title">PQM-703 арт</div>
-                        <div class="product__subtitle">Анализатор параметров качества 
-                            электрической энергии</div>
-                        <div class="product__img">
-                            <img src="./img/card1.png" alt="">
-                        </div>
-                        <div class="product__bottom">
-                            <div class="product__slide-pagination pagination"></div>
-                            <div class="product__price">26 946<sup>₽</sup></div>
-                        </div>
-                        <div class="product__hover-box">
-                            <a href="product__hover-box-link">Подробнее о товаре</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<!-- 3 -->
+                            <!-- 2 -->
                             <div class="product">
                                 <div class="product__content">
                                     <div class="product__box">
@@ -389,7 +329,73 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -407,7 +413,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -425,7 +431,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -440,7 +446,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -455,7 +461,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -473,7 +479,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -491,7 +497,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -506,7 +512,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -521,7 +527,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -539,7 +545,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -557,7 +563,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -572,7 +578,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -587,7 +593,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">Portaflow 330А&B</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card6.png" alt="">
@@ -605,7 +611,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -623,7 +629,7 @@
                                                         <img src="./img/brend-logo.png" alt="">
                                                     </div>
                                                     <div class="product__title">PQM-703 арт</div>
-                                                    <div class="product__subtitle">Анализатор параметров качества 
+                                                    <div class="product__subtitle">Анализатор параметров качества
                                                         электрической энергии</div>
                                                     <div class="product__img">
                                                         <img src="./img/card1.png" alt="">
@@ -638,686 +644,689 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
-                        <!-- 7 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
+                            <!-- 7 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PA194I-2K1T</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card8.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price"><sup></sup></div>
+                                                        <div class="product__request">По запросу</div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">По запросу<sup></sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 9 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">Testo 420</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card9.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">199 000<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 10 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 11 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 12 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 13 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 14 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 15 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 16 -->
+                            <div class="product">
+                                <div class="product__content">
+                                    <div class="product__box">
+                                        <div class="product__box-slider swiper-slider">
+                                            <div class="product__box-slider-wrapper swiper-wrapper">
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
+                                                </div>
+                                                <div class="product__box-slide swiper-slide">
+                                                    <div class="product__brend-img">
+                                                        <img src="./img/brend-logo.png" alt="">
+                                                    </div>
+                                                    <div class="product__title">PQM-703 арт</div>
+                                                    <div class="product__subtitle">Анализатор параметров качества
+                                                        электрической энергии</div>
+                                                    <div class="product__img">
+                                                        <img src="./img/card1.png" alt="">
+                                                    </div>
+                                                    <div class="product__bottom">
+                                                        <div class="product__slide-pagination pagination"></div>
+                                                        <div class="product__price">26 946<sup>₽</sup></div>
+                                                    </div>
+                                                    <div class="product__hover-box">
+                                                        <a href="product__hover-box-link">Подробнее о товаре</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
-                        <!-- 8 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PA194I-2K1T</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card8.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">По запросу<sup></sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="catalog__bottom">
+                    <div class="catalog__product-more more">
+                        <a href="" class="">Показать еще</a>
+                    </div>
+                    <div class="catalog__number-page-wrap number-page-wrap desctop">
+                        <a class="catalog__page-arrow-prew arrow-custom arrow-prew-custom" href="#">
+                            <img src="./img/arrow-black.svg" alt="">
+                        </a>
+                        <div class="catalog__page-pagination pagination-custom">
+                            <div class="catalog__page-pagination-curent curent">01</div>
+                            <span>/</span>
+                            <div class="catalog__page-pagination-total total">02</div>
                         </div>
-                        <!-- 9 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">Testo 420</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card9.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">199 000<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 10 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 11 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 12 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 13 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 14 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 15 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 16 -->
-                        <div class="product">
-                            <div class="product__content">
-                                <div class="product__box">
-                                    <div class="product__box-slider swiper-slider">
-                                        <div class="product__box-slider-wrapper swiper-wrapper">
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="product__box-slide swiper-slide">
-                                                <div class="product__brend-img">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div>
-                                                <div class="product__title">PQM-703 арт</div>
-                                                <div class="product__subtitle">Анализатор параметров качества 
-                                                    электрической энергии</div>
-                                                <div class="product__img">
-                                                    <img src="./img/card1.png" alt="">
-                                                </div>
-                                                <div class="product__bottom">
-                                                    <div class="product__slide-pagination pagination"></div>
-                                                    <div class="product__price">26 946<sup>₽</sup></div>
-                                                </div>
-                                                <div class="product__hover-box">
-                                                    <a href="product__hover-box-link">Подробнее о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="catalog__product-more more">
-                            <a href="" class="">Показать еще</a>
-                        </div>
-                        <div class="catalog__products-controll">
-                            <div class="catalog__arrow btn-slider-wrap">
-                                <div class="catalog__arrow-prev btn-prev">
-                                    <img src="./img/arrow-black.svg" alt="">
-                                </div>
-                                <div class="catalog__pagination">
-                                </div>
-                                <div class="catalog__arrow-next btn-next">
-                                    <img src="./img/arrow-black.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                        <a class="catalog__page-arrow-next arrow-custom arrow-next-custom active" href="#">
+                            <img src="./img/arrow-black.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
