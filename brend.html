@@ -17,10 +17,25 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
+                    <div class="header__top-mob-left mobile">
+                        <button class="header__burger  mobile">
+                        </button>
+                        <a href="" class="header__search-mob">
+                            <img src="./img/menu-mob3.svg" alt="">
+                        </a>
+                    </div>
                     <a href="" class="header__logo">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <div class="header__contact-info">
+                    <div class="header__contact-mob mobile">
+                        <a href="" class="header__email-mob">
+                            <img src="./img/menu-mob1.svg" alt="">
+                        </a>
+                        <a href="" class="header__tel-mob">
+                            <img src="./img/menu-mob4.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__contact-info desctop">
                         <div class="header__social-wrap">
                             <a href="" class="header__social">
                                 <img src="./img/WhatsApp_black.svg" alt="">
@@ -39,12 +54,13 @@
                 </div>
             </div>
         </div>
+
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="">Каталог
-                            <img src="./img/catalog-burger.svg" alt="">
+                            <img class="desctop" src="./img/catalog-burger.svg" alt="">
                         </a>
                     </li>
                     <li class="header__nav-item">
@@ -63,7 +79,7 @@
                         <a class="header__nav-link" href="">Контакты</a>
                     </li>
                 </ul>
-                <div class="header__search-wrap">
+                <div class="header__search-wrap desctop">
                     <div class="header__search">
                         <button class="header__search-btn">
                             <img src="./img/loup.svg" alt="">
@@ -93,6 +109,21 @@
                         использующих лазерное наведение на изучаемый объект.</div>
 
                     <div class="brend__content">
+                        <div class="catalog__filter-open mobile">
+                            <div class="catalog__filter-open-left">
+                                <svg class="catalog__filter-open-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 20V10" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12 20V4" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6 20V14" stroke="" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="catalog__filter-open-title">Фильтр</div>
+                            </div>
+                            <svg class="catalog__filter-open-arrow" width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 8L8 2L2 8" stroke="" stroke-width="2" stroke-linecap="square" />
+                            </svg>
+                        </div>
                         <div class="brend__filter-block">
                             <div class="brend__search-wrap">
                                 <div class="brend__search">
@@ -226,7 +257,7 @@
                                                     <img src="./img/distr-photo2.png" alt="">
                                                 </div>
                                                 <div class="product-card__bottom">
-                                                    <div class="product-card__price">26 946<sub>₽</sub></div>
+                                                    <div class="product-card__price">26 946<sup>₽</sup></div>
                                                 </div>
                                             </div>
                                             <div class="product-card__slide swiper-slide">
@@ -246,9 +277,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -287,9 +315,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -328,9 +353,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -374,9 +396,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -415,9 +434,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -456,9 +472,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -497,9 +510,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -538,9 +548,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -579,9 +586,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -620,9 +624,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -661,9 +662,6 @@
                                         <div class="product-card__pagination pagination"></div>
                                         <div class="product-card__wrap swiper-wrapper">
                                             <div class="product-card__slide swiper-slide">
-                                                <!-- <div class="product-card__brend">
-                                                    <img src="./img/brend-logo.png" alt="">
-                                                </div> -->
                                                 <div class="product-card__title">PQM-703 арт</div>
                                                 <div class="product-card__subtitle">Анализатор параметров качества
                                                     электрической энергии</div>
@@ -706,7 +704,7 @@
                         <div class="brend__product-more more">
                             <a href="" class="">Показать еще</a>
                         </div>
-                        <div class="brend__number-page-wrap number-page-wrap">
+                        <div class="brend__number-page-wrap number-page-wrap desctop">
                             <a class="brend__page-arrow-prew arrow-custom arrow-prew-custom" href="#">
                                 <img src="./img/arrow-black.svg" alt="">
                             </a>

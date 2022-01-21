@@ -23,10 +23,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-
-        
-
     }
    
     
@@ -55,12 +51,10 @@
             object-fit: contain;
             mix-blend-mode: multiply;
         }
-    
     }
     
     &__bottom {
         text-align: end;
-    
     }
     
     &__pagination {
@@ -69,8 +63,6 @@
             width: 0.7rem;
             height: 0.7rem;
 
-    
-    
             &:not(:last-child) {
                 margin-right: 1.2rem;
             }
@@ -80,6 +72,7 @@
             top: 80%;
             left: 2.3rem;
         }
+
         .swiper-pagination-bullet-active {
             width: 1.5rem;
             height: 1.5rem;
@@ -98,9 +91,108 @@
             padding-bottom: 0.7rem;
         }
     }
+}
 
 
+
+
+@media (max-width: 48em) { 
+    .product-card {
+        width: 47.59rem;
+        height: 63.6rem;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+            margin-bottom: 8rem;
+        }
+
+
+        &:nth-child(n+3) {
+            display: none;
+        }
+    
+        &__wrap {
+            // width: 29.3rem;
+            // height: 41.7rem;
+    
+        }
+        
+        &__slide {
+            height: 63.6rem;
+            padding: 4.2rem 4rem 4.7rem 2.5rem;
+            justify-content: start;
+        }
+       
+        
+        
+        &__title {
+        font-size: 3.45rem;
+        margin-bottom: 1.5rem;
+        }
+        
+        &__subtitle {
+            font-size: 2.2rem;
+            margin-bottom: 2.2rem;
+        
+        }
+        
+        &__img {
+            width: 36.6rem;
+            height: 34rem;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+    
+            img {
+                height: 100%;
+                object-fit: contain;
+                mix-blend-mode: multiply;
+            }
+        }
+        
+        &__bottom {
+            text-align: end;
+        }
+        
+        &__pagination {
+    
+            .swiper-pagination-bullet {
+                width: 1.5rem;
+                height: 1.5rem;
+    
+                &:not(:last-child) {
+                    margin-right: 1.2rem;
+                }
+            }
+            
+            &.pagination {
+                top: 83%;
+                left: 1.3rem;
+            }
+    
+            .swiper-pagination-bullet-active {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            
+        
+        }
+        
+        &__price {
+            font-size: 4rem;
+            font-weight: 600;
+            color: #232323;
+            margin-left: auto;
+    
+            sup {
+                font-size: 1.4rem;
+                padding-bottom: 0.7rem;
+            }
+        }
     }
+
+
+}
+
     
    
 

@@ -227,17 +227,27 @@ new Swiper('.product__box-slider', {
 });
 
 
-
-
-new Swiper('.product-card__slider', {
+new Swiper('.product-card', {
     slidesPerView: 1,
     speed: 800,
 
     pagination: {
-        el: '.distributor__photo-pagin',
+        el: '.product-card__pagination',
         clickable: true,
     },
 });
+
+
+new Swiper('.card-product__description-slider', {
+    slidesPerView: 1,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.card-product__arrow-prev',
+        nextEl: '.card-product__arrow-next',
+    },
+});
+
 
 $(".categories__sort-link").click(function(e) {
     e.preventDefault();
@@ -261,6 +271,12 @@ $('.catalog__select-title').click(function (event) {
 $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
+
+$(".card-product__about-item").click(function(e) {
+    e.preventDefault();
+    $(".card-product__about-item").removeClass('active');
+    $(this).addClass('active');
+  })
 
 
 let textSlider = new Swiper('.command__about-pipl-slider', {
@@ -334,11 +350,7 @@ new Swiper('.card-product__description-slider', {
 
 
 
-$(".card-product__about-item").click(function(e) {
-    e.preventDefault();
-    $(".card-product__about-item").removeClass('active');
-    $(this).addClass('active');
-  })
+
 
 
 

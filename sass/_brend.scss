@@ -194,7 +194,15 @@
     // }
     
     &__cards-item {
+         
 
+        &:not(:last-child) {
+            margin-bottom: 4.2rem;
+        }
+
+        &:last-child {
+            margin-bottom: -4rem;
+        }
 
     }
 

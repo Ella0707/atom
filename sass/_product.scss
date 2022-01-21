@@ -213,7 +213,7 @@
     
     
         &__box-slide {
-            padding: 3rem;
+            padding: 4rem 3rem 3rem 3rem;
         }
     
     
@@ -221,7 +221,7 @@
             width: 8rem;
             height: 3.6rem;
             position: absolute;
-            top: 1.5rem;
+            top: 2.5rem;
             right: 2rem;
     
             img {
@@ -240,12 +240,14 @@
             font-weight: 400;
             color: #9D9D9D;
             margin-bottom: 2.2rem;
+            line-height: 1.35;
         }
     
         &__img {
-            width: 35.2rem;
+            width: 32.2rem;
             height: 33.2rem;
-            margin-bottom: 1rem;
+            margin: 0 auto;
+            margin-bottom: 0.4rem;
     
             img {
                 height: 100%;
