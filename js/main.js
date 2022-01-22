@@ -1,8 +1,15 @@
+
+$('.catalog__select-title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(300);
+});
+
+
+
 function handleClick() {
     $(".catalog__select-list").each(function() {
       const $li = $(this).find(".catalog__select-item")
-      if ($li.length > 2) {
-        $(this).addClass('grid-block')
+      if ($li.length > 14) {
+        $(this).addClass('grid-display')
       }
     })
   }
@@ -15,6 +22,7 @@ function handleClick() {
 // мобильное меню
 $('.header__burger').on('click', function (e) {
     e.preventDefault();
+    document.body.classList.toggle('lock');
     $('.header__burger').toggleClass("active");
     $('.header__bottom').toggleClass("active");
 });
@@ -61,6 +69,16 @@ const activitySlider = new Swiper('#activity-slider', {
     $(".arrow-custom").removeClass('active');
     $(this).addClass('active');
   })
+
+
+  $(".service__toggle").click(function(e) {
+    e.preventDefault();
+    $(".service__toggle").removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+
 
 // слайдеры
 new Swiper('.banner__slider', {
@@ -277,11 +295,6 @@ $(".categories__sort-link").click(function(e) {
   })
 
 
-
-$('.catalog__select-title').click(function (event) {
-    $(this).toggleClass('active').next().slideToggle(300);
-});
-
 $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
@@ -290,7 +303,9 @@ $(".card-product__about-item").click(function(e) {
     e.preventDefault();
     $(".card-product__about-item").removeClass('active');
     $(this).addClass('active');
-  })
+})
+
+
 
 
 let textSlider = new Swiper('.command__about-pipl-slider', {
@@ -329,10 +344,16 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 
 let imageSlider = new Swiper('.command__photo-pipl-slider', {
     slidesPerView: 1,
-    spaceBetween: 60,
+    spaceBetween: 0,
     speed: 800,
     slidesPerGroup: 1,
     loop: true,
+
+    breakpoints: {
+        769: {
+            spaceBetween: 60,
+        }
+    }
 });
 
 textSlider.controller.control = imageSlider;
@@ -385,8 +406,8 @@ new Swiper('.card-product__description-slider', {
 
 
   let reviewsSlider = new Swiper('.reviews__slider', {
-    slidesPerView: 2.5,
-    spaceBetween: 60,
+    slidesPerView: 1,
+    spaceBetween: 15,
     speed: 800,
     loop: true,
     navigation: {
@@ -411,4 +432,12 @@ new Swiper('.card-product__description-slider', {
             return number;
         },
     },
+
+
+    breakpoints: {
+        769: {
+            slidesPerView: 2.5,
+            spaceBetween: 60,
+        }
+    }
 });

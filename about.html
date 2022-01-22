@@ -15,10 +15,25 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
+                    <div class="header__top-mob-left mobile">
+                        <button class="header__burger  mobile">
+                        </button>
+                        <a href="" class="header__search-mob">
+                            <img src="./img/menu-mob3.svg" alt="">
+                        </a>
+                    </div>
                     <a href="" class="header__logo">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <div class="header__contact-info">
+                    <div class="header__contact-mob mobile">
+                        <a href="" class="header__email-mob">
+                            <img src="./img/menu-mob1.svg" alt="">
+                        </a>
+                        <a href="" class="header__tel-mob">
+                            <img src="./img/menu-mob4.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__contact-info desctop">
                         <div class="header__social-wrap">
                             <a href="" class="header__social">
                                 <img src="./img/WhatsApp_black.svg" alt="">
@@ -37,12 +52,13 @@
                 </div>
             </div>
         </div>
+      
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="">Каталог
-                            <img src="./img/catalog-burger.svg" alt="">
+                            <img class="desctop" src="./img/catalog-burger.svg" alt="">
                         </a>
                     </li>
                     <li class="header__nav-item">
@@ -61,7 +77,7 @@
                         <a class="header__nav-link" href="">Контакты</a>
                     </li>
                 </ul>
-                <div class="header__search-wrap">
+                <div class="header__search-wrap desctop">
                     <div class="header__search">
                         <button class="header__search-btn">
                             <img src="./img/loup.svg" alt="">
@@ -73,23 +89,26 @@
         </div>
     </header>
     <section class="banner-about">
-        <div class="banner-about__inner">
-            <img class="banner-about__background" src="./img/about-banner.png" alt="">
-            <div class="banner-about__text-block">
-                <div class="banner-about__title-wrap">
-                    <div class="banner-about__subtitle">О компании</div>
-                    <div class="banner-about__title">Эксперты в своем деле</div>
-                </div>
-                <div class="banner-about__advantages">
-                    <div class="banner-about__advantage">
-                        <div class="banner-about__advantage-number">10+</div>
-                        <div class="banner-about__advantage-title">лет
-                            на&nbsp;рынке</div>
+        <div class="container">
+            <div class="banner-about__inner">
+                <img class="banner-about__background desctop" src="./img/about-banner.png" alt="">
+                <img class="banner-about__background mobile" src="./img/backgroung-about-img.png" alt="">
+                <div class="banner-about__text-block">
+                    <div class="banner-about__title-wrap">
+                        <div class="banner-about__subtitle">О компании</div>
+                        <div class="banner-about__title">Эксперты в своем деле</div>
                     </div>
-                    <div class="banner-about__advantage">
-                        <div class="banner-about__advantage-number">65+</div>
-                        <div class="banner-about__advantage-title">компаний
-                            в каталоге</div>
+                    <div class="banner-about__advantages">
+                        <div class="banner-about__advantage">
+                            <div class="banner-about__advantage-number">10+</div>
+                            <div class="banner-about__advantage-title">лет
+                                на&nbsp;рынке</div>
+                        </div>
+                        <div class="banner-about__advantage">
+                            <div class="banner-about__advantage-number">65+</div>
+                            <div class="banner-about__advantage-title">компаний
+                                в каталоге</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,11 +117,13 @@
 
     <section class="advantages">
         <div class="container">
-            <div class="advantages__text">Мы специализируемся на оптово-розничных поставках оборудования
-                в области: электродиагностики, энергоаудита, а также геодезии, геологии
-                и другого измерительного оборудования. Нашим клиентам мы предлагаем не только поставку
-                оборудования, но и пред- и&nbsp;постпродажное сопровождение, обучение сотрудников,
-                гарантию и, конечно, удобство в совершении сделки.
+            <div class="advantages__text">
+                <p>Мы специализируемся на оптово-розничных поставках оборудования
+                    в области: электродиагностики, энергоаудита, а также геодезии, геологии
+                    и другого измерительного оборудования. </p>
+                <p>Нашим клиентам мы предлагаем не только поставку
+                    оборудования, но и пред- и&nbsp;постпродажное сопровождение, обучение сотрудников,
+                    гарантию и, конечно, удобство в совершении сделки.</p>
             </div>
 
             <div class="advantages__content">
@@ -160,89 +181,92 @@
             <div class="command__inner">
                 <div class="command__title">Наша команда</div>
                 <div class="command__color-block"></div>
-                <div class="command__white-block"></div>
-    
-                <div class="command__about-pipl-slider swiper-slider">
-                    <div class="command__about-pipl-wrap swiper-wrapper">
-                        <div class="command-about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
-                        <div class="command__about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна2</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
-                        <div class="command__about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна3</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
-                        <div class="command__about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна4</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
-                        <div class="command__about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна5</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
-                        <div class="command__about-pipl-slide swiper-slide">
-                            <div class="command__pipl-name">Горлатова Дарья Викторовна5</div>
-                            <div class="command__pipl-position">Генеральный директор</div>
-                            <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
-                            <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
-                        </div>
+                <div class="command__white-block desctop"></div>
+    <div class="command__sliders-wrap">
+        <div class="command__about-pipl-slider swiper-slider">
+            <div class="command__about-pipl-wrap swiper-wrapper">
+                <div class="command-about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+                <div class="command__about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна2</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+                <div class="command__about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна3</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+                <div class="command__about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна4</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+                <div class="command__about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна5</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+                <div class="command__about-pipl-slide swiper-slide">
+                    <div class="command__pipl-name">Горлатова Дарья Викторовна5</div>
+                    <div class="command__pipl-position">Генеральный директор</div>
+                    <div class="command__pipl-contact">Тел: 8 (924) 411-11-02</div>
+                    <div class="command__pipl-contact">E-mail: sale@auradv.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="command__photo-pipl-slider swiper-slider">
+            <div class="command__photo-wrap swiper-wrapper">
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda1.png" alt="">
                     </div>
                 </div>
-    
-                <div class="command__photo-pipl-slider swiper-slider">
-                    <div class="command__photo-wrap swiper-wrapper">
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">
-                                <img src="./img/comanda1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">
-                                <img src="./img/comanda2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">
-                                <img src="./img/comanda3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">4
-                                <img src="./img/comanda1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">5
-                                <img src="./img/comanda3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="command__photo-slide swiper-slide">
-                            <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
-                            <div class="command__photo-img">6
-                                <img src="./img/comanda3.png" alt="">
-                            </div>
-                        </div>
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda2.png" alt="">
                     </div>
                 </div>
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda3.png" alt="">
+                    </div>
+                </div>
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda1.png" alt="">
+                    </div>
+                </div>
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda3.png" alt="">
+                    </div>
+                </div>
+                <div class="command__photo-slide swiper-slide">
+                    <img class="command__photo-background" src="./img/substrate-servis.svg" alt="">
+                    <div class="command__photo-img">
+                        <img src="./img/comanda3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+             
+    
+               
                 <div class="command__about-pipl-control">
                     <div class="command__about-pipl-pagin">
                     </div>
@@ -294,7 +318,8 @@
                     <div class="reviews__slider swiper-slider">
                         <div class="reviews__slider-wrap swiper-wrapper">
                             <div class="reviews__slide swiper-slide">
-                                <img class="reviews__slide-substrate" src="./img/substrate-rew.png" alt="">
+                                <img class="reviews__slide-substrate desctop" src="./img/substrate-rew.png" alt="">
+                                <img class="reviews__slide-substrate mobile" src="./img/substrate-rev-mob.png" alt="">
                                     <img class="reviews__color-block-paper" src="./img/paper.png" alt="">
                                     <div class="reviews__slide-content">
                                         <div class="reviews__slide-title">ОАО «РЖД»</div>
@@ -378,9 +403,9 @@
             <div class="footer__inner">
                 <div class="footer__top">
                     <div class="footer__top-left">
-                        <div class="footer__top-left-logo">
+                        <a href="" class="footer__top-left-logo">
                             <img src="./img/logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="footer__top-left-social">
                             <a href="footer__social-link">
                                 <img src="./img/inst.svg" alt="">

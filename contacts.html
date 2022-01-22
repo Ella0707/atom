@@ -9,7 +9,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
     <link href="./css/style.css" rel="stylesheet">
-    <title>title</title>
+    <title>Контакты</title>
 </head>
 
 <body>
@@ -17,10 +17,25 @@
         <div class="container">
             <div class="header__inner">
                 <div class="header__top">
+                    <div class="header__top-mob-left mobile">
+                        <button class="header__burger  mobile">
+                        </button>
+                        <a href="" class="header__search-mob">
+                            <img src="./img/menu-mob3.svg" alt="">
+                        </a>
+                    </div>
                     <a href="" class="header__logo">
                         <img src="./img/logo.svg" alt="">
                     </a>
-                    <div class="header__contact-info">
+                    <div class="header__contact-mob mobile">
+                        <a href="" class="header__email-mob">
+                            <img src="./img/menu-mob1.svg" alt="">
+                        </a>
+                        <a href="" class="header__tel-mob">
+                            <img src="./img/menu-mob4.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__contact-info desctop">
                         <div class="header__social-wrap">
                             <a href="" class="header__social">
                                 <img src="./img/WhatsApp_black.svg" alt="">
@@ -39,12 +54,13 @@
                 </div>
             </div>
         </div>
+      
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="">Каталог
-                            <img src="./img/catalog-burger.svg" alt="">
+                            <img class="desctop" src="./img/catalog-burger.svg" alt="">
                         </a>
                     </li>
                     <li class="header__nav-item">
@@ -63,7 +79,7 @@
                         <a class="header__nav-link" href="">Контакты</a>
                     </li>
                 </ul>
-                <div class="header__search-wrap">
+                <div class="header__search-wrap desctop">
                     <div class="header__search">
                         <button class="header__search-btn">
                             <img src="./img/loup.svg" alt="">
@@ -153,8 +169,7 @@
                             </div>
                         </div>
                     </div>
-                  </div>
-                  <div class="contacts__map-wrap">
+                </div>
                         <div class="contacts__map" id="map"></div>
                         <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> -->
                         <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript">
@@ -188,7 +203,7 @@
                                 myMap.geoObjects.add(myPlacemark);
                             }
                         </script>
-                  </div>
+                
               </div>
           </div>
         </section>
@@ -198,9 +213,9 @@
             <div class="footer__inner">
                 <div class="footer__top">
                     <div class="footer__top-left">
-                        <div class="footer__top-left-logo">
+                        <a href="" class="footer__top-left-logo">
                             <img src="./img/logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="footer__top-left-social">
                             <a href="footer__social-link">
                                 <img src="./img/inst.svg" alt="">

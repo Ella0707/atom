@@ -1,6 +1,8 @@
 .banner-about {
-
+    height: 40rem;
     margin-bottom: 10rem;
+    position: relative;
+
     
     &__inner {
         width: 100%;
@@ -9,9 +11,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        position: relative;
-    
     }
     
     &__background {
@@ -25,7 +24,6 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-    
     }
     
     &__text-block {
@@ -38,7 +36,6 @@
     
     &__title-wrap {
         padding-top: 2.3rem;
-    
     }
     
     &__subtitle {
@@ -98,6 +95,10 @@
     color: #292729;
     margin-bottom: 10rem;
     line-height: 1.55;
+
+     p {
+         display: inline;
+     }
     }
     
     &__content {
@@ -212,6 +213,7 @@
 
     position: relative;
     margin-bottom: 17rem;
+    overflow: hidden;
     
     &__inner {
     height: 60rem;
@@ -227,6 +229,12 @@
     margin-bottom: 7.7rem;
     position: relative;
     z-index: 4;
+    }
+
+    &__sliders-wrap {
+        display: flex;
+        align-items: start;
+        height: 100%;
     }
     
     &__color-block {
@@ -251,11 +259,12 @@
     
     &__about-pipl-slider {
      overflow: hidden;
-     width: 36rem;
+     width: 51rem;
      height: 22rem;
      padding: 1rem 1rem 1rem 0rem;
      background-color: #ffffff;
      position: relative;
+     align-self: center;
      z-index: 100;
      
     }
@@ -304,8 +313,9 @@
     }
     
     &__about-pipl-pagin {
-    position: relative;
-    z-index: 4;
+        position: relative;
+        z-index: 4;
+        bottom: 0;
     }
     
     &__arrow {
@@ -322,17 +332,6 @@
     }
    
     &__photo-pipl-slider {
-        position: absolute;
-        // top: 12.3rem;
-        // right: 3.6rem;
-        // overflow: hidden;
-        // width: 120rem;
-
-        right: 45%;
-        top: 12.3rem;
-
-        // overflow: hidden;
-        width: 120rem;
         width: 36rem;
         height: 36rem;
     }
@@ -355,7 +354,7 @@
         top: 0;
         right: 0;
         width: 27rem;
-        height: 38rem;
+        height: 35.5rem;
         object-fit: contain;
         z-index: -1;
     
@@ -484,8 +483,7 @@
     }
     
     &__slider {
-        // height: 57rem;
-        width: 106rem;
+        width: 103.3rem;
 
         overflow: hidden;
 

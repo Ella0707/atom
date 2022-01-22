@@ -26,6 +26,10 @@ body {
     font-size: 3rem;
 }
 
+body.lock {
+    overflow: hidden;
+ }
+
 input,
 textarea {
     -webkit-animation: bugfix infinite 1s;
