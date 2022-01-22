@@ -187,19 +187,10 @@
     }
 
     
-    // &__cards-wrapper {
-    //     width: 116.9rem;
-        
-    
-    // }
-    
     &__cards-item {
          
 
-        &:not(:last-child) {
-            margin-bottom: 4.2rem;
-        }
-
+      
         &:last-child {
             margin-bottom: -4rem;
         }

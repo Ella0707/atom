@@ -1817,19 +1817,10 @@ input[type=number] {
   color: #292729;
   margin-bottom: 2rem;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: wrap column;
-          flex-flow: wrap column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-height: 70.5rem;
 }
-.catalog__select-list[style*="display: block"] {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+.catalog__select-list.grid-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .catalog__select-item {
   width: 46%;
@@ -2991,9 +2982,6 @@ input[type=number] {
   font-weight: 400;
   color: #285f5b;
 }
-.brend__cards-item:not(:last-child) {
-  margin-bottom: 4.2rem;
-}
 .brend__cards-item:last-child {
   margin-bottom: -4rem;
 }
@@ -3375,6 +3363,8 @@ input[type=number] {
   font-weight: 600;
   color: #292729;
   margin-bottom: 7.7rem;
+  position: relative;
+  z-index: 4;
 }
 .command__color-block {
   position: absolute;
@@ -3385,11 +3375,23 @@ input[type=number] {
   right: 0;
   z-index: -5;
 }
+.command__white-block {
+  position: absolute;
+  width: 69rem;
+  height: 69rem;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 .command__about-pipl-slider {
   overflow: hidden;
   width: 36rem;
   height: 22rem;
   padding: 1rem 1rem 1rem 0rem;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 100;
 }
 .command-about-pipl-slide {
   height: 36rem;
@@ -3421,12 +3423,17 @@ input[type=number] {
   display: flex;
   width: 25rem;
 }
+.command__about-pipl-pagin {
+  position: relative;
+  z-index: 4;
+}
 .command__photo-pipl-slider {
   position: absolute;
+  right: 45%;
   top: 12.3rem;
-  right: 3.6rem;
-  overflow: hidden;
   width: 120rem;
+  width: 36rem;
+  height: 36rem;
 }
 .command__photo-slide {
   width: 36rem;
@@ -3947,7 +3954,7 @@ input[type=number] {
     height: 6rem;
   }
   .banner__pagination {
-    width: 16rem;
+    width: auto;
     color: #ffffff;
     position: absolute;
     right: 2rem;
@@ -4158,7 +4165,7 @@ input[type=number] {
     font-size: 5rem;
   }
   .categories__hover-text {
-    font-size: 1.7rem;
+    font-size: 2.6rem;
     font-weight: 300;
     color: white;
     width: 89%;
@@ -4193,7 +4200,7 @@ input[type=number] {
     display: flex;
   }
   .categories__pagination {
-    width: 18rem;
+    width: auto;
   }
 
   .services {
@@ -4417,7 +4424,7 @@ input[type=number] {
     bottom: 0;
   }
   .distributor__our-disr-pagin {
-    width: 26%;
+    width: auto;
   }
   .distributor__our-distr-slider {
     overflow: hidden;
@@ -4492,7 +4499,7 @@ input[type=number] {
             justify-content: space-between;
   }
   .clients__pagination {
-    width: 25%;
+    width: auto;
     margin-right: 0;
   }
   .clients__content {
@@ -5452,6 +5459,9 @@ input[type=number] {
         flex-wrap: wrap;
     width: 100%;
   }
+  .brend__cards-item:not(:last-child) {
+    margin-bottom: 4.2rem;
+  }
   .brend__cards-title {
     color: #285f5b;
     width: 100%;
@@ -5497,7 +5507,7 @@ input[type=number] {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    width: 60%;
+    width: 67%;
   }
   .card-product__articul {
     font-size: 3.4rem;
@@ -5525,8 +5535,8 @@ input[type=number] {
     padding: 5.5rem 5rem 4.5rem 5rem;
   }
   .card-product__description-slide img {
-    height: 25.8rem;
-    width: 34.6rem;
+    height: 29.8rem;
+    width: 35.6rem;
     -o-object-fit: contain;
        object-fit: contain;
     mix-blend-mode: multiply;
@@ -5536,19 +5546,19 @@ input[type=number] {
   .card-product__arrow-next {
     position: absolute;
     z-index: 10;
-    width: 1.2rem;
-    top: 47%;
-    right: 5rem;
+    width: 1.7rem;
+    top: 46%;
+    right: 2.5rem;
     cursor: pointer;
   }
   .card-product__arrow-prev {
     position: absolute;
     z-index: 10;
-    width: 1.2rem;
-    top: 47%;
+    width: 1.7rem;
+    top: 46%;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    left: 5rem;
+    left: 2.5rem;
     cursor: pointer;
   }
   .card-product__description-text {
@@ -5631,7 +5641,7 @@ input[type=number] {
     color: #232323;
   }
   .card-product__description-price sup {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     padding-left: 0.5rem;
   }
   .card-product__description-button {
@@ -5654,7 +5664,7 @@ input[type=number] {
        object-fit: contain;
   }
   .card-product__about {
-    margin-bottom: 17rem;
+    margin-bottom: 20rem;
   }
   .card-product__about-item-wrap {
     -ms-flex-wrap: wrap;
@@ -5699,19 +5709,21 @@ input[type=number] {
   }
   .card-product__text-block {
     background-color: #F9F9F9;
-    padding: 6rem 4rem 6rem 4rem;
+    padding: 6rem 3rem 6rem 4.8rem;
+    width: 100%;
   }
   .card-product__text-block-title {
     font-size: 5.2rem;
     margin-bottom: 2rem;
+    margin-left: -0.5rem;
   }
   .card-product__table {
     padding: 4rem 1.5rem 2rem 3.4rem;
     border-left: 0.2rem solid #E4E4E4;
   }
   .card-product__table-item-title {
-    padding: 2rem 2rem 1.5rem 2rem;
-    height: 13.5rem;
+    padding: 5rem 2rem 4rem 1rem;
+    line-height: 1.01;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5735,11 +5747,13 @@ input[type=number] {
     background-color: #292729;
     border-radius: 50%;
     position: absolute;
-    left: -5rem;
+    left: -4.5rem;
     top: 50%;
   }
   .card-product__list {
-    padding: 4.2rem 0 3rem 0.2rem;
+    padding: 4.8rem 0 3rem 0.2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5799,10 +5813,12 @@ input[type=number] {
     margin-bottom: 2.3rem;
   }
   .card-product__list-item-value span {
-    width: 37%;
+    width: 100%;
+    margin-top: 1.4rem;
   }
   .card-product__list-item-value span:empty {
     width: 0;
+    margin-top: 0;
   }
   .card-product__list-item-key {
     position: relative;
@@ -5811,13 +5827,13 @@ input[type=number] {
   }
   .card-product__list-item-key::before {
     content: "";
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: #292729;
     border-radius: 50%;
     position: absolute;
-    left: -1.5rem;
-    top: 0.7rem;
+    left: -2.7rem;
+    top: 1.5rem;
   }
 }
 .select {

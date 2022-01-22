@@ -1,3 +1,17 @@
+function handleClick() {
+    $(".catalog__select-list").each(function() {
+      const $li = $(this).find(".catalog__select-item")
+      if ($li.length > 2) {
+        $(this).addClass('grid-block')
+      }
+    })
+  }
+
+  handleClick()
+
+
+
+
 // мобильное меню
 $('.header__burger').on('click', function (e) {
     e.preventDefault();
@@ -314,7 +328,7 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 
 
 let imageSlider = new Swiper('.command__photo-pipl-slider', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 60,
     speed: 800,
     slidesPerGroup: 1,
@@ -398,7 +412,3 @@ new Swiper('.card-product__description-slider', {
         },
     },
 });
-
-
-
-

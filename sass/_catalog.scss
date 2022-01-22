@@ -180,12 +180,32 @@
     margin-bottom: 2rem;
     display: none;
 
-    flex-flow: wrap column;
-    justify-content: space-between;
-    max-height: 70.5rem;
 
-    &[style*="display: block"]{
-        display:flex!important;
+    // .catalog__select-item {
+        
+    //     &:nth-of-type(n+7) {
+    //         display: grid;
+    //         grid-template-columns: repeat(2,1fr);
+    //         grid-template-rows: repeat(10,10rem);
+    //     }
+    // }
+
+    // flex-flow: wrap column;
+    // justify-content: space-between;
+    // max-height: 70.5rem;
+
+   
+    // display: grid;
+    // grid-template-columns: repeat(2,1fr);
+    // grid-template-rows: repeat(6,100px);
+
+    // &[style*="display: block"]{
+    //     display:flex!important;
+    // }
+
+    &.grid-block {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
     
@@ -198,6 +218,8 @@
             background-color: rgba(241, 241, 241, 1);
             padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         }
+
+       
     }
 
 

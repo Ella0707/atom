@@ -225,6 +225,8 @@
     font-weight: 600;
     color: #292729;
     margin-bottom: 7.7rem;
+    position: relative;
+    z-index: 4;
     }
     
     &__color-block {
@@ -236,12 +238,25 @@
         right: 0;
         z-index: -5;
     }
+
+    &__white-block {
+        position: absolute;
+        width: 69rem;
+        height: 69rem;
+        background: #ffffff;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
     
     &__about-pipl-slider {
      overflow: hidden;
      width: 36rem;
      height: 22rem;
      padding: 1rem 1rem 1rem 0rem;
+     background-color: #ffffff;
+     position: relative;
+     z-index: 100;
      
     }
 
@@ -288,8 +303,9 @@
         width: 25rem;
     }
     
-    &__pagin {
-    
+    &__about-pipl-pagin {
+    position: relative;
+    z-index: 4;
     }
     
     &__arrow {
@@ -307,10 +323,18 @@
    
     &__photo-pipl-slider {
         position: absolute;
+        // top: 12.3rem;
+        // right: 3.6rem;
+        // overflow: hidden;
+        // width: 120rem;
+
+        right: 45%;
         top: 12.3rem;
-        right: 3.6rem;
-        overflow: hidden;
+
+        // overflow: hidden;
         width: 120rem;
+        width: 36rem;
+        height: 36rem;
     }
     
     &__photo-wrap {
