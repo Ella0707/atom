@@ -148,7 +148,7 @@
                         </div>
                         <div class="card-product__description-bottom">
                             <div class="card-product__description-price description desctop">26 946<sup>₽</sup></div>
-                            <a class="card-product__description-button">
+                            <a class="card-product__description-button popup-link">
                                 <div class="card-product__description-button-title">Оставить заявку</div>
                                 <div class="card-product__description-button-arrow">
                                     <img src="./img/arrow-white.svg" alt="">
@@ -360,6 +360,92 @@
             </div>
         </div>
     </footer>
+
+     <!-- POPAP  -->
+     <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close close-popup">
+                    <img class="popup__close-img" src="./img/clouse.svg" alt="">
+                </a>
+                <div class="popup__content-wrap">
+                    <div class="popup__content-wrap-left">
+                        <form class="popup__form" action="">
+                            <div class="popup__title">Оставьте заявку</div>
+                            <div class="popup__input-wrap">
+                                <input class="popup__input" type="text" placeholder="Компания*" name="" id="">
+                                <input class="popup__input" type="text" placeholder="Ваше имя*" name="" id="">
+                                <input class="popup__input" type="tel" placeholder="Телефон*" name="" id="">
+
+                                <input class="popup__input" type="email" placeholder="Введите e-mail**" name="" id="">
+                                <input class="popup__input" type="text" placeholder="Ваш вопрос" name=""
+                                    id="">
+                            </div>
+                            <div class="popup__select">
+                                <div class="popup__select-item">
+                                    <label class="popup__select-label">Отправляя заявку,
+                                        вы соглашаетесь с политикой конфиденциальности.
+                                        <input class="popup__select-input" type="checkbox" name="select" id="">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="popup__link-wrap">
+                                <a href="" class="popup__link popup-accepted">Оставить заявку
+                                    <div class="popup__link-arrow">
+                                        <img src="./img/arrow-white.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="popup__content-right">
+                        <img class="popup__content-right-bg" src="./img/substrate-servis.svg" alt="">
+                        <div class="popup__right-messengers">
+                            <a class="popup__right-messenger" href="">WhatsApp
+                                <img src="" alt="">
+                            </a>
+                            <a class="popup__right-messenger" href="">Telegram
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        <div class="popup__right-contacts">
+                            <a class="popup__tel" href="">8 800 800 88 88
+                            </a>
+                            <div class="popup__right-sale">
+                                <div class="popup__right-sale-email">Отдел продаж</div>
+                                <div class="popup__right-sale-title">zakaz@auradv.com</div>
+                            </div>
+                            <div class="popup__right-address">
+                                <div class="popup__right-address-name">
+                                    г. Хабаровск: 680009,
+                                    ул. Пугачёва 32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPAP-ACCEPTED ACCEPTED -->
+    <div class="accepted">
+        <div class="accepted__body">
+            <div class="accepted__content">
+                <a href="" class="accepted__close close-popup">
+                    <img class="accepted__close-img" src="./assets/images/popap-close.svg" alt="">
+                </a>
+                <a href="" class="accepted__logo">
+                    <img class="accepted__logo-img" src="./assets/images/logo.svg" alt="">
+                </a>
+                <div class="accepted__title">Ваша заявка принята</div>
+                <div class="accepted__subtitle">Мы свяжемся с вами в ближайшее время</div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>

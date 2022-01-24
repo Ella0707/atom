@@ -82,6 +82,21 @@
         border-collapse: collapse;
         transition: 1s;
 
+        &.pickup {
+            flex-direction: column;
+            
+            span {
+                font-size: 2.1rem;
+                font-weight: 400;
+                color: #FFBC3A;
+            }
+
+            img {
+                width: 3.2rem;
+                height: 4.5rem;
+            }
+        }
+
         img {
             height: 8rem;
             width: 16rem;
@@ -102,6 +117,7 @@
     
     &__information-wrap {
     display: block;
+    width: 19rem;
 
     &:not(:last-child) {
         margin-right: 7.1rem;
@@ -130,7 +146,7 @@
     
     &__information-title {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     color: rgba(41, 39, 41, 1);
     
     }
@@ -139,7 +155,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         color: rgba(41, 39, 41, 1);
-        width: 19rem;
+
     }
 
 }
