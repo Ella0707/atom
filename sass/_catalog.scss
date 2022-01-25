@@ -104,6 +104,7 @@
             }
     }
 
+
     &__option-img {
         width: 6.6rem;
         height: 5.7rem;
@@ -131,7 +132,12 @@
     &__select-wrap {
         display: flex;
         flex-direction: column;
-    
+
+        display: none; 
+        
+            &.active {
+                display: flex;
+            }
     }
  
     &__select {

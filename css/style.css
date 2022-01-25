@@ -1778,6 +1778,12 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
+}
+.catalog__select-wrap.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .catalog__select {
   margin-bottom: 3rem;
@@ -3504,20 +3510,28 @@ input[type=number] {
 }
 .breadcrumbs a {
   position: relative;
+  line-height: 1.5;
 }
 .breadcrumbs a:not(:last-child) {
   margin-right: 5rem;
 }
-.breadcrumbs a:not(:last-child)::after {
+.breadcrumbs a:not(:first-child)::before {
   content: "";
   width: 0.1rem;
   height: 1.6rem;
-  background-color: #285F5B;
+  background-color: #cecece;
   position: absolute;
-  right: -2.4rem;
+  left: -2.4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .breadcrumbs a:last-child {
   color: black;
+}
+.breadcrumbs a:last-child::before {
+  content: "";
+  background-color: #285F5B;
 }
 
 @media (max-width: 48em) {
@@ -3532,13 +3546,12 @@ input[type=number] {
   .breadcrumbs a:not(:last-child) {
     margin-right: 4rem;
   }
-  .breadcrumbs a:not(:last-child)::after {
-    content: "";
-    width: 0.1rem;
-    position: absolute;
-    background-color: #285F5B;
+  .breadcrumbs a:not(:first-child)::before {
     height: 3.2rem;
-    right: -2rem;
+    left: -2rem;
+  }
+  .breadcrumbs a:last-child::before {
+    top: 25%;
   }
 }
 .product {
@@ -4935,7 +4948,7 @@ input[type=number] {
   border-left: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
   background: #f9f9f9;
-  height: 100%;
+  height: 153.4rem;
 }
 .catalog__search-wrap {
   margin-bottom: 4rem;
@@ -5070,7 +5083,7 @@ input[type=number] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #292729;
-  padding-left: 1.5rem;
+  padding-left: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5080,25 +5093,13 @@ input[type=number] {
   cursor: pointer;
 }
 .catalog__checkbox-input {
-  outline: none;
-  border: none;
-  position: relative;
-  margin-right: 4rem;
-}
-.catalog__checkbox-input::before {
-  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: #FFFFFF;
-  border: 1px solid #C0C0C0;
-  border-radius: 0.3rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
-.catalog__checkbox-input:checked:after {
+.catalog__checkbox-input:checked + .catalog__checkbox-style::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -5113,7 +5114,15 @@ input[type=number] {
   background-color: #285f5b;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  visibility: visible;
+}
+.catalog__checkbox-style {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  border-radius: 0.3rem;
+  margin-left: -6rem;
 }
 .catalog__products {
   display: -webkit-box;
@@ -5122,6 +5131,7 @@ input[type=number] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 117.2rem;
+  margin-bottom: 3rem;
 }
 
 .filter__input-label {
@@ -6418,7 +6428,7 @@ input[type=number] {
   }
 
   .catalog.catalog3 {
-    margin-bottom: 20.5rem;
+    margin-bottom: 15.5rem;
   }
   .catalog.catalog3 .catalog__title-wrap {
     -webkit-box-orient: vertical;
@@ -6440,9 +6450,8 @@ input[type=number] {
     padding: 4rem 4rem 2rem 4rem;
   }
   .catalog.catalog3 .breadcrumbs {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 10.5rem;
-    line-height: 1.8;
   }
   .catalog.catalog3 .catalog__number {
     margin-bottom: 2.5rem;
@@ -6660,44 +6669,24 @@ input[type=number] {
   }
   .catalog__checkbox-label {
     font-size: 3.6rem;
-    padding-left: 3.5rem;
+    padding-left: 14.5rem;
   }
-  .catalog__checkbox-input {
-    margin-right: 8rem;
-  }
-  .catalog__checkbox-input::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  .catalog__checkbox-input:checked + .catalog__checkbox-style::before {
     width: 5rem;
     height: 5rem;
-    border-radius: 0.3rem;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .catalog__checkbox-input:checked:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 0.3rem;
-    background-image: url(./../img/check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 3rem;
-    background-color: #285f5b;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    visibility: visible;
+  }
+  .catalog__checkbox-style {
+    width: 5rem;
+    height: 5rem;
+    margin-left: -12rem;
   }
   .catalog__products {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0;
   }
 
   .filter__input-label {
