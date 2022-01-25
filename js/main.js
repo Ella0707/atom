@@ -86,9 +86,9 @@ new Swiper('.banner__slider', {
 
     slidesPerView: 1,
     speed: 1500,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 5000,
+    },
     effect: "fade",
     fadeEffect: {
         crossFade: true
@@ -155,8 +155,8 @@ new Swiper('.services__slider', {
     breakpoints: {
 
         769: {
-            slidesOffsetAfter: 120,
             slidesPerView: 3.5,
+            spaceBetween: 0,
         }
     }
 });
@@ -304,6 +304,9 @@ $(".card-product__about-item").click(function(e) {
     $(".card-product__about-item").removeClass('active');
     $(this).addClass('active');
 })
+
+
+
 
 
 $('.popup-link').click(function (e) {

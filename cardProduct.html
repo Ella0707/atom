@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="another website">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link href="./css/ion.rangeSlider.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <title>title</title>
 </head>
@@ -366,55 +365,61 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="" class="popup__close close-popup">
-                    <img class="popup__close-img" src="./img/clouse.svg" alt="">
+                    <img class="popup__close-img" src="./img/close-white.svg" alt="">
                 </a>
                 <div class="popup__content-wrap">
                     <div class="popup__content-wrap-left">
                         <form class="popup__form" action="">
                             <div class="popup__title">Оставьте заявку</div>
                             <div class="popup__input-wrap">
-                                <input class="popup__input" type="text" placeholder="Компания*" name="" id="">
+                                <input required="required" class="popup__input" type="text" placeholder="Компания" name="" id="">
                                 <input class="popup__input" type="text" placeholder="Ваше имя*" name="" id="">
-                                <input class="popup__input" type="tel" placeholder="Телефон*" name="" id="">
-
-                                <input class="popup__input" type="email" placeholder="Введите e-mail**" name="" id="">
-                                <input class="popup__input" type="text" placeholder="Ваш вопрос" name=""
+                                <div class="popup__input-contact-wrap">
+                                    <input class="popup__input" type="tel" placeholder="Телефон*" name="" id="">
+                                    <input class="popup__input" type="email" placeholder="E-mail" name="" id="">
+                                </div>
+                                <div class="popup__input-request">
+                                    <span class="check-style">Ваш вопрос</span>
+                                    <input class="popup__input" type="text" placeholder="" name=""
                                     id="">
+                                </div>
                             </div>
                             <div class="popup__select">
                                 <div class="popup__select-item">
                                     <label class="popup__select-label">Отправляя заявку,
                                         вы соглашаетесь с политикой конфиденциальности.
-                                        <input class="popup__select-input" type="checkbox" name="select" id="">
+                                        <input class="popup__checkbox-input" type="checkbox" name="select" id="">
+                                        <span>
+                                        </span>
                                     </label>
                                 </div>
                             </div>
                             <div class="popup__link-wrap">
-                                <a href="" class="popup__link popup-accepted">Оставить заявку
+                                <a href="" class="popup__link popup-accepted">
+                                    <span> Оставить заявку</span>
                                     <div class="popup__link-arrow">
                                         <img src="./img/arrow-white.svg" alt="">
                                     </div>
                                 </a>
                             </div>
-                            
                         </form>
                     </div>
                     <div class="popup__content-right">
                         <img class="popup__content-right-bg" src="./img/substrate-servis.svg" alt="">
                         <div class="popup__right-messengers">
                             <a class="popup__right-messenger" href="">WhatsApp
-                                <img src="" alt="">
+                                <img src="./img/arrow-social.png" alt="">
                             </a>
                             <a class="popup__right-messenger" href="">Telegram
-                                <img src="" alt="">
+                                <img src="./img/arrow-social.png" alt="">
                             </a>
                         </div>
                         <div class="popup__right-contacts">
                             <a class="popup__tel" href="">8 800 800 88 88
                             </a>
                             <div class="popup__right-sale">
-                                <div class="popup__right-sale-email">Отдел продаж</div>
-                                <div class="popup__right-sale-title">zakaz@auradv.com</div>
+                                <div class="popup__right-sale-email">zakaz@auradv.com</div>
+                                <div class="popup__right-sale-title">Отдел продаж</div>
                             </div>
                             <div class="popup__right-address">
                                 <div class="popup__right-address-name">
@@ -433,14 +438,44 @@
     <div class="accepted">
         <div class="accepted__body">
             <div class="accepted__content">
-                <a href="" class="accepted__close close-popup">
-                    <img class="accepted__close-img" src="./assets/images/popap-close.svg" alt="">
-                </a>
-                <a href="" class="accepted__logo">
-                    <img class="accepted__logo-img" src="./assets/images/logo.svg" alt="">
-                </a>
-                <div class="accepted__title">Ваша заявка принята</div>
-                <div class="accepted__subtitle">Мы свяжемся с вами в ближайшее время</div>
+                    <a href="" class="accepted__close close-popup">
+                        <img class="accepted__close-img" src="./img/close-white.svg" alt="">
+                    </a>
+                    <div class="accepted__content-wrap">
+                        <div class="accepted__content-wrap-left">
+                        <div class="accepted__left-pic">
+                            <img src="./img/popap.svg" alt="">
+                        </div>
+                        <div class="accepted__left-title">Спасибо!</div>
+                        <div class="accepted__left-subtitle">Наши специалисты свяжутся с Вами 
+                            в ближайшее время</div>
+                        </div>
+                        <div class="popup__content-right">
+                            <img class="popup__content-right-bg" src="./img/substrate-servis.svg" alt="">
+                            <div class="popup__right-messengers">
+                                <a class="popup__right-messenger" href="">WhatsApp
+                                    <img src="./img/arrow-social.png" alt="">
+                                </a>
+                                <a class="popup__right-messenger" href="">Telegram
+                                    <img src="./img/arrow-social.png" alt="">
+                                </a>
+                            </div>
+                            <div class="popup__right-contacts">
+                                <a class="popup__tel" href="">8 800 800 88 88
+                                </a>
+                                <div class="popup__right-sale">
+                                    <div class="popup__right-sale-email">zakaz@auradv.com</div>
+                                    <div class="popup__right-sale-title">Отдел продаж</div>
+                                </div>
+                                <div class="popup__right-address">
+                                    <div class="popup__right-address-name">
+                                        г. Хабаровск: 680009,
+                                        ул. Пугачёва 32
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
