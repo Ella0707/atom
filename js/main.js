@@ -89,11 +89,11 @@ function handleClick() {
 
 
 
-  $(".service__toggle").click(function(e) {
-    e.preventDefault();
-    $(".service__toggle").removeClass('active');
-    $(this).addClass('active');
-  })
+//   $(".service__toggle").click(function(e) {
+//     e.preventDefault();
+//     $(".service__toggle").removeClass('active');
+//     $(this).addClass('active');
+//   })
 
 
 
@@ -407,7 +407,6 @@ new Swiper('.card-product__description-slider', {
         },
     },
 
-
     breakpoints: {
         769: {
             slidesPerView: 2.5,
@@ -417,44 +416,21 @@ new Swiper('.card-product__description-slider', {
 });
 
 
+let imageSlider = new Swiper('.command__photo-pipl-slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+    slidesPerGroup: 1,
+    loop: true,
 
-
-
-const tabsBtn   = document.querySelectorAll(".catalog__option");
-const tabsItems = document.querySelectorAll(".catalog__select-wrap");
-
-tabsBtn.forEach(onTabClick);
-
-function onTabClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
-
-        if( ! currentBtn.classList.contains('active') ) {
-            tabsBtn.forEach(function(item) {
-                item.classList.remove('active');
-            });
-    
-            tabsItems.forEach(function(item) {
-                item.classList.remove('active');
-            });
-    
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
+    breakpoints: {
+        769: {
+            spaceBetween: 60,
         }
-    });
-}
+    }
+});
 
-document.querySelector('.catalog__option').click();
-
-
-
-
-
-
-
-  let textSlider = new Swiper('.command__about-pipl-slider', {
+let textSlider = new Swiper('.command__about-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
     speed: 800,
@@ -485,22 +461,50 @@ document.querySelector('.catalog__option').click();
             return number;
         },
     },
+
+    controller: {
+        control: imageSlider
+    },
 });
 
 
-let imageSlider = new Swiper('.command__photo-pipl-slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    speed: 800,
-    slidesPerGroup: 1,
-    loop: true,
 
-    breakpoints: {
-        769: {
-            spaceBetween: 60,
+
+// function controllerSlider() {
+//     textSlider.controller.control = imageSlider;
+//     imageSlider.controller.control = textSlider;
+// }
+
+
+const tabsBtn   = document.querySelectorAll(".tab-btn");
+const tabsItems = document.querySelectorAll(".tab-item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            tabsItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+    
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
         }
-    }
-});
+    });
+}
 
-textSlider.controller.control = imageSlider;
-imageSlider.controller.control = textSlider;
+document.querySelector('.tab-btn').click();
+
+
+
+
+

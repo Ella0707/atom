@@ -4,17 +4,29 @@
 
     &__inner {
         display: flex;
+        height: 100%;
+    }
+
+    &__substrate {
+        position: absolute;
+        transform: rotateY(180deg);
+        width: 95.8rem;
+        height: 80.7rem;
+        left: -14%;
+        top: 0;
+        z-index: -1;
     }
 
     &__content {
         padding-top: 5rem;
+        padding-bottom: 24rem;
         width: 50%;
-        height: 80.7rem;
     }
     
     &__breadcrumbs {
-        margin-bottom: 5rem;
-    
+        &.breadcrumbs {
+            margin-bottom: 4.5rem;
+        }
     }
    
     
@@ -191,8 +203,9 @@
     &__map {
         position: absolute;
         right: 0;
+        bottom: 0;
         width: 96.2rem;
-        height: 80.7rem;
+        height: 100%;
     }
 
 }

@@ -126,7 +126,7 @@
     font-size: 1.8rem;
     font-weight: 400;
     color: #747474;
-    width: 29.2rem;
+    width: 55%;
     }
     
     &__description-value {
@@ -306,6 +306,7 @@
             position: absolute;
             left: -4rem;
             top: 50%;
+            transform: translateY(-50%);
         }
     }
     
@@ -361,7 +362,8 @@
     }
 
     span {
-        width: 37%;
+        width: 39%;
+        padding-left: 2rem;
 
         &:empty {
             width: 0;

@@ -59,7 +59,7 @@
         display: flex;
         flex-direction: column;
 
-        padding: 5.0rem;
+        padding: 5rem 5rem 3rem 5rem;
     }
 
     &__form {
@@ -171,27 +171,9 @@
 
     &__select-label {
         position: relative;
-
-        span {
-            position: relative;
-            margin-right: 2rem;
-            padding-left: 1.5rem;
-            &::before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 2.5rem;
-                height: 2.5rem;
-                background: #FFFFFF;
-                border: 1px solid #C0C0C0;
-                border-radius: 0.3rem;
-                transform: translate(-50%, -50%);
-            }
-    
-          
     }
-    &__checkbox-input {
+
+    &__checkbox {
 
         position: absolute;
         width: 1px;
@@ -202,7 +184,7 @@
         clip: rect(0 0 0 0);
         overflow: hidden;
 
-        &:checked + .check-style::after {
+        &:checked + .popup__checkbox-style::after {
             content: "";
             position: absolute;
             top: 50%;
@@ -219,6 +201,23 @@
             visibility: visible;
         }
     }
+
+    &__checkbox-style {
+        position: relative;
+        margin-right: 2rem;
+        padding-left: 1.5rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: #FFFFFF;
+            border: 1px solid #C0C0C0;
+            border-radius: 0.3rem;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__select-label {

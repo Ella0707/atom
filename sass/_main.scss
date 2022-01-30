@@ -543,13 +543,13 @@
     &__top {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 7rem;
     }
 
     &__title {
         font-size: 4rem;
         font-weight: 600;
         color: $textColor;
-        margin-bottom: 7rem;
     }
 
     &__slider-control-wrap {

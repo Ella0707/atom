@@ -91,10 +91,10 @@
     </header>
     <main class="main">
         <section class="service-banner">
+            <img class="service-banner__background desctop" src="./img/background-service.png" alt="">
+            <img class="service-banner__background mobile" src="./img/service-bg-mob.png" alt="">
             <div class="container">
                 <div class="service-banner__inner">
-                    <img class="service-banner__background desctop" src="./img/background-service.png" alt="">
-                    <img class="service-banner__background mobile" src="./img/service-bg-mob.png" alt="">
                     <div class="service-banner__title">Мы созданы для достижения эффективного взаимодействия
                         продаж и эксплуатации на&nbsp;предприятии
                     </div>
@@ -103,26 +103,25 @@
         </section>
 
         <section class="service">
-            <div class="container">
-                <div class="service__color-line desctop"></div>
-                <div class="service__toggle-wrap">
-                    <div class="service__toggle">
-                        <div class="service__toggle-title">Монтаж приборов учета</div>
-                    </div>
-                    <div class="service__toggle">
-                        <div class="service__toggle-title desctop">Пусконаладочные работы / Шеф-монтажные работы</div>
-                        <div class="service__toggle-title mobile">Пусконаладочные работы<br>Шеф-монтажные работы</div>
-                    </div>
-                    <div class="service__toggle">
-                        <div class="service__toggle-title">Проверка оборудования</div>
-                    </div>
-                    <div class="service__toggle">
-                        <div class="service__toggle-title">Обучение персонала</div>
-                    </div>
+            <div class="service__toggle-wrap">
+                <div class="service__toggle tab-btn" data-tab="#tab_1">
+                    <div class="service__toggle-title">Монтаж приборов учета</div>
                 </div>
+                <div class="service__toggle tab-btn" data-tab="#tab_2">
+                    <div class="service__toggle-title desctop">Пусконаладочные работы / Шеф-монтажные работы</div>
+                    <div class="service__toggle-title mobile">Пусконаладочные работы<br>Шеф-монтажные работы</div>
+                </div>
+                <div class="service__toggle tab-btn" data-tab="#tab_3">
+                    <div class="service__toggle-title">Проверка оборудования</div>
+                </div>
+                <div class="service__toggle tab-btn" data-tab="#tab_4">
+                    <div class="service__toggle-title">Обучение персонала</div>
+                </div>
+            </div>
 
+            <div class="container">
                 <div class="service__content">
-                    <div class="service__item">
+                    <div class="service__item tab-item" id="tab_1">
                         <div class="service__item-photo-block">
                             <img class="desctop" src="./img/servise1.png" alt="">
                             <img class="mobile" src="./img/service1-mob.png" alt="">
@@ -130,26 +129,30 @@
                                 <div class="service__item-title">Монтаж приборов учета</div>
                             </div>
                         </div>
-                        <div class="service__item-text-title">Заголовок текста</div>
-                        <div class="service__item-text-wrap">
-                            <div class="service__item-text">Под шеф-монтажными работами понимается нахождение
-                                представителя
-                                Поставщика по месту монтажа оборудования для консультаций и контроля за
-                                правильностью монтажа оборудования, с целью достижения соответствия оборудования
-                                гарантийным требованиям завода-изготовителя.
+                        <div class="service__item-content-wrap">
+                            <div class="service__content-title-wrap">
+                                <div class="service__item-text-title">Заголовок текста</div>
                             </div>
-                            <ul class="service__item-list"> В пусконаладочные работы входит:
-                                <li>Проверка монтажа оборудования: правильность монтажа,
-                                    правильность подключения электрики и автоматики,
-                                    разводка кабеля, подвод сжатого воздуха и.т.д.;
-                                </li>
-                                <li>Пусконаладочные работы: проверка работы системы регенерации,
-                                    отладка временного режима срабатывания клапанов системы регенерации фильтра
-                                </li>
-                            </ul>
+                            <div class="service__item-text-wrap">
+                                <div class="service__item-text">Под шеф-монтажными работами понимается нахождение
+                                    представителя
+                                    Поставщика по месту монтажа оборудования для консультаций и контроля за
+                                    правильностью монтажа оборудования, с целью достижения соответствия оборудования
+                                    гарантийным требованиям завода-изготовителя.
+                                </div>
+                                <ul class="service__item-list"> В пусконаладочные работы входит:
+                                    <li>Проверка монтажа оборудования: правильность монтажа,
+                                        правильность подключения электрики и автоматики,
+                                        разводка кабеля, подвод сжатого воздуха и.т.д.;
+                                    </li>
+                                    <li>Пусконаладочные работы: проверка работы системы регенерации,
+                                        отладка временного режима срабатывания клапанов системы регенерации фильтра
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="service__item desctop">
+                    <div class="service__item tab-item" id="tab_2">
                         <div class="service__item-photo-block">
                             <img class="desctop" src="./img/service2.png" alt="">
                             <img class="mobile" src="./img/service1-mob.png" alt="">
@@ -160,26 +163,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="service__item-text-title">Заголовок текста</div>
-                        <div class="service__item-text-wrap">
-                            <div class="service__item-text">Под шеф-монтажными работами понимается нахождение
-                                представителя
-                                Поставщика по месту монтажа оборудования для консультаций и контроля за
-                                правильностью монтажа оборудования, с целью достижения соответствия оборудования
-                                гарантийным требованиям завода-изготовителя.
+                        <div class="service__item-content-wrap">
+                            <div class="service__content-title-wrap">
+                                <div class="service__item-text-title">Заголовок текста</div>
                             </div>
-                            <ul class="service__item-list"> В пусконаладочные работы входит:
-                                <li>Проверка монтажа оборудования: правильность монтажа,
-                                    правильность подключения электрики и автоматики,
-                                    разводка кабеля, подвод сжатого воздуха и.т.д.;
-                                </li>
-                                <li>Пусконаладочные работы: проверка работы системы регенерации,
-                                    отладка временного режима срабатывания клапанов системы регенерации фильтра
-                                </li>
-                            </ul>
+                            <div class="service__item-text-wrap">
+                                <div class="service__item-text">Под шеф-монтажными работами понимается нахождение
+                                    представителя
+                                    Поставщика по месту монтажа оборудования для консультаций и контроля за
+                                    правильностью монтажа оборудования, с целью достижения соответствия оборудования
+                                    гарантийным требованиям завода-изготовителя.
+                                </div>
+                                <ul class="service__item-list"> В пусконаладочные работы входит:
+                                    <li>Проверка монтажа оборудования: правильность монтажа,
+                                        правильность подключения электрики и автоматики,
+                                        разводка кабеля, подвод сжатого воздуха и.т.д.;
+                                    </li>
+                                    <li>Пусконаладочные работы: проверка работы системы регенерации,
+                                        отладка временного режима срабатывания клапанов системы регенерации фильтра
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="service__item desctop">
+                    <div class="service__item tab-item" id="tab_3">
                         <div class="service__item-photo-block">
                             <img class="desctop" src="./img/service3.png" alt="">
                             <img class="mobile" src="./img/service1-mob.png" alt="">
@@ -187,21 +194,26 @@
                                 <div class="service__item-title">Проверка оборудования</div>
                             </div>
                         </div>
-                        <div class="service__item-text-title">Мы подготовим ваших сотурдников к работе с системами</div>
-                        <div class="service__item-text-wrap">
-                            <div class="service__item-text">Под услугами по обучению персонала
-                                Покупателя понимаются консультации по основам работы,
-                                правилам технического обслуживания и инструктаж по технике
-                                безопасности при работе с оборудованием. Обучению подлежит
-                                только персонал, ответственный за эксплуатацию и техническое
-                                обслуживание Оборудования, назначенный внутренним приказом
-                                руководителя предприятия или руководителя соответствующего
-                                подразделения. Услуги по обучению персонала совмещаются
-                                по времени с пусконаладочными работами и проводятся одновременно.
+                        <div class="service__item-content-wrap">
+                            <div class="service__content-title-wrap">
+                                <div class="service__item-text-title">Мы подготовим ваших сотурдников к работе с системами</div>
+                            </div>
+                            <div class="service__item-text-wrap">
+                                <div class="service__item-text">Под услугами по обучению персонала 
+                                    Покупателя понимаются консультации по основам работы, правилам 
+                                    технического обслуживания и инструктаж по технике безопасности 
+                                    при работе с оборудованием. Обучению подлежит только персонал, 
+                                    ответственный за эксплуатацию и техническое обслуживание Оборудования,
+                                    назначенный внутренним приказом руководителя предприятия или
+                                    руководителя соответствующего подразделения.
+                                    Услуги по обучению персонала совмещаются
+                                    по времени с пусконаладочными работами
+                                    и проводятся одновременно.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="service__item desctop">
+                    <div class="service__item tab-item" id="tab_4">
                         <div class="service__item-photo-block">
                             <img class="desctop" src="./img/service4.png" alt="">
                             <img class="mobile" src="./img/service1-mob.png" alt="">
@@ -209,24 +221,27 @@
                                 <div class="service__item-title">Обучение персонала</div>
                             </div>
                         </div>
-                        <div class="service__item-text-title">Мы подготовим ваших сотурдников к работе с системами</div>
-                        <div class="service__item-text-wrap">
-                            <div class="service__item-text">Под услугами по обучению персонала
-                                Покупателя понимаются консультации по основам работы,
-                                правилам технического обслуживания и инструктаж по технике
-                                безопасности при работе с оборудованием. Обучению подлежит
-                                только персонал, ответственный за эксплуатацию и техническое
-                                обслуживание Оборудования, назначенный внутренним приказом
-                                руководителя предприятия или руководителя соответствующего
-                                подразделения. Услуги по обучению персонала совмещаются
-                                по времени с пусконаладочными работами и проводятся одновременно.
+                        <div class="service__item-content-wrap">
+                            <div class="service__content-title-wrap">
+                                <div class="service__item-text-title">Мы подготовим ваших сотурдников к работе с системами</div>
+                            </div>
+                            <div class="service__item-text-wrap">
+                                <div class="service__item-text">Под услугами по обучению персонала 
+                                    Покупателя понимаются консультации по основам работы, правилам 
+                                    технического обслуживания и инструктаж по технике безопасности 
+                                    при работе с оборудованием. Обучению подлежит только персонал, 
+                                    ответственный за эксплуатацию и техническое обслуживание Оборудования,
+                                    назначенный внутренним приказом руководителя предприятия или
+                                    руководителя соответствующего подразделения.
+                                    Услуги по обучению персонала совмещаются
+                                    по времени с пусконаладочными работами
+                                    и проводятся одновременно.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class=""></div>
         </section>
 
     </main>

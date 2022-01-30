@@ -802,12 +802,12 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 7rem;
 }
 .services__title {
   font-size: 4rem;
   font-weight: 600;
   color: #292729;
-  margin-bottom: 7rem;
 }
 .services__slider-control-wrap {
   display: -webkit-box;
@@ -2056,7 +2056,7 @@ input[type=number] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #747474;
-  width: 29.2rem;
+  width: 55%;
 }
 .card-product__description-value {
   font-size: 1.6rem;
@@ -2232,6 +2232,8 @@ input[type=number] {
   position: absolute;
   left: -4rem;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .card-product__list {
   padding: 3rem 0 3rem 0;
@@ -2294,7 +2296,8 @@ input[type=number] {
   margin-bottom: 2.3rem;
 }
 .card-product__list-item-value span {
-  width: 37%;
+  width: 39%;
+  padding-left: 2rem;
 }
 .card-product__list-item-value span:empty {
   width: 0;
@@ -2321,14 +2324,25 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+}
+.contacts__substrate {
+  position: absolute;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: 95.8rem;
+  height: 80.7rem;
+  left: -14%;
+  top: 0;
+  z-index: -1;
 }
 .contacts__content {
   padding-top: 5rem;
+  padding-bottom: 24rem;
   width: 50%;
-  height: 80.7rem;
 }
-.contacts__breadcrumbs {
-  margin-bottom: 5rem;
+.contacts__breadcrumbs.breadcrumbs {
+  margin-bottom: 4.5rem;
 }
 .contacts__subtitle {
   font-size: 1.8rem;
@@ -2492,8 +2506,9 @@ input[type=number] {
 .contacts__map {
   position: absolute;
   right: 0;
+  bottom: 0;
   width: 96.2rem;
-  height: 80.7rem;
+  height: 100%;
 }
 
 .brend {
@@ -3184,17 +3199,9 @@ input[type=number] {
 }
 
 .reviews {
+  height: 67.1rem;
   position: relative;
   margin-bottom: 16.5rem;
-}
-.reviews__inner {
-  height: 67.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .reviews__left-block {
   width: 60rem;
@@ -3288,6 +3295,7 @@ input[type=number] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 9rem;
 }
 .reviews__slider {
   width: 103.3rem;
@@ -3323,6 +3331,27 @@ input[type=number] {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 1;
+}
+.reviews__slide::after {
+  content: "";
+  width: 30rem;
+  height: 15rem;
+  overflow: hidden;
+  background: #285f5b;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  position: absolute;
+  overflow: hidden;
+  border-left: 2px solid red;
+  border-right: 2px solid white;
+  /* border-top-right-radius: 0px; */
+  border-block-start-width: -11px;
+  padding: -1rem;
+  /* inset: -7rem; */
+  top: 15.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 .reviews__slide.swiper-slide-next, .reviews__slide.swiper-slide-active, .reviews__slide.swiper-slide-prev {
@@ -3419,6 +3448,7 @@ input[type=number] {
   display: flex;
   width: 25rem;
   margin-right: 6rem;
+  margin-left: auto;
 }
 .select {
   position: relative;
@@ -3551,7 +3581,7 @@ input[type=number] {
     left: -2rem;
   }
   .breadcrumbs a:last-child::before {
-    top: 25%;
+    top: 50%;
   }
 }
 .product {
@@ -3891,6 +3921,8 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  background-color: #285f5b;
 }
 .service__toggle {
   width: 34.6rem;
@@ -3914,7 +3946,9 @@ input[type=number] {
   cursor: pointer;
 }
 .service__toggle.active {
-  width: 70.1rem;
+  width: auto;
+  white-space: nowrap;
+  padding: 3rem 6rem;
   background-color: white;
   -webkit-box-shadow: 0px 18.4689px 61.5631px rgba(148, 148, 148, 0.1);
           box-shadow: 0px 18.4689px 61.5631px rgba(148, 148, 148, 0.1);
@@ -4427,7 +4461,7 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5rem;
+  padding: 5rem 5rem 3rem 5rem;
 }
 .popup__form {
   display: -webkit-box;
@@ -4600,25 +4634,7 @@ input[type=number] {
 .popup__select-label {
   position: relative;
 }
-.popup__select-label span {
-  position: relative;
-  margin-right: 2rem;
-  padding-left: 1.5rem;
-}
-.popup__select-label span::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: #FFFFFF;
-  border: 1px solid #C0C0C0;
-  border-radius: 0.3rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.popup__select-label__checkbox-input {
+.popup__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -4628,7 +4644,7 @@ input[type=number] {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.popup__select-label__checkbox-input:checked + .check-style::after {
+.popup__checkbox:checked + .popup__checkbox-style::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -4644,6 +4660,24 @@ input[type=number] {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   visibility: visible;
+}
+.popup__checkbox-style {
+  position: relative;
+  margin-right: 2rem;
+  padding-left: 1.5rem;
+}
+.popup__checkbox-style::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  border-radius: 0.3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .popup__select-label {
   font-size: 1.8rem;
@@ -6771,7 +6805,7 @@ input[type=number] {
     padding-top: 5rem;
   }
   .brend__breadcrumbs.breadcrumbs {
-    margin-bottom: 17.2rem;
+    margin-bottom: 10rem;
   }
   .brend__subtitle {
     font-size: 3.6rem;
@@ -6794,7 +6828,7 @@ input[type=number] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
   .brend__filter-block {
     width: 100%;
@@ -7144,7 +7178,7 @@ input[type=number] {
        object-fit: contain;
   }
   .card-product__about {
-    margin-bottom: 20rem;
+    margin-bottom: 22rem;
   }
   .card-product__about-item-wrap {
     -ms-flex-wrap: wrap;
@@ -7189,7 +7223,7 @@ input[type=number] {
   }
   .card-product__text-block {
     background-color: #F9F9F9;
-    padding: 6rem 3rem 6rem 4.8rem;
+    padding: 6rem 3rem 0rem 4.8rem;
     width: 100%;
   }
   .card-product__text-block-title {
@@ -7198,11 +7232,11 @@ input[type=number] {
     margin-left: -0.5rem;
   }
   .card-product__table {
-    padding: 4rem 1.5rem 2rem 3.4rem;
+    padding: 4rem 1.5rem 0rem 3.4rem;
     border-left: 0.2rem solid #E4E4E4;
   }
   .card-product__table-item-title {
-    padding: 5rem 2rem 4rem 1rem;
+    padding: 5rem 2rem 4rem 4rem;
     line-height: 1.01;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7210,9 +7244,6 @@ input[type=number] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-size: 3.6rem;
     font-weight: 600;
     color: #292729;
@@ -7231,7 +7262,7 @@ input[type=number] {
     top: 50%;
   }
   .card-product__list {
-    padding: 4.8rem 0 3rem 0.2rem;
+    padding: 4.5rem 0 2.5rem 0.2rem;
     margin-bottom: 1.5rem;
     margin-left: -0.5rem;
     display: -webkit-box;
@@ -7270,7 +7301,7 @@ input[type=number] {
   .card-product__list-item-title {
     width: 100%;
     font-size: 3.6rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.3rem;
   }
   .card-product__list-item-value-wrap {
     width: 100%;
@@ -7294,16 +7325,19 @@ input[type=number] {
   }
   .card-product__list-item-value span {
     width: 100%;
-    margin-top: 1.4rem;
+    margin-top: 2.4rem;
+    padding-left: 0;
+    margin-bottom: 1.8rem;
   }
   .card-product__list-item-value span:empty {
     width: 0;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .card-product__list-item-key {
     position: relative;
     padding-left: 0.5rem;
-    line-height: 1.25;
+    line-height: 1.277;
   }
   .card-product__list-item-key::before {
     content: "";
@@ -7818,11 +7852,21 @@ input[type=number] {
     width: auto;
   }
   .contacts {
-    padding-bottom: 151rem;
+    padding-bottom: 91rem;
     position: relative;
   }
+  .contacts .container {
+    padding: 0;
+  }
+  .contacts__substrate {
+    width: 72.2rem;
+    height: 103.8rem;
+    left: -16%;
+    top: 2%;
+  }
   .contacts .breadcrumbs {
-    margin-bottom: 11rem;
+    margin-bottom: 10rem;
+    padding: 0 3rem;
   }
   .contacts__inner {
     display: -webkit-box;
@@ -7831,23 +7875,27 @@ input[type=number] {
   }
   .contacts__content {
     padding-top: 6.5rem;
+    padding-bottom: 0;
     width: 100%;
     height: 100%;
   }
   .contacts__subtitle {
     font-size: 3.6rem;
     margin-bottom: 1rem;
+    padding: 0 3rem;
   }
   .contacts__title {
     font-size: 6rem;
     margin-bottom: 5.5rem;
     margin-bottom: 6.2rem;
+    padding: 0 3rem;
   }
   .contacts__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 3rem;
     margin-bottom: 0rem;
   }
   .contacts__item {
@@ -7893,7 +7941,8 @@ input[type=number] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 8.7rem;
+    margin-bottom: 9.7rem;
+    padding: 0 3rem;
   }
   .contacts__details-img {
     width: 8.4rem;
@@ -7923,12 +7972,23 @@ input[type=number] {
   }
   .contacts__managers-block {
     padding: 6rem 3rem;
-    position: absolute;
-    bottom: 91rem;
-    left: 0;
+    position: static;
+    height: 59rem;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+  }
+  .contacts__managers-block::before {
+    content: "";
     height: 59rem;
     width: 100%;
     background-color: #285f5b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
   }
   .contacts__managers-title {
     font-size: 3.6rem;
@@ -7978,7 +8038,7 @@ input[type=number] {
     right: 0;
     left: 0;
     bottom: 0;
-    width: 75rem;
+    width: 100%;
     height: 90.6rem;
     overflow: hidden;
   }
@@ -8031,6 +8091,8 @@ input[type=number] {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 3.5rem;
+    padding: 0 3rem;
+    background-color: transparent;
   }
   .service__toggle {
     width: 100%;
@@ -8055,6 +8117,10 @@ input[type=number] {
   }
   .service__item {
     margin-bottom: 11rem;
+    display: none;
+  }
+  .service__item.active {
+    display: block;
   }
   .service__item-photo-block {
     height: 36rem;

@@ -1743,7 +1743,7 @@
 
         &__breadcrumbs {
             &.breadcrumbs {
-                margin-bottom: 17.2rem;
+                margin-bottom: 10rem;
             }
         }
 
@@ -1769,7 +1769,7 @@
 
         &__content {
             flex-direction: column;
-            margin-bottom: 4rem;
+            margin-bottom: 0rem;
         }
 
         &__filter-block {
@@ -2128,7 +2128,7 @@
 
 
         &__about {
-            margin-bottom: 20rem;
+            margin-bottom: 22rem;
         }
 
 
@@ -2184,7 +2184,7 @@
 
         &__text-block {
             background-color: #F9F9F9;
-            padding: 6rem 3rem 6rem 4.8rem;
+            padding: 6rem 3rem 0rem 4.8rem;
             width: 100%;
         }
 
@@ -2195,16 +2195,15 @@
         }
 
         &__table {
-            padding: 4rem 1.5rem 2rem 3.4rem;
+            padding: 4rem 1.5rem 0rem 3.4rem;
             border-left: 0.2rem solid #E4E4E4;
         }
 
         &__table-item-title {
-            padding: 5rem 2rem 4rem 1rem;
+            padding: 5rem 2rem 4rem 4rem;
             line-height: 1.01;
             display: flex;
             align-items: center;
-            justify-content: center;
             font-size: 3.6rem;
             font-weight: 600;
             color: #292729;
@@ -2227,7 +2226,7 @@
         }
 
         &__list {
-            padding: 4.8rem 0 3rem 0.2rem;
+            padding: 4.5rem 0 2.5rem 0.2rem;
             margin-bottom: 1.5rem;
             margin-left: -0.5rem;
             display: flex;
@@ -2254,7 +2253,7 @@
         &__list-item-title {
             width: 100%;
             font-size: 3.6rem;
-            margin-bottom: 2.5rem
+            margin-bottom: 2.3rem
         }
 
         &__list-item-value-wrap {
@@ -2275,11 +2274,14 @@
 
             span {
                 width: 100%;
-                margin-top: 1.4rem;
+                margin-top: 2.4rem;
+                padding-left: 0;
+                margin-bottom: 1.8rem;
 
                 &:empty {
                     width: 0;
                     margin-top: 0;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -2287,7 +2289,7 @@
         &__list-item-key {
             position: relative;
             padding-left: 0.5rem;
-            line-height: 1.25;
+            line-height: 1.277;
 
             &::before {
                 content: "";
@@ -2881,11 +2883,24 @@
 
     .contacts {
 
-        padding-bottom: 151rem;
+        padding-bottom: 91rem;
         position: relative;
 
+        .container {
+            padding: 0;
+        }
+
+        &__substrate {
+            width: 72.2rem;
+            height: 103.8rem;
+            left: -16%;
+            top: 2%;
+        }
+
+  
         .breadcrumbs {
-            margin-bottom: 11rem;
+            margin-bottom: 10rem;
+            padding: 0 3rem;
         }
 
         &__inner {
@@ -2894,6 +2909,7 @@
 
         &__content {
             padding-top: 6.5rem;
+            padding-bottom: 0;
             width: 100%;
             height: 100%;
         }
@@ -2901,16 +2917,19 @@
         &__subtitle {
             font-size: 3.6rem;
             margin-bottom: 1rem;
+            padding: 0 3rem;
         }
 
         &__title {
             font-size: 6rem;
             margin-bottom: 5.5rem;
             margin-bottom: 6.2rem;
+            padding: 0 3rem;
         }
 
         &__wrap {
             flex-direction: column;
+            padding: 0 3rem;
 
             margin-bottom: 0rem;
         }
@@ -2959,7 +2978,8 @@
             display: flex;
             align-items: center;
 
-            margin-bottom: 8.7rem;
+            margin-bottom: 9.7rem;
+            padding: 0 3rem;
         }
 
         &__details-img {
@@ -2988,13 +3008,27 @@
 
         &__managers-block {
             padding: 6rem 3rem;
-            position: absolute;
-            bottom: 91rem;
-            left: 0;
+            position: static;
             height: 59rem;
             width: 100%;
-            background-color: $brendColor;
+            background-color: transparent;
 
+            position: relative;
+
+            &::before {
+                content: "";
+                height: 59rem;
+                width: 100%;
+                background-color: $brendColor;
+    
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+    
+                z-index: -1;
+                overflow: hidden;
+            }
         }
 
         &__managers-title {
@@ -3054,8 +3088,8 @@
             right: 0;
             left: 0;
             bottom: 0;
-            width: 75rem;
-            // width: 100%;
+            // width: 75rem;
+            width: 100%;
             height: 90.6rem;
             overflow: hidden;
         }
@@ -3110,6 +3144,8 @@
         &__toggle-wrap {
             flex-direction: column;
             margin-bottom: 3.5rem;
+            padding: 0 3rem;
+            background-color: transparent;
         }
 
         &__toggle {
@@ -3138,6 +3174,11 @@
 
         &__item {
             margin-bottom: 11rem;
+            display: none; 
+
+            &.active {
+                display: block;
+            }
         }
 
         &__item-photo-block {
