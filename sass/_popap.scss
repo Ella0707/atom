@@ -36,8 +36,8 @@
         justify-content: center;
 
         position: absolute;
-        right: 1rem;
-        top: 1rem;
+        right: 1.7rem;
+        top: 1.8rem;
         z-index: 99;
     }
 
@@ -60,7 +60,7 @@
         flex-direction: column;
         
 
-        padding: 5rem 5rem 3rem 5rem;
+        padding: 5rem 5rem 5rem 5rem;
     }
 
     &__form {
@@ -73,7 +73,7 @@
         font-weight: 600;
         color: #292729;
     
-        margin-bottom: 3.3rem;
+        margin-bottom: 3.8rem;
     }
 
     &__input-wrap {
@@ -82,25 +82,36 @@
         margin-bottom: 3rem;
     }
 
+    &__label {
+        height: 4.8rem;
+        border-bottom: 1px solid #A2A2A2;
+        margin-bottom: 1.5rem;
+
+        &.request {
+            height: 9rem;
+            margin-bottom: 0rem;
+        }
+    }
+
     &__input-contact-wrap {
         display: flex;
         flex-direction: column;
         width: 100%;
         
-        input {
-            max-width: 45.8rem;
-        }
+        // input {
+        //     max-width: 45.8rem;
+        // }
     }
 
     &__input {
         font-size: 1.8rem;
         font-weight: 400;
 
-        height: 5.3rem;
-        max-width: 45.8rem;
+      
+        width: 100%;
 
         border: none;
-        border-bottom: 1px solid #A2A2A2;
+     
 
         &::placeholder {
                 font-size: 1.8rem;
@@ -128,7 +139,7 @@
     &__input-request {
         display: flex;
         flex-direction: column;
-        padding-top: 1.8rem;
+        padding-top: 1rem;
         line-height: 1.65;
 
         span {
@@ -136,11 +147,12 @@
                 font-weight: 400;
                 color: #959595;
                 border-bottom: 1px solid #A2A2A2;
+                display: block;
         }
 
-        input {
-            height: 6rem;
-        }
+        // input {
+        //     height: 6rem;
+        // }
     }
 
 
@@ -155,7 +167,7 @@
     &__select {
         display: flex;
 
-        margin-bottom: 4.5rem;
+        margin-bottom: 5rem;
         padding-left: 0.5rem;
     }
 
@@ -170,9 +182,9 @@
     }
 
 
-    &__select-label {
-        position: relative;
-    }
+    // &__select-label {
+    //     position: relative;
+    // }
 
     &__checkbox {
 
@@ -222,7 +234,7 @@
     }
 
     &__select-label {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -327,7 +339,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         color: #ffffff;
-        height: 15rem;
+        height: 13.2rem;
         width: 20rem;
         display: flex;
         flex-direction: column;

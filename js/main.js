@@ -372,7 +372,7 @@ new Swiper('.card-product__description-slider', {
 
   let reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 1,
-    spaceBetween: 15,
+    spaceBetween: 30,
     speed: 800,
     loop: true,
     navigation: {

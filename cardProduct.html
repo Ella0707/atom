@@ -372,16 +372,26 @@
                         <form class="popup__form" action="">
                             <div class="popup__title">Оставьте заявку</div>
                             <div class="popup__input-wrap">
-                                <input required="required" class="popup__input" type="text" placeholder="Компания" name="" id="">
-                                <input class="popup__input" type="text" placeholder="Ваше имя*" name="" id="">
+                                <label class="popup__label">
+                                    <input class="popup__input" type="text" placeholder="Компания" name="" id="">
+                                </label>
+                                <label class="popup__label">
+                                    <input class="popup__input" type="text" placeholder="Ваше имя*" name="" id="">
+                                </label>
                                 <div class="popup__input-contact-wrap">
-                                    <input class="popup__input" type="tel" placeholder="Телефон*" name="" id="">
-                                    <input class="popup__input" type="email" placeholder="E-mail" name="" id="">
+                                    <label class="popup__label">
+                                        <input class="popup__input" type="tel" placeholder="Телефон*" name="" id="">
+                                    </label>
+                                    <label class="popup__label">
+                                        <input class="popup__input" type="email" placeholder="E-mail" name="" id="">
+                                    </label>
                                 </div>
                                 <div class="popup__input-request">
-                                    <span class="check-style">Ваш вопрос</span>
-                                    <input class="popup__input" type="text" placeholder="" name=""
-                                    id="">
+                                    <label class="popup__label request">
+                                        <span class="check-style">Ваш вопрос</span>
+                                        <input class="popup__input" type="text" placeholder="" name=""
+                                        id="">
+                                    </label>
                                 </div>
                             </div>
                             <div class="popup__select">
@@ -438,11 +448,14 @@
     <div class="accepted">
         <div class="accepted__body">
             <div class="accepted__content">
-                    <a href="" class="accepted__close close-popup">
+                    <a href="" class="accepted__close close-popup desctop">
                         <img class="accepted__close-img" src="./img/close-white.svg" alt="">
                     </a>
                     <div class="accepted__content-wrap">
                         <div class="accepted__content-wrap-left">
+                            <a href="" class="accepted__close close-popup mobile">
+                                <img class="accepted__close-img" src="./img/clouse.svg" alt="">
+                            </a>
                         <div class="accepted__left-pic">
                             <img src="./img/popap.svg" alt="">
                         </div>
