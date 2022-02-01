@@ -88,15 +88,6 @@ function handleClick() {
   handleClick()
 
 
-
-//   $(".service__toggle").click(function(e) {
-//     e.preventDefault();
-//     $(".service__toggle").removeClass('active');
-//     $(this).addClass('active');
-//   })
-
-
-
 const activitySlider = new Swiper('#activity-slider', {
     slidesPerView: 1,
     speed: 800,
@@ -425,7 +416,9 @@ let imageSlider = new Swiper('.command__photo-pipl-slider', {
 
     breakpoints: {
         769: {
+            slidesPerView: 1,
             spaceBetween: 60,
+            slidesPerGroup: 1,
         }
     }
 });
@@ -468,12 +461,6 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 });
 
 
-
-
-// function controllerSlider() {
-//     textSlider.controller.control = imageSlider;
-//     imageSlider.controller.control = textSlider;
-// }
 
 
 const tabsBtn   = document.querySelectorAll(".tab-btn");
