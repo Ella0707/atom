@@ -3571,7 +3571,7 @@ input[type=number] {
     left: -2rem;
   }
   .breadcrumbs a:last-child::before {
-    top: 50%;
+    top: 2rem;
   }
 }
 .product {
@@ -7852,6 +7852,7 @@ input[type=number] {
             transform: translateX(-50%);
     width: auto;
   }
+
   .contacts {
     padding-bottom: 91rem;
     position: relative;
