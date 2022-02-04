@@ -849,19 +849,17 @@ input[type=number] {
 }
 @media (min-width: 48em) {
   .services__slide-start:hover {
-    width: 55.2rem;
-    height: 49.4rem;
     opacity: 1;
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
     -webkit-box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
             box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
     padding: 5.5rem 4.2rem 4.2rem 3.2rem;
     border: none;
     background-color: #ffffff;
     position: absolute;
-    top: -4rem;
-    left: 0;
+    top: -3rem;
+    left: -4.5rem;
     z-index: 10;
   }
   .services__slide-start:hover .services__slide-link-hover {
@@ -1040,8 +1038,6 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
   mix-blend-mode: multiply;
-  -webkit-transform: rotate(3.18deg);
-          transform: rotate(3.18deg);
 }
 .distributor__photo-slide-articul {
   font-size: 1.46rem;
@@ -1744,12 +1740,10 @@ input[type=number] {
   transition: 1s;
 }
 .catalog__option.active {
-  width: 35.8rem;
-  height: 21.1rem;
   background-color: #285f5b;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   position: absolute;
-  top: -1rem;
-  left: 1.5rem;
   z-index: 10;
 }
 .catalog__option.active .catalog__option-title {
@@ -2749,6 +2743,7 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 .product-card__title {
   font-size: 2.2rem;
@@ -4096,11 +4091,21 @@ input[type=number] {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.brends__brend-box svg {
+  height: 9rem;
+  width: 20rem;
+  stroke: green;
+  fill: green;
+}
 .brends__brend-box:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
           box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+}
+.brends__brend-box:hover svg {
+  stroke: red;
+  fill: red;
 }
 .brends__link {
   font-size: 1.8rem;

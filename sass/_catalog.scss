@@ -87,13 +87,14 @@
         transition: 1s;
 
         &.active {
-                width: 35.8rem;
-                height: 21.1rem;
+                // width: 35.8rem;
+                // height: 21.1rem;
                 background-color: $brendColor;
+                transform: scale(1.05);
 
                 position: absolute;
-                top: -1rem;
-                left: 1.5rem;
+                // top: -1rem;
+                // left: 1.5rem;
                 z-index: 10;
         
                 .catalog__option-title {
