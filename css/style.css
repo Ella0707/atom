@@ -4084,18 +4084,153 @@ input[type=number] {
   border-collapse: collapse;
   -webkit-transition: 1s;
   transition: 1s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% center;
 }
-.brends__brend-box img {
-  height: 9rem;
-  width: 20rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+.brends__brend-box:nth-child(1) {
+  background-image: url(./../img/brends/1.png);
 }
-.brends__brend-box svg {
-  height: 9rem;
-  width: 20rem;
-  stroke: green;
-  fill: green;
+.brends__brend-box:nth-child(1):hover {
+  background-image: url(./../img/brends/1g.png);
+}
+.brends__brend-box:nth-child(2) {
+  background-image: url(./../img/brends/2.png);
+}
+.brends__brend-box:nth-child(2):hover {
+  background-image: url(./../img/brends/2g.png);
+}
+.brends__brend-box:nth-child(3) {
+  background-image: url(./../img/brends/3.png);
+}
+.brends__brend-box:nth-child(3):hover {
+  background-image: url(./../img/brends/3g.png);
+}
+.brends__brend-box:nth-child(4) {
+  background-image: url(./../img/brends/4.png);
+}
+.brends__brend-box:nth-child(4):hover {
+  background-image: url(./../img/brends/4g.png);
+}
+.brends__brend-box:nth-child(5) {
+  background-image: url(./../img/brends/5.png);
+}
+.brends__brend-box:nth-child(5):hover {
+  background-image: url(./../img/brends/5g.png);
+}
+.brends__brend-box:nth-child(6) {
+  background-image: url(./../img/brends/6.png);
+}
+.brends__brend-box:nth-child(6):hover {
+  background-image: url(./../img/brends/6g.png);
+}
+.brends__brend-box:nth-child(7) {
+  background-image: url(./../img/brends/7.png);
+}
+.brends__brend-box:nth-child(7):hover {
+  background-image: url(./../img/brends/7g.png);
+}
+.brends__brend-box:nth-child(8) {
+  background-image: url(./../img/brends/8.png);
+}
+.brends__brend-box:nth-child(8):hover {
+  background-image: url(./../img/brends/8g.png);
+}
+.brends__brend-box:nth-child(9) {
+  background-image: url(./../img/brends/9.png);
+}
+.brends__brend-box:nth-child(9):hover {
+  background-image: url(./../img/brends/9g.png);
+}
+.brends__brend-box:nth-child(10) {
+  background-image: url(./../img/brends/10.png);
+}
+.brends__brend-box:nth-child(10):hover {
+  background-image: url(./../img/brends/10g.png);
+}
+.brends__brend-box:nth-child(11) {
+  background-image: url(./../img/brends/11.png);
+}
+.brends__brend-box:nth-child(11):hover {
+  background-image: url(./../img/brends/11g.png);
+}
+.brends__brend-box:nth-child(12) {
+  background-image: url(./../img/brends/12.png);
+}
+.brends__brend-box:nth-child(12):hover {
+  background-image: url(./../img/brends/12g.png);
+}
+.brends__brend-box:nth-child(13) {
+  background-image: url(./../img/brends/13.png);
+}
+.brends__brend-box:nth-child(13):hover {
+  background-image: url(./../img/brends/13g.png);
+}
+.brends__brend-box:nth-child(14) {
+  background-image: url(./../img/brends/14.png);
+}
+.brends__brend-box:nth-child(14):hover {
+  background-image: url(./../img/brends/14g.png);
+}
+.brends__brend-box:nth-child(15) {
+  background-image: url(./../img/brends/15.png);
+}
+.brends__brend-box:nth-child(15):hover {
+  background-image: url(./../img/brends/15g.png);
+}
+.brends__brend-box:nth-child(16) {
+  background-image: url(./../img/brends/16.png);
+}
+.brends__brend-box:nth-child(16):hover {
+  background-image: url(./../img/brends/16g.png);
+}
+.brends__brend-box:nth-child(17) {
+  background-image: url(./../img/brends/17.png);
+}
+.brends__brend-box:nth-child(17):hover {
+  background-image: url(./../img/brends/17g.png);
+}
+.brends__brend-box:nth-child(18) {
+  background-image: url(./../img/brends/18.png);
+}
+.brends__brend-box:nth-child(18):hover {
+  background-image: url(./../img/brends/18g.png);
+}
+.brends__brend-box:nth-child(19) {
+  background-image: url(./../img/brends/19.png);
+}
+.brends__brend-box:nth-child(19):hover {
+  background-image: url(./../img/brends/19g.png);
+}
+.brends__brend-box:nth-child(20) {
+  background-image: url(./../img/brends/20.png);
+}
+.brends__brend-box:nth-child(20):hover {
+  background-image: url(./../img/brends/20g.png);
+}
+.brends__brend-box:nth-child(21) {
+  background-image: url(./../img/brends/21.png);
+}
+.brends__brend-box:nth-child(21):hover {
+  background-image: url(./../img/brends/21g.png);
+}
+.brends__brend-box:nth-child(22) {
+  background-image: url(./../img/brends/22.png);
+}
+.brends__brend-box:nth-child(22):hover {
+  background-image: url(./../img/brends/22g.png);
+}
+.brends__brend-box:nth-child(23) {
+  background-image: url(./../img/brends/23.png);
+}
+.brends__brend-box:nth-child(23):hover {
+  background-image: url(./../img/brends/23g.png);
+}
+.brends__brend-box:nth-child(24) {
+  background-image: url(./../img/brends/24.png);
+}
+.brends__brend-box:nth-child(24):hover {
+  background-image: url(./../img/brends/24g.png);
 }
 .brends__brend-box:hover {
   -webkit-transform: scale(1.1);

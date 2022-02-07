@@ -45,23 +45,196 @@
             border-collapse: collapse;
             transition: 1s;
 
-            img {
-                height: 9rem;
-                width: 20rem;
-                object-fit: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50% center;
+
+            &:nth-child(1) {
+                background-image: url(./../img/brends/1.png);
+                &:hover {
+                    background-image: url(./../img/brends/1g.png);
+                }
             }
 
-            svg {
-                height: 9rem;
-                width: 20rem;
-                stroke: green;
-                fill: green;
-
+            &:nth-child(2) {
+                background-image: url(./../img/brends/2.png);
+                &:hover {
+                    background-image: url(./../img/brends/2g.png);
+                }
             }
+
+            &:nth-child(3) {
+                background-image: url(./../img/brends/3.png);
+                &:hover {
+                    background-image: url(./../img/brends/3g.png);
+                }
+            }
+
+            &:nth-child(4) {
+                background-image: url(./../img/brends/4.png);
+                &:hover {
+                    background-image: url(./../img/brends/4g.png);
+                }
+            }
+
+            &:nth-child(5) {
+                background-image: url(./../img/brends/5.png);
+                &:hover {
+                    background-image: url(./../img/brends/5g.png);
+                }
+            }
+
+            &:nth-child(6) {
+                background-image: url(./../img/brends/6.png);
+                &:hover {
+                    background-image: url(./../img/brends/6g.png);
+                }
+            }
+
+            &:nth-child(7) {
+                background-image: url(./../img/brends/7.png);
+                &:hover {
+                    background-image: url(./../img/brends/7g.png);
+                }
+            }
+
+            &:nth-child(8) {
+                background-image: url(./../img/brends/8.png);
+                &:hover {
+                    background-image: url(./../img/brends/8g.png);
+                }
+            }
+
+            &:nth-child(9) {
+                background-image: url(./../img/brends/9.png);
+                &:hover {
+                    background-image: url(./../img/brends/9g.png);
+                }
+            }
+
+            &:nth-child(10) {
+                background-image: url(./../img/brends/10.png);
+                &:hover {
+                    background-image: url(./../img/brends/10g.png);
+                }
+            }
+
+            &:nth-child(11) {
+                background-image: url(./../img/brends/11.png);
+                &:hover {
+                    background-image: url(./../img/brends/11g.png);
+                }
+            }
+
+            &:nth-child(12) {
+                background-image: url(./../img/brends/12.png);
+                &:hover {
+                    background-image: url(./../img/brends/12g.png);
+                }
+            }
+
+            &:nth-child(13) {
+                background-image: url(./../img/brends/13.png);
+                &:hover {
+                    background-image: url(./../img/brends/13g.png);
+                }
+            }
+
+            &:nth-child(14) {
+                background-image: url(./../img/brends/14.png);
+                &:hover {
+                    background-image: url(./../img/brends/14g.png);
+                }
+            }
+
+            &:nth-child(15) {
+                background-image: url(./../img/brends/15.png);
+                &:hover {
+                    background-image: url(./../img/brends/15g.png);
+                }
+            }
+
+            &:nth-child(16) {
+                background-image: url(./../img/brends/16.png);
+                &:hover {
+                    background-image: url(./../img/brends/16g.png);
+                }
+            }
+
+            &:nth-child(17) {
+                background-image: url(./../img/brends/17.png);
+                &:hover {
+                    background-image: url(./../img/brends/17g.png);
+                }
+            }
+
+            &:nth-child(18) {
+                background-image: url(./../img/brends/18.png);
+                &:hover {
+                    background-image: url(./../img/brends/18g.png);
+                }
+            }
+
+            &:nth-child(19) {
+                background-image: url(./../img/brends/19.png);
+                &:hover {
+                    background-image: url(./../img/brends/19g.png);
+                }
+            }
+
+            &:nth-child(20) {
+                background-image: url(./../img/brends/20.png);
+                &:hover {
+                    background-image: url(./../img/brends/20g.png);
+                }
+            }
+
+            &:nth-child(21) {
+                background-image: url(./../img/brends/21.png);
+                &:hover {
+                    background-image: url(./../img/brends/21g.png);
+                }
+            }
+
+            &:nth-child(22) {
+                background-image: url(./../img/brends/22.png);
+                &:hover {
+                    background-image: url(./../img/brends/22g.png);
+                }
+            }
+
+            &:nth-child(23) {
+                background-image: url(./../img/brends/23.png);
+                &:hover {
+                    background-image: url(./../img/brends/23g.png);
+                }
+            }
+
+            &:nth-child(24) {
+                background-image: url(./../img/brends/24.png);
+                &:hover {
+                    background-image: url(./../img/brends/24g.png);
+                }
+            }
+
+            // img {
+            //     height: 9rem;
+            //     width: 20rem;
+            //     object-fit: contain;
+            // }
+
+            // svg {
+            //     height: 9rem;
+            //     width: 20rem;
+            //     stroke: green;
+            //     fill: green;
+
+            // }
 
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+
 
                 svg {
                     stroke: red;
