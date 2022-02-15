@@ -35,6 +35,7 @@
         &__brend-box {
             width: 39rem;
             height: 18.8rem;
+            cursor: pointer;
 
             display: flex;
             justify-content: center;
@@ -50,196 +51,177 @@
             background-size: 50% center;
 
             &:nth-child(1) {
-                background-image: url(./../img/brends/1.png);
+                background-image: url(./../img/brends/1g.png);
+
                 &:hover {
-                    background-image: url(./../img/brends/1g.png);
+                    background-image: url(./../img/brends/1.png);
                 }
             }
 
             &:nth-child(2) {
-                background-image: url(./../img/brends/2.png);
+                background-image: url(./../img/brends/2g.png);
                 &:hover {
-                    background-image: url(./../img/brends/2g.png);
+                    background-image: url(./../img/brends/2.png);
                 }
             }
 
             &:nth-child(3) {
-                background-image: url(./../img/brends/3.png);
+                background-image: url(./../img/brends/3g.png);
                 &:hover {
-                    background-image: url(./../img/brends/3g.png);
+                    background-image: url(./../img/brends/3.png);
                 }
             }
 
             &:nth-child(4) {
-                background-image: url(./../img/brends/4.png);
+                background-image: url(./../img/brends/4g.png);
                 &:hover {
-                    background-image: url(./../img/brends/4g.png);
+                    background-image: url(./../img/brends/4.png);
                 }
             }
 
             &:nth-child(5) {
-                background-image: url(./../img/brends/5.png);
+                background-image: url(./../img/brends/5g.png);
                 &:hover {
-                    background-image: url(./../img/brends/5g.png);
+                    background-image: url(./../img/brends/5.png);
                 }
             }
 
             &:nth-child(6) {
-                background-image: url(./../img/brends/6.png);
+                background-image: url(./../img/brends/6g.png);
                 &:hover {
-                    background-image: url(./../img/brends/6g.png);
+                    background-image: url(./../img/brends/6.png);
                 }
             }
 
             &:nth-child(7) {
-                background-image: url(./../img/brends/7.png);
+                background-image: url(./../img/brends/7g.png);
                 &:hover {
-                    background-image: url(./../img/brends/7g.png);
+                    background-image: url(./../img/brends/7.png);
                 }
             }
 
             &:nth-child(8) {
-                background-image: url(./../img/brends/8.png);
+                background-image: url(./../img/brends/8g.png);
                 &:hover {
-                    background-image: url(./../img/brends/8g.png);
+                    background-image: url(./../img/brends/8.png);
                 }
             }
 
             &:nth-child(9) {
-                background-image: url(./../img/brends/9.png);
+                background-image: url(./../img/brends/9g.png);
                 &:hover {
-                    background-image: url(./../img/brends/9g.png);
+                    background-image: url(./../img/brends/9.png);
                 }
             }
 
             &:nth-child(10) {
-                background-image: url(./../img/brends/10.png);
+                background-image: url(./../img/brends/10g.png);
                 &:hover {
-                    background-image: url(./../img/brends/10g.png);
+                    background-image: url(./../img/brends/10.png);
                 }
             }
 
             &:nth-child(11) {
-                background-image: url(./../img/brends/11.png);
+                background-image: url(./../img/brends/11g.png);
                 &:hover {
-                    background-image: url(./../img/brends/11g.png);
+                    background-image: url(./../img/brends/11.png);
                 }
             }
 
             &:nth-child(12) {
-                background-image: url(./../img/brends/12.png);
+                background-image: url(./../img/brends/12g.png);
                 &:hover {
-                    background-image: url(./../img/brends/12g.png);
+                    background-image: url(./../img/brends/12.png);
                 }
             }
 
             &:nth-child(13) {
-                background-image: url(./../img/brends/13.png);
+                background-image: url(./../img/brends/13g.png);
                 &:hover {
-                    background-image: url(./../img/brends/13g.png);
+                    background-image: url(./../img/brends/13.png);
                 }
             }
 
             &:nth-child(14) {
-                background-image: url(./../img/brends/14.png);
+                background-image: url(./../img/brends/14g.png);
                 &:hover {
-                    background-image: url(./../img/brends/14g.png);
+                    background-image: url(./../img/brends/14.png);
                 }
             }
 
             &:nth-child(15) {
-                background-image: url(./../img/brends/15.png);
+                background-image: url(./../img/brends/15g.png);
                 &:hover {
-                    background-image: url(./../img/brends/15g.png);
+                    background-image: url(./../img/brends/15.png);
                 }
             }
 
             &:nth-child(16) {
-                background-image: url(./../img/brends/16.png);
+                background-image: url(./../img/brends/16g.png);
                 &:hover {
-                    background-image: url(./../img/brends/16g.png);
+                    background-image: url(./../img/brends/16.png);
                 }
             }
 
             &:nth-child(17) {
-                background-image: url(./../img/brends/17.png);
+                background-image: url(./../img/brends/17g.png);
                 &:hover {
-                    background-image: url(./../img/brends/17g.png);
+                    background-image: url(./../img/brends/17.png);
                 }
             }
 
             &:nth-child(18) {
-                background-image: url(./../img/brends/18.png);
+                background-image: url(./../img/brends/18g.png);
                 &:hover {
-                    background-image: url(./../img/brends/18g.png);
+                    background-image: url(./../img/brends/18.png);
                 }
             }
 
             &:nth-child(19) {
-                background-image: url(./../img/brends/19.png);
+                background-image: url(./../img/brends/19g.png);
                 &:hover {
-                    background-image: url(./../img/brends/19g.png);
+                    background-image: url(./../img/brends/19.png);
                 }
             }
 
             &:nth-child(20) {
-                background-image: url(./../img/brends/20.png);
+                background-image: url(./../img/brends/20g.png);
                 &:hover {
-                    background-image: url(./../img/brends/20g.png);
+                    background-image: url(./../img/brends/20.png);
                 }
             }
 
             &:nth-child(21) {
-                background-image: url(./../img/brends/21.png);
+                background-image: url(./../img/brends/21g.png);
                 &:hover {
-                    background-image: url(./../img/brends/21g.png);
+                    background-image: url(./../img/brends/21.png);
                 }
             }
 
             &:nth-child(22) {
-                background-image: url(./../img/brends/22.png);
+                background-image: url(./../img/brends/22g.png);
                 &:hover {
-                    background-image: url(./../img/brends/22g.png);
+                    background-image: url(./../img/brends/22.png);
                 }
             }
 
             &:nth-child(23) {
-                background-image: url(./../img/brends/23.png);
+                background-image: url(./../img/brends/23g.png);
                 &:hover {
-                    background-image: url(./../img/brends/23g.png);
+                    background-image: url(./../img/brends/23.png);
                 }
             }
 
             &:nth-child(24) {
-                background-image: url(./../img/brends/24.png);
+                background-image: url(./../img/brends/24g.png);
                 &:hover {
-                    background-image: url(./../img/brends/24g.png);
+                    background-image: url(./../img/brends/24.png);
                 }
             }
-
-            // img {
-            //     height: 9rem;
-            //     width: 20rem;
-            //     object-fit: contain;
-            // }
-
-            // svg {
-            //     height: 9rem;
-            //     width: 20rem;
-            //     stroke: green;
-            //     fill: green;
-
-            // }
 
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
-
-
-                svg {
-                    stroke: red;
-                    fill: red;
-                }
             }
     }
         

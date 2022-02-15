@@ -138,17 +138,22 @@
         height: 33rem;
         padding: 3rem;
         background: #F9F9F9;
-        z-index: -2;
+        cursor: pointer;
+        transition: 0.7s;
         position: relative;
 
         &:not(:last-child) {
             margin-right: 7.55rem;
         }
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__card-background {
         position: absolute;
-        z-index: -1;
+        // z-index: -1;
         top: 0;
         right: 0;
         height: 33.5rem;
@@ -205,8 +210,6 @@
     .container {
         margin: 0 3rem 0 18rem;
         width: 170rem;
-        // margin-left: 18rem;
-        // margin-right: 3rem;
     }
 
     &__inner {
@@ -275,9 +278,14 @@
         font-size: 1.8rem;
         font-weight: 400;
         color: #292729;
+        display: block;
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
+        }
+
+        &.e-mail {
+            color: #FFBC3A;
         }
     }
 
@@ -300,11 +308,6 @@
     &__photo-pipl-slider {
         height: 36rem;
         width: 36rem;
-    }
-
-    &__photo-wrap {
-        // width: 36rem;
-
     }
 
     &__photo-slide {
@@ -388,39 +391,6 @@
         &:not(:last-child) {
             margin-bottom: 2.5rem;
         }
-    }
-
-    &__total {
-        display: flex;
-    }
-
-    &__total-wrap {
-        margin-right: 5.6rem;
-    }
-
-    &__total-title {
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #434248;
-        margin-bottom: 0.8rem;
-    }
-
-    &__number {
-        font-size: 2.5rem;
-        font-weight: 600;
-        color: #434248;
-        margin-right: 1.5rem;
-    }
-
-    &__stars {
-        display: flex;
-        align-items: center;
-    }
-
-    &__star {
-        width: 14rem;
-        height: 2rem;
-        object-fit: contain;
     }
 
     &__slider {
@@ -563,7 +533,5 @@
     &__slide-controll {
         display: flex;
         width: 25rem;
-        margin-right: 6rem;
-        margin-left: auto;
     }
 }

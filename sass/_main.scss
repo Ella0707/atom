@@ -445,7 +445,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        transition: 0.8s;
+        transition: 1.4s;
 
         &:hover {
 
@@ -575,6 +575,8 @@
 
     &__content {
         display: flex;
+        overflow: hidden;
+
     }
 
     &__slider {
@@ -594,22 +596,18 @@
     &__slide-start {
         border: 1px solid #E4E4E4;
         padding: 5rem 5rem 6.6rem 5rem;
-        transition: 0.8s;
+        transition: 1.2s;
 
         @media (min-width: 48em) {
             &:hover {
-                // width: 55.2rem;
-                // height: 49.4rem;
                 opacity: 1;
-                transform: scale(1.02);
+                transform: scale(1.1);
                 box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
-                padding: 5.5rem 4.2rem 4.2rem 3.2rem;
                 border: none;
                 background-color: #ffffff;
     
                 position: absolute;
                 top: -3rem;
-                left: -4.5rem;
                 z-index: 10;
     
                 .services__slide-link-hover {
@@ -622,11 +620,17 @@
     
                 .services__slide-subtitle {
                     margin-bottom: 3.5rem;
-                    width: 90%;
                 }
     
                 .services__img-bg {
                     display: block;
+                }
+
+                .services__slide-img-wrap {
+                    svg {
+                        fill: $brendColor;
+                        stroke: $brendColor;
+                    }
                 }
             }
             
@@ -637,10 +641,13 @@
         width: 10.8rem;
         height: 10.8rem;
         margin-bottom: 5rem;
+        transition: 0.8s;
 
         svg {
-            fill: $brendColor;
-            stroke: $brendColor;
+            width: 10.8rem;
+            height: 10.8rem;
+            fill: #E1E1E1;
+            stroke: #E1E1E1;
         }
     }
 
@@ -936,7 +943,6 @@
 .clients {
 
     margin-bottom: 22.5rem;
-    overflow: hidden;
     
     &__title-wrap {
         display: flex;
@@ -954,26 +960,32 @@
     }
 
     &__content {
-        position: relative;
+        // position: relative;
     }
     
 
     &__control-wrap {
         display: flex;
-        position: absolute;
-        top: -15rem;
-        right: 0;
+        // position: absolute;
+        // top: -15rem;
+        // right: 0;
     }
     
 
     &__pagination {
     margin-right: 5rem;
     font-size: 1.8rem;
+    flex-shrink: 0;
+    }
+
+    &__content {
+        overflow: hidden;
     }
 
     &__content-wrap {
         display: inline-flex;
         align-items: center;
+        // overflow: hidden;
     }
 
     &__slide-img {

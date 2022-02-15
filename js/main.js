@@ -1,3 +1,4 @@
+
 // каталог стрелки
 $(".arrow-custom").click(function(e) {
     e.preventDefault();
@@ -24,8 +25,6 @@ $(".card-product__about-item").click(function(e) {
     $(".card-product__about-item").removeClass('active');
     $(this).addClass('active');
 })
-
-
 
 
 
@@ -199,7 +198,7 @@ new Swiper('.services__slider', {
     breakpoints: {
 
         769: {
-            slidesPerView: 3.5,
+            slidesPerView: 3,
             spaceBetween: 0,
         }
     }
@@ -266,7 +265,7 @@ new Swiper('.clients__content', {
     },
 
     pagination: {
-        el: '.clients__pagination',
+        el: '.cclients__pagination',
         type: "fraction",
 
         formatFractionCurrent: function (number) {
@@ -493,5 +492,15 @@ document.querySelector('.tab-btn').click();
 
 
 
-
-
+$(document).ready(function() {
+    var margin = 100; // переменная для контроля докрутки
+    $("a").click(function() { // условия, для всех ссылок или для конкретных
+       $("html, body").animate({
+          scrollTop: $($(this).attr("href")).offset().top-margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+       }, {
+          duration: 1600, // тут можно контролировать скорость
+          easing: "swing"
+       });
+       return false;
+    });
+ });

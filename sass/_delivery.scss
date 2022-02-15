@@ -76,11 +76,62 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;
-
         border: 1px solid #E4E4E4;
-        border-collapse: collapse;
+        background-color: #ffffff;
         transition: 1s;
+        cursor: pointer;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50% center;
+
+        &:nth-child(1) {
+            background-image: url(./../img/delivery1c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_1.png);
+            }
+        }
+
+        &:nth-child(2) {
+            background-image: url(./../img/delivery2c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_7.png);
+            }
+        }
+
+        &:nth-child(3) {
+            background-image: url(./../img/delivery3c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_6.png);
+            }
+        }
+
+        &:nth-child(4) {
+            background-image: url(./../img/delivery4c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_5.png);
+            }
+        }
+
+        &:nth-child(5) {
+            background-image: url(./../img/delivery5c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_4.png);
+            }
+        }
+
+        &:nth-child(6) {
+            background-image: url(./../img/delivery6c.png);
+
+            &:hover {
+                background-image: url(./../img/delivery_3.png);
+            }
+        }
 
         &.pickup {
             flex-direction: column;
@@ -97,12 +148,6 @@
             }
         }
 
-        img {
-            height: 8rem;
-            width: 16rem;
-            object-fit: contain;
-        }
-
         &:hover {
             transform: scale(1.1);
             box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
@@ -117,7 +162,7 @@
     
     &__information-wrap {
     display: block;
-    width: 19rem;
+    width: 21rem;
 
     &:not(:last-child) {
         margin-right: 7.1rem;
@@ -138,21 +183,22 @@
 
         margin-right: 1.4rem;
 
-        img {
-            height: 100%;
-            object-fit: contain;
+        svg {
+            width: 2.4rem;
+            height: 2.9rem;
+            stroke: #FFBC3A;
         }
     }
     
     &__information-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: rgba(41, 39, 41, 1);
     
     }
     
     &__information-bottom {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 400;
         color: rgba(41, 39, 41, 1);
 
