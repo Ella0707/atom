@@ -3,7 +3,20 @@
         height: 41.7rem;
     overflow: hidden;
     border: 1px solid #E4E4E4;
+    background-color: #ffffff;
     position: relative;
+    transition: 0.8s;
+
+
+    @media (min-width: 48em) {
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0rem 4rem 10rem rgb(27 36 49 / 5%);
+            position: relative;
+            z-index: 1;
+        }
+    }
+  
 
     
 
@@ -11,6 +24,8 @@
     &__wrap {
         // width: 29.3rem;
         // height: 41.7rem;
+
+     
 
     }
    
@@ -24,6 +39,8 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+
+      
     }
    
     

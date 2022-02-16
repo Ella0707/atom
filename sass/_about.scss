@@ -146,8 +146,10 @@
             margin-right: 7.55rem;
         }
 
-        &:hover {
-            transform: scale(1.1);
+        @media (min-width: 48em) {
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -463,7 +465,6 @@
         position: relative;
         padding: 18.5rem 2rem 2rem 2rem;
         background: $brendColor;
-        z-index: -1;
 
         &::before {
             content: "";

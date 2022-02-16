@@ -154,25 +154,25 @@
     }
     
     &__description-button {
-    width: 27.1rem;
-    height: 7.9rem;
+    width: 23rem;
+    height: 6.5rem;
     background-color: $brendColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.79rem 0 3.3rem;
-    margin-right: 9rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin-right: 11rem;
     }
     
     &__description-button-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #ffffff;
     }
     
     &__description-button-arrow {
-        width: 4.48rem;
-        height: 4.45rem;
+        width: 4rem;
+        height: 4rem;
         background: rgba(255, 255, 255, 0.24);
 
         display: flex;
@@ -245,6 +245,12 @@
             .card-product__about-item-title {
                 color: #292729;
             }
+
+            .card-product__about-item-img {
+                svg {
+                    fill: $brendColor;
+                }
+            }
         }
     }
     
@@ -253,9 +259,10 @@
         height: 4rem;
         margin-bottom: 2.2rem;
 
-        img {
-            height: 100%;
-            object-fit: contain;
+        svg {
+            width: 4rem;
+            height: 4rem;
+            fill: #737373;
         }
     
     }

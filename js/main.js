@@ -20,7 +20,7 @@ $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
 
-$(".card-product__about-item").click(function(e) {
+$(".card-product__about-item").hover(function(e) {
     e.preventDefault();
     $(".card-product__about-item").removeClass('active');
     $(this).addClass('active');
@@ -129,9 +129,9 @@ new Swiper('.banner__slider', {
 
     slidesPerView: 1,
     speed: 1500,
-    autoplay: {
-        delay: 5000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
     effect: "fade",
     fadeEffect: {
         crossFade: true
@@ -161,7 +161,9 @@ new Swiper('.banner__slider', {
 
     breakpoints: {
         769: {
-            verticalSwiping: false,
+            // slidesPerView: 1.35,
+
+            // verticalSwiping: false,
         }
     }
 });
@@ -265,7 +267,7 @@ new Swiper('.clients__content', {
     },
 
     pagination: {
-        el: '.cclients__pagination',
+        el: '.clients__pagination',
         type: "fraction",
 
         formatFractionCurrent: function (number) {

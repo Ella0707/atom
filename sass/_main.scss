@@ -163,7 +163,42 @@
 }
 
 
+// margin-bottom: 12.3rem;
+// overflow: hidden;
+// height: 65.7rem;
 
+// &__slider {
+//     height: 100%;
+// }
+
+
+// &__slide {
+//     position: relative;
+
+//     img {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         height: 100%;
+//         object-fit: cover;
+//     }
+
+//     &.swiper-slide-active {
+
+//         // img {
+//         //     width: 100%;
+//         // }
+//     }
+
+//     &.swiper-slide-next {
+       
+//         // img {
+//         //     width: 50rem;
+//         // }
+//     }
+// }
 
 
 .banner {
@@ -943,6 +978,11 @@
 .clients {
 
     margin-bottom: 22.5rem;
+
+    &__inner {
+        overflow: hidden;
+        // position: relative;
+    }
     
     &__title-wrap {
         display: flex;
@@ -960,15 +1000,16 @@
     }
 
     &__content {
-        // position: relative;
+        position: relative;
     }
     
 
     &__control-wrap {
         display: flex;
-        // position: absolute;
-        // top: -15rem;
-        // right: 0;
+        position: absolute;
+        top: -14rem;
+        right: 18rem;
+        width: 9rem;
     }
     
 
@@ -979,7 +1020,7 @@
     }
 
     &__content {
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     &__content-wrap {

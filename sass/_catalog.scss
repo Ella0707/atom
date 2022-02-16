@@ -101,7 +101,13 @@
                     font-weight: 400;
                     color: rgba(255, 255, 255, 1);
                 }
-        
+
+                .catalog__option-img {
+                    svg {
+                        fill: rgba(255, 255, 255, 1);
+                        stroke: rgba(255, 255, 255, 1);
+                    }
+                }
             }
     }
 
@@ -112,8 +118,11 @@
 
         margin-bottom: 2.2rem;
 
-        img {
-            height: 100%;
+        svg {
+            width: 6.6rem;
+            height: 5.7rem;
+            fill: #E1E1E1;
+            stroke: #E1E1E1;
         }
     }
     
@@ -205,9 +214,14 @@
         &:hover {
             background-color: rgba(241, 241, 241, 1);
             padding: 1.5rem 1.5rem 1.35rem 1.5rem;
-        }
 
-       
+            .catalog__select-link {
+                span {
+                    color: $brendColor;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
 

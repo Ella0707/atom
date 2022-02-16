@@ -67,6 +67,12 @@
         justify-content: center;
         width: 100%;
         background-color: $brendColor;
+
+        @media (min-width: 48em) {
+            position: sticky;
+            z-index: 10;
+            top: 0;
+        }
     }
     
     &__toggle {

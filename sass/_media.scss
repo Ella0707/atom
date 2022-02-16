@@ -861,6 +861,7 @@
             position: absolute;
             top: auto;
             bottom: 0;
+            right: 0;
             width: 100%;
             justify-content: space-between;
         }
@@ -1201,7 +1202,7 @@
         &__select-list {
             font-size: 3.2rem;
             margin-bottom: 2rem;
-            display: none;
+            // display: none;
 
             &.grid-display {
                 grid-template: 1fr/1fr;
@@ -3258,10 +3259,7 @@
             width: 50%;
             height: 17.3rem;
 
-            img {
-                height: 7rem;
-                width: 13rem;
-            }
+            background-size: 60%;
 
             &:nth-child(n + 7) {
                 display: none;
@@ -3351,12 +3349,9 @@
         &__box {
             width: 34.5rem;
             height: 17.15rem;
+            background-size: 50%;
 
-            img {
-                height: 8rem;
-                width: 16rem;
-                object-fit: contain;
-            }
+           
 
 
             &.pickup {
@@ -3414,9 +3409,9 @@
 
             margin-right: 1.4rem;
 
-            img {
-                height: 100%;
-                object-fit: contain;
+            svg {
+                width: 4.4rem;
+                height: 4.4rem;
             }
         }
 
@@ -3529,7 +3524,12 @@
         &__title {
             font-size: 6rem;
 
-            margin-bottom: 4.5rem;
+            margin-bottom: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 3.2rem;
+            margin-bottom: 2rem;
         }
 
         &__input-wrap {

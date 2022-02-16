@@ -1177,6 +1177,9 @@ input[type=number] {
 .clients {
   margin-bottom: 22.5rem;
 }
+.clients__inner {
+  overflow: hidden;
+}
 .clients__title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,19 +1197,23 @@ input[type=number] {
   font-weight: 600;
   color: #292729;
 }
+.clients__content {
+  position: relative;
+}
 .clients__control-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: -14rem;
+  right: 18rem;
+  width: 9rem;
 }
 .clients__pagination {
   margin-right: 5rem;
   font-size: 1.8rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-.clients__content {
-  overflow: hidden;
 }
 .clients__content-wrap {
   display: -webkit-inline-box;
@@ -1754,13 +1761,20 @@ input[type=number] {
   font-weight: 400;
   color: white;
 }
+.catalog__option.active .catalog__option-img svg {
+  fill: white;
+  stroke: white;
+}
 .catalog__option-img {
   width: 6.6rem;
   height: 5.7rem;
   margin-bottom: 2.2rem;
 }
-.catalog__option-img img {
-  height: 100%;
+.catalog__option-img svg {
+  width: 6.6rem;
+  height: 5.7rem;
+  fill: #E1E1E1;
+  stroke: #E1E1E1;
 }
 .catalog__option-title {
   font-size: 2rem;
@@ -1842,6 +1856,10 @@ input[type=number] {
 .catalog__select-item:hover {
   background-color: #f1f1f1;
   padding: 1.5rem 1.5rem 1.35rem 1.5rem;
+}
+.catalog__select-item:hover .catalog__select-link span {
+  color: #285f5b;
+  font-weight: 500;
 }
 .catalog__select-link {
   display: -webkit-box;
@@ -2083,8 +2101,8 @@ input[type=number] {
   padding-left: 0.5rem;
 }
 .card-product__description-button {
-  width: 27.1rem;
-  height: 7.9rem;
+  width: 23rem;
+  height: 6.5rem;
   background-color: #285f5b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2095,17 +2113,17 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1.79rem 0 3.3rem;
-  margin-right: 9rem;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-right: 11rem;
 }
 .card-product__description-button-title {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: #ffffff;
 }
 .card-product__description-button-arrow {
-  width: 4.48rem;
-  height: 4.45rem;
+  width: 4rem;
+  height: 4rem;
   background: rgba(255, 255, 255, 0.24);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,15 +2201,18 @@ input[type=number] {
 .card-product__about-item.active .card-product__about-item-title {
   color: #292729;
 }
+.card-product__about-item.active .card-product__about-item-img svg {
+  fill: #285f5b;
+}
 .card-product__about-item-img {
   width: 4rem;
   height: 4rem;
   margin-bottom: 2.2rem;
 }
-.card-product__about-item-img img {
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.card-product__about-item-img svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #737373;
 }
 .card-product__about-item-title {
   font-size: 1.8rem;
@@ -2731,7 +2752,20 @@ input[type=number] {
   height: 41.7rem;
   overflow: hidden;
   border: 1px solid #E4E4E4;
+  background-color: #ffffff;
   position: relative;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+@media (min-width: 48em) {
+  .product-card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
+            box-shadow: 0rem 4rem 10rem rgba(27, 36, 49, 0.05);
+    position: relative;
+    z-index: 1;
+  }
 }
 .product-card__slide {
   width: 29.3rem;
@@ -3017,9 +3051,11 @@ input[type=number] {
 .advantages__card:not(:last-child) {
   margin-right: 7.55rem;
 }
-.advantages__card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (min-width: 48em) {
+  .advantages__card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 .advantages__card-background {
   position: absolute;
@@ -3329,7 +3365,6 @@ input[type=number] {
   position: relative;
   padding: 18.5rem 2rem 2rem 2rem;
   background: #285f5b;
-  z-index: -1;
 }
 .reviews__slide-content::before {
   content: "";
@@ -3571,10 +3606,14 @@ input[type=number] {
   width: 100%;
   background-color: #ffffff;
   border: 1px solid #E4E4E4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .product__hover-box {
   display: none;
   width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .product__hover-box a {
   width: 23.2rem;
@@ -3592,6 +3631,8 @@ input[type=number] {
   font-size: 1.8rem;
   font-weight: 400;
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .product:hover .product__hover-box {
   display: -webkit-box;
@@ -3609,6 +3650,8 @@ input[type=number] {
   -webkit-box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
           box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
   height: 50rem;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 .product__box-slide {
   padding: 3rem;
@@ -3885,6 +3928,13 @@ input[type=number] {
           justify-content: center;
   width: 100%;
   background-color: #285f5b;
+}
+@media (min-width: 48em) {
+  .service__toggle-wrap {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+  }
 }
 .service__toggle {
   width: 34.6rem;
@@ -4210,11 +4260,13 @@ input[type=number] {
 .brends__brend-box:nth-child(24):hover {
   background-image: url(./../img/brends/24.png);
 }
-.brends__brend-box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
-          box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+@media (min-width: 48em) {
+  .brends__brend-box:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+            box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+  }
 }
 .brends__link {
   font-size: 1.8rem;
@@ -4376,11 +4428,13 @@ input[type=number] {
   width: 3.2rem;
   height: 4.5rem;
 }
-.delivery__box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
-          box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+@media (min-width: 48em) {
+  .delivery__box:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+            box-shadow: 0px 10px 60px rgba(41, 39, 41, 0.08);
+  }
 }
 .delivery__informations {
   display: -webkit-box;
@@ -4613,7 +4667,13 @@ input[type=number] {
   font-size: 4rem;
   font-weight: 600;
   color: #292729;
-  margin-bottom: 3.8rem;
+  margin-bottom: 2rem;
+}
+.popup__subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #292729;
+  margin-bottom: 1.8rem;
 }
 .popup__input-wrap {
   display: -webkit-box;
@@ -6170,6 +6230,7 @@ input[type=number] {
     position: absolute;
     top: auto;
     bottom: 0;
+    right: 0;
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -6466,7 +6527,6 @@ input[type=number] {
   .catalog__select-list {
     font-size: 3.2rem;
     margin-bottom: 2rem;
-    display: none;
   }
   .catalog__select-list.grid-display {
     grid-template: 1fr/1fr;
@@ -8359,10 +8419,7 @@ input[type=number] {
   .brends__brend-box {
     width: 50%;
     height: 17.3rem;
-  }
-  .brends__brend-box img {
-    height: 7rem;
-    width: 13rem;
+    background-size: 60%;
   }
   .brends__brend-box:nth-child(n+7) {
     display: none;
@@ -8448,12 +8505,7 @@ input[type=number] {
   .delivery__box {
     width: 34.5rem;
     height: 17.15rem;
-  }
-  .delivery__box img {
-    height: 8rem;
-    width: 16rem;
-    -o-object-fit: contain;
-       object-fit: contain;
+    background-size: 50%;
   }
   .delivery__box.pickup {
     border: none;
@@ -8512,10 +8564,9 @@ input[type=number] {
             justify-content: center;
     margin-right: 1.4rem;
   }
-  .delivery__information-img img {
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+  .delivery__information-img svg {
+    width: 4.4rem;
+    height: 4.4rem;
   }
   .delivery__information-title {
     font-size: 3.6rem;
@@ -8614,7 +8665,11 @@ input[type=number] {
   }
   .popup__title {
     font-size: 6rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
+  }
+  .popup__subtitle {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
   }
   .popup__input-wrap {
     display: -webkit-box;

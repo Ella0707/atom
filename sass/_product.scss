@@ -19,11 +19,13 @@
         width: 100%;
         background-color: #ffffff;
         border: 1px solid #E4E4E4;
+        transition: 0.5s;
     }
 
     &__hover-box {
         display: none;
         width: 100%;
+        transition: 0.5s;
 
         
         a {
@@ -38,6 +40,7 @@
             font-size: 1.8rem;
             font-weight: 400;
             color: #fff;
+            transition: 0.5s;
         }
     }
 
@@ -52,7 +55,8 @@
         .product__content:hover {
             z-index: 2;
             box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
-         height: 50rem;
+            height: 50rem;
+            transform: scale(1.04);
 
         }
     }
@@ -192,6 +196,8 @@
 
                 font-size: 3rem;
             }
+
+          
         }
     
         &:hover {
@@ -206,8 +212,6 @@
                 z-index: 2;
                 box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
                 height: 80rem;
-
-    
             }
         }
     
