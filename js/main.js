@@ -287,7 +287,7 @@ new Swiper('.clients__content', {
     breakpoints: {
         769: {
             slidesPerView: 5,
-            spaceBetween: 183,
+            spaceBetween: 70,
         }
     }
 });
@@ -498,7 +498,7 @@ $(document).ready(function() {
     var margin = 100; // переменная для контроля докрутки
     $("a").click(function() { // условия, для всех ссылок или для конкретных
        $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top-margin+ "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+          scrollTop: $($(this).attr("href")).offset().top-margin+ "px" // .top+margin -  минус, если нужно увеличить отступ
        }, {
           duration: 1600, // тут можно контролировать скорость
           easing: "swing"
