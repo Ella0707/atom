@@ -4378,40 +4378,40 @@ input[type=number] {
   background-size: 50% center;
 }
 .delivery__box:nth-child(1) {
-  background-image: url(./../img/delivery1c.png);
-}
-.delivery__box:nth-child(1):hover {
   background-image: url(./../img/delivery_1.png);
 }
-.delivery__box:nth-child(2) {
-  background-image: url(./../img/delivery2c.png);
+.delivery__box:nth-child(1):hover {
+  background-image: url(./../img/delivery1c.png);
 }
-.delivery__box:nth-child(2):hover {
+.delivery__box:nth-child(2) {
   background-image: url(./../img/delivery_7.png);
 }
-.delivery__box:nth-child(3) {
-  background-image: url(./../img/delivery3c.png);
+.delivery__box:nth-child(2):hover {
+  background-image: url(./../img/delivery2c.png);
 }
-.delivery__box:nth-child(3):hover {
+.delivery__box:nth-child(3) {
   background-image: url(./../img/delivery_6.png);
 }
-.delivery__box:nth-child(4) {
-  background-image: url(./../img/delivery4c.png);
+.delivery__box:nth-child(3):hover {
+  background-image: url(./../img/delivery3c.png);
 }
-.delivery__box:nth-child(4):hover {
+.delivery__box:nth-child(4) {
   background-image: url(./../img/delivery_5.png);
 }
-.delivery__box:nth-child(5) {
-  background-image: url(./../img/delivery5c.png);
+.delivery__box:nth-child(4):hover {
+  background-image: url(./../img/delivery4c.png);
 }
-.delivery__box:nth-child(5):hover {
+.delivery__box:nth-child(5) {
   background-image: url(./../img/delivery_4.png);
 }
+.delivery__box:nth-child(5):hover {
+  background-image: url(./../img/delivery5c.png);
+}
 .delivery__box:nth-child(6) {
-  background-image: url(./../img/delivery6c.png);
+  background-image: url(./../img/delivery_3.png);
 }
 .delivery__box:nth-child(6):hover {
-  background-image: url(./../img/delivery_3.png);
+  background-image: url(./../img/delivery6c.png);
 }
 .delivery__box.pickup {
   -webkit-box-orient: vertical;

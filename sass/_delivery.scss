@@ -86,53 +86,59 @@
         background-size: 50% center;
 
         &:nth-child(1) {
-            background-image: url(./../img/delivery1c.png);
+            background-image: url(./../img/delivery_1.png);
 
             &:hover {
-                background-image: url(./../img/delivery_1.png);
+            background-image: url(./../img/delivery1c.png);
+
             }
         }
 
         &:nth-child(2) {
-            background-image: url(./../img/delivery2c.png);
+            background-image: url(./../img/delivery_7.png);
 
             &:hover {
-                background-image: url(./../img/delivery_7.png);
+            background-image: url(./../img/delivery2c.png);
+
             }
         }
 
         &:nth-child(3) {
-            background-image: url(./../img/delivery3c.png);
+            background-image: url(./../img/delivery_6.png);
 
             &:hover {
-                background-image: url(./../img/delivery_6.png);
+            background-image: url(./../img/delivery3c.png);
+
             }
         }
 
         &:nth-child(4) {
-            background-image: url(./../img/delivery4c.png);
+            background-image: url(./../img/delivery_5.png);
 
             &:hover {
-                background-image: url(./../img/delivery_5.png);
+            background-image: url(./../img/delivery4c.png);
+
             }
         }
 
         &:nth-child(5) {
-            background-image: url(./../img/delivery5c.png);
+            background-image: url(./../img/delivery_4.png);
 
             &:hover {
-                background-image: url(./../img/delivery_4.png);
+            background-image: url(./../img/delivery5c.png);
+
             }
         }
 
         &:nth-child(6) {
-            background-image: url(./../img/delivery6c.png);
+            background-image: url(./../img/delivery_3.png);
 
             &:hover {
-                background-image: url(./../img/delivery_3.png);
+            background-image: url(./../img/delivery6c.png);
+
             }
         }
-
+        
         &.pickup {
             flex-direction: column;
             
