@@ -58,7 +58,6 @@ $('.close-popup').click(function () {
 
 
 
-
   $('.catalog__select-title').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
@@ -120,6 +119,13 @@ const activitySlider = new Swiper('#activity-slider', {
       activitySlider.destroy();
     }
   }
+
+// Поиск
+  $(document).ready(function () {
+    $('.header__search').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
 
 
 
