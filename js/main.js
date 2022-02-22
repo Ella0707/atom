@@ -130,49 +130,91 @@ const activitySlider = new Swiper('#activity-slider', {
 
 
 // слайдеры
-new Swiper('.banner__slider', {
-    verticalSwiping: true,
+// new Swiper('.banner__slider', {
+//     verticalSwiping: true,
 
-    slidesPerView: 1,
-    speed: 1500,
-    // autoplay: {
-    //     delay: 5000,
+//     slidesPerView: 1,
+//     speed: 1500,
+//     // autoplay: {
+//     //     delay: 5000,
+//     // },
+//     // effect: "fade",
+//     // fadeEffect: {
+//     //     crossFade: true
+//     // },
+//     navigation: {
+//         nextEl: '.banner__arrow-next',
+//         prevEl: '.banner__arrow-prew',
+//     },
+
+//     pagination: {
+//         el: '.banner__pagination',
+//         type: "fraction",
+
+//         formatFractionCurrent: function (number) {
+//             if (number < 10) {
+//                 number = "0" + number;
+//             }
+//             return number;
+//         },
+//         formatFractionTotal: function (number) {
+//             if (number < 10) {
+//                 number = "0" + number;
+//             }
+//             return number;
+//         },
+//     },
+
+//     breakpoints: {
+//         769: {
+//             // slidesPerView: auto,
+
+//             // verticalSwiping: false,
+//         }
+//     }
+// });
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1.3,
+    grabCursor: true,
+    // loop: true,
+    // effect: "creative",
+    // creativeEffect: {
+    //   prev: {
+    //     shadow: true,
+    //     translate: [0, 0, -5],
+    //   },
+    //   next: {
+    //     translate: ["100%", 0, 0],
+    //   },
     // },
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true
-    },
+
     navigation: {
-        nextEl: '.banner__arrow-next',
-        prevEl: '.banner__arrow-prew',
-    },
+                nextEl: '.banner__arrow-next',
+                prevEl: '.banner__arrow-prev',
+            },
+        
+            pagination: {
+                el: '.banner__pagination',
+                type: "fraction",
+        
+                formatFractionCurrent: function (number) {
+                    if (number < 10) {
+                        number = "0" + number;
+                    }
+                    return number;
+                },
+                formatFractionTotal: function (number) {
+                    if (number < 10) {
+                        number = "0" + number;
+                    }
+                    return number;
+                },
+            },
+  });
 
-    pagination: {
-        el: '.banner__pagination',
-        type: "fraction",
 
-        formatFractionCurrent: function (number) {
-            if (number < 10) {
-                number = "0" + number;
-            }
-            return number;
-        },
-        formatFractionTotal: function (number) {
-            if (number < 10) {
-                number = "0" + number;
-            }
-            return number;
-        },
-    },
-
-    breakpoints: {
-        769: {
-            // slidesPerView: 1.35,
-
-            // verticalSwiping: false,
-        }
-    }
-});
 
 
 new Swiper('.services__slider', {
