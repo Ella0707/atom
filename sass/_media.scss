@@ -1147,7 +1147,7 @@
             &.active {
                 margin: 0;
                 width: 75rem;
-                height: 23.2rem;
+                // height: 23.2rem;
                 background-color: $brendColor;
                 left: 0;
                 right: 0;
@@ -1333,6 +1333,7 @@
             &__box-start {
                 padding: 3rem 2.3rem 1.5rem 3rem;
                 justify-content: flex-start;
+                background: #ffffff;
 
 
 
@@ -1993,7 +1994,7 @@
         }
 
         &__description-slider {
-            width: 47.3rem;
+            width: 100%;
             height: 38.4rem;
             margin: 0 auto;
             border: 1px solid #E4E4E4;
@@ -2008,7 +2009,7 @@
             width: 47.3rem;
             height: 38.4rem;
             margin: 0 auto;
-            padding: 5.5rem 5rem 4.5rem 5rem;
+            padding: 5.5rem 11rem 4.5rem 11rem;
 
 
 
@@ -2105,16 +2106,18 @@
 
         &__description-bottom {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
 
         }
 
         &__description-price {
-            font-size: 4.4rem;
-            width: 21.4rem;
+            font-size: 5.4rem;
             font-weight: 600;
             color: #232323;
+            align-self: flex-end;
+            margin-bottom: 5rem;
 
             sup {
                 font-size: 2.8rem;
@@ -2329,7 +2332,6 @@
 
         height: 38.4rem;
         margin-bottom: 7.8rem;
-        margin-top: 6.5rem;
 
         &__inner {
             height: 38.4rem;
@@ -2599,6 +2601,7 @@
 
         &__pipl-contact {
             font-size: 3rem;
+            // display: inline-block;
 
             &:not(:last-child) {
                 margin-bottom: 1.5rem;

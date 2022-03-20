@@ -154,8 +154,8 @@
     }
     
     &__description-button {
-    width: 23rem;
-    height: 6.5rem;
+    width: 21rem;
+    height: 5rem;
     background-color: $brendColor;
     display: flex;
     align-items: center;
@@ -165,14 +165,14 @@
     }
     
     &__description-button-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #ffffff;
     }
     
     &__description-button-arrow {
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
         background: rgba(255, 255, 255, 0.24);
 
         display: flex;

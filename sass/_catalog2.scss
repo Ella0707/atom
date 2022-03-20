@@ -49,10 +49,13 @@
 
     &__box-start {
         padding: 3rem 2.3rem 3rem 3rem;
+        background: rgba(#000000, 0.3);
 
 
         &:hover {
             padding: 3rem 2.3rem 3rem 3rem;
+            background-color: rgb(40, 95, 91);
+
 
             .categories__box-subtitle {
                 font-size: 1.3rem;

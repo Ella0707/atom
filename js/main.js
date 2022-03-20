@@ -130,92 +130,49 @@ const activitySlider = new Swiper('#activity-slider', {
 
 
 // слайдеры
-// new Swiper('.banner__slider', {
-//     verticalSwiping: true,
+new Swiper('.banner__slider', {
+    verticalSwiping: true,
 
-//     slidesPerView: 1,
-//     speed: 1500,
-//     // autoplay: {
-//     //     delay: 5000,
-//     // },
-//     // effect: "fade",
-//     // fadeEffect: {
-//     //     crossFade: true
-//     // },
-//     navigation: {
-//         nextEl: '.banner__arrow-next',
-//         prevEl: '.banner__arrow-prew',
-//     },
-
-//     pagination: {
-//         el: '.banner__pagination',
-//         type: "fraction",
-
-//         formatFractionCurrent: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//         formatFractionTotal: function (number) {
-//             if (number < 10) {
-//                 number = "0" + number;
-//             }
-//             return number;
-//         },
-//     },
-
-//     breakpoints: {
-//         769: {
-//             // slidesPerView: auto,
-
-//             // verticalSwiping: false,
-//         }
-//     }
-// });
-
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.3,
-    grabCursor: true,
-    // loop: true,
-    // effect: "creative",
-    // creativeEffect: {
-    //   prev: {
-    //     shadow: true,
-    //     translate: [0, 0, -5],
-    //   },
-    //   next: {
-    //     translate: ["100%", 0, 0],
-    //   },
-    // },
-
+    slidesPerView: 1,
+    speed: 1500,
+    autoplay: {
+        delay: 5000,
+    },
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
     navigation: {
-                nextEl: '.banner__arrow-next',
-                prevEl: '.banner__arrow-prev',
-            },
-        
-            pagination: {
-                el: '.banner__pagination',
-                type: "fraction",
-        
-                formatFractionCurrent: function (number) {
-                    if (number < 10) {
-                        number = "0" + number;
-                    }
-                    return number;
-                },
-                formatFractionTotal: function (number) {
-                    if (number < 10) {
-                        number = "0" + number;
-                    }
-                    return number;
-                },
-            },
-  });
+        nextEl: '.banner__arrow-next',
+        prevEl: '.banner__arrow-prew',
+    },
 
+    pagination: {
+        el: '.banner__pagination',
+        type: "fraction",
 
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
 
+    // breakpoints: {
+    //     769: {
+    //         // slidesPerView: auto,
+
+    //         // verticalSwiping: false,
+    //     }
+    // }
+});
 
 new Swiper('.services__slider', {
     slidesPerView: 1,
@@ -302,7 +259,6 @@ new Swiper('.distributor__photo', {
         clickable: true,
     },
 });
-
 
 
 new Swiper('.clients__content', {
@@ -398,12 +354,7 @@ new Swiper('.card-product__description-slider', {
 });
 
 
-
-
-
-
-
-  new Swiper('.product-card', {
+    new Swiper('.product-card', {
     slidesPerView: 1,
     speed: 800,
     spaceBetween: 0,
@@ -460,9 +411,9 @@ let imageSlider = new Swiper('.command__photo-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 800,
+    
     slidesPerGroup: 1,
     loop: true,
-
     breakpoints: {
         769: {
             slidesPerView: 1,
@@ -476,10 +427,10 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
     speed: 800,
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true
-    },
+    // effect: 'fade',
+    // fadeEffect: {
+    //   crossFade: true
+    // },
     loop: true,
     navigation: {
         prevEl: '.command__about-pipl-arrow-prev',
