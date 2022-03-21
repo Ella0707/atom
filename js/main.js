@@ -134,7 +134,7 @@ new Swiper('.banner__slider', {
     verticalSwiping: true,
 
     slidesPerView: 1,
-    speed: 1500,
+    speed: 1000,
     autoplay: {
         delay: 5000,
     },
@@ -178,6 +178,7 @@ new Swiper('.services__slider', {
     slidesPerView: 1,
     spaceBetween: 15,
     slidesOffsetAfter: 0,
+    loop: true,
     speed: 800,
     navigation: {
         prevEl: '.services__arrow-prev',
@@ -219,6 +220,7 @@ new Swiper('.distributor__our-distr-slider', {
     slidesPerView: 1,
     speed: 800,
     spaceBetween: 30,
+    loop: true,
     navigation: {
         prevEl: '.distributor__arrow-prev',
         nextEl: '.distributor__arrow-next',
@@ -253,6 +255,7 @@ new Swiper('.distributor__our-distr-slider', {
 new Swiper('.distributor__photo', {
     slidesPerView: 1,
     speed: 800,
+    loop: true,
 
     pagination: {
         el: '.distributor__photo-pagin',
@@ -265,6 +268,7 @@ new Swiper('.clients__content', {
     slidesPerView: 1,
     spaceBetween: 35,
     speed: 800,
+    loop: true,
     navigation: {
         prevEl: '.clients__arrow-prev',
         nextEl: '.clients__arrow-next',
@@ -323,6 +327,7 @@ new Swiper('.product-card', {
 new Swiper('.card-product__description-slider', {
     slidesPerView: 1,
     speed: 800,
+    loop: true,
 
     navigation: {
         prevEl: '.card-product__arrow-prev',
@@ -427,10 +432,10 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 10,
     speed: 800,
-    // effect: 'fade',
-    // fadeEffect: {
-    //   crossFade: true
-    // },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     loop: true,
     navigation: {
         prevEl: '.command__about-pipl-arrow-prev',

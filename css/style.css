@@ -310,7 +310,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 15.5rem;
+  margin-right: 5rem;
 }
 .header__nav-item {
   font-size: 1.7rem;
@@ -351,7 +351,7 @@ input[type=number] {
           align-items: center;
 }
 .header__search {
-  width: 20rem;
+  width: 32rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,7 +360,7 @@ input[type=number] {
           align-items: center;
 }
 .header__search-input {
-  width: 17rem;
+  width: 28rem;
   font-size: 1.8rem;
 }
 .header__search-input::-webkit-input-placeholder {
@@ -737,8 +737,8 @@ input[type=number] {
           justify-content: center;
   cursor: pointer;
   background: transparent;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 .banner-main__accordian-item img {
   position: absolute;
@@ -771,24 +771,25 @@ input[type=number] {
   display: block;
 }
 .banner-main__text {
-  width: 35rem;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  width: 100%;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 .banner-main__subtitle {
   font-size: 1.8rem;
   font-weight: 600;
   color: #FFBC3A;
   margin-bottom: 2rem;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
 }
 .banner-main__title {
-  font-size: 3.2rem;
+  font-size: 5rem;
   font-weight: 600;
   color: #ffffff;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+  width: 100%;
 }
 .banner-main__hover-wrap {
   display: none;
@@ -3102,7 +3103,7 @@ input[type=number] {
   }
   .product-card__slide {
     height: 63.6rem;
-    padding: 4.2rem 12rem 4.7rem 12rem;
+    padding: 4.2rem 10rem 4.7rem 10rem;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -3112,7 +3113,7 @@ input[type=number] {
     margin-bottom: 1.5rem;
   }
   .product-card__subtitle {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin-bottom: 2.2rem;
   }
   .product-card__img {
@@ -3139,7 +3140,7 @@ input[type=number] {
   }
   .product-card__pagination.pagination {
     top: 83%;
-    left: 13rem;
+    left: 10rem;
   }
   .product-card__pagination .swiper-pagination-bullet-active {
     width: 2.5rem;
@@ -3922,8 +3923,8 @@ input[type=number] {
   -webkit-box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
           box-shadow: 0rem 3.4rem 8rem rgba(41, 39, 41, 0.1);
   height: 50rem;
-  -webkit-transform: scale(1.17, 1.05);
-          transform: scale(1.17, 1.05);
+  -webkit-transform: scale(1.13, 1.05);
+          transform: scale(1.13, 1.05);
 }
 .product__box-slide {
   padding: 3rem;
@@ -4062,7 +4063,7 @@ input[type=number] {
             transform: none;
   }
   .product__box-slide {
-    padding: 4rem 13rem 3rem 13rem;
+    padding: 4rem 10rem 3rem 10rem;
   }
   .product__brend-img {
     width: 8rem;
@@ -4081,7 +4082,7 @@ input[type=number] {
     margin-bottom: 1.5rem;
   }
   .product__subtitle {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     font-weight: 400;
     color: #9D9D9D;
     margin-bottom: 2.2rem;
@@ -4258,7 +4259,7 @@ input[type=number] {
   margin-bottom: 11rem;
 }
 .service__item-photo-block {
-  height: 40rem;
+  height: 35rem;
   position: relative;
   margin-bottom: 9rem;
   display: -webkit-box;
@@ -4292,8 +4293,8 @@ input[type=number] {
   left: 0;
 }
 .service__item-title-wrap {
-  width: 90.5rem;
-  height: 20rem;
+  width: 70rem;
+  height: 13rem;
   padding: 2rem 8rem 2rem 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4301,7 +4302,7 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #285f5b;
   line-height: 1.25;
@@ -6543,6 +6544,9 @@ input[type=number] {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .clients__control-wrap.desctop {
+    display: none;
+  }
   .clients__pagination {
     width: auto;
     margin-right: 0;
@@ -8089,9 +8093,19 @@ input[type=number] {
     position: relative;
     z-index: 100;
   }
-  .command-about-pipl-slide {
+  .command__about-pipl-slide {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .command__pipl-name {
     font-size: 3.6rem;

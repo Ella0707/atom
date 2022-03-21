@@ -116,7 +116,7 @@
     }
     
     &__item-photo-block {
-        height: 40rem;
+        height: 35rem;
         position: relative;
         margin-bottom: 9rem;
 
@@ -149,14 +149,14 @@
     }
     
     &__item-title-wrap {
-        width: 90.5rem;
-        height: 20rem;
+        width: 70rem;
+        height: 13rem;
         padding: 2rem 8rem 2rem 8rem;
 
         display: flex;
         align-items: center;
 
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 600;
         color: $brendColor;
         line-height: 1.25;

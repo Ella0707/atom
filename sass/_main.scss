@@ -85,7 +85,7 @@
     &__nav-list {
         display: flex;
         align-items: center;
-        margin-right: 15.5rem;
+        margin-right: 5rem;
     }
 
     &__nav-item {
@@ -128,13 +128,13 @@
     }
 
     &__search {
-        width: 20rem;
+        width: 32rem;
         display: flex;
         align-items: center;
     }
 
     &__search-input {
-        width: 17rem;
+        width: 28rem;
         font-size: 1.8rem;
 
         &::placeholder {
@@ -547,7 +547,7 @@ overflow: hidden;
         cursor: pointer;
         background: transparent;
 
-        transition: 0.8s;
+        transition: 1.3s;
 
         img {
             position: absolute;
@@ -591,8 +591,8 @@ overflow: hidden;
 
     
     &__text {
-        width: 35rem;
-        transition: 0.7s;
+        width: 100%;
+        transition: 1.3s;
     }
     
     &__subtitle {
@@ -600,38 +600,33 @@ overflow: hidden;
         font-weight: 600;
         color: $accentColor;
         margin-bottom: 2rem;
-        transition: 0.8s;
+        transition: 1.3s;
     
     }
     
     &__title {
-        font-size: 3.2rem;
+        font-size: 5rem;
         font-weight: 600;
         color: #ffffff;
-        transition: 0.8s;
+        transition: 1.3s;
+        width: 100%;
     }
 
     &__hover-wrap {
         display: none;
-
     }
-
     
     &__more-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 4rem;
-
-
-    
     }
     
     &__more {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
     }
     
     &__more-arrow {
@@ -651,14 +646,12 @@ overflow: hidden;
             position: relative;
             z-index: 10;
         }
-    
     }
     
     &__more-text {
         font-size: 1.6rem;
         font-weight: 600;
         color: #ffffff;
-    
     }
     
     &__pagination {
@@ -673,7 +666,6 @@ overflow: hidden;
             font-size: 4rem;
             margin-right: 1rem;
         }
-    
     }
 
     
@@ -704,7 +696,6 @@ overflow: hidden;
             transform: translateY(-50%);
             z-index: 10;
         }
-    
     }
 }
 
@@ -719,7 +710,6 @@ overflow: hidden;
         display: flex;
         align-items: flex-end;
         margin-bottom: 7rem;
-
     }
 
     &__title {
@@ -771,7 +761,6 @@ overflow: hidden;
         &:not(:nth-child(n+4)) {
             margin-bottom: 4rem;
         }
-
     }
 
     &__box-start {
