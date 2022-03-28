@@ -91,6 +91,8 @@ const activitySlider = new Swiper('#activity-slider', {
     speed: 800,
     slidesPerColumn: 2,
     spaceBetween: 30,
+    loop: true,
+    // loopPreventsSlide: true,
     navigation: {
       nextEl: '.categories__arrow-next',
       prevEl: '.categories__arrow-prev',
@@ -294,7 +296,7 @@ new Swiper('.clients__content', {
 
     breakpoints: {
         769: {
-            slidesPerView: 5,
+            slidesPerView: 1,
             spaceBetween: 70,
         }
     }
