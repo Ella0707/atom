@@ -85,12 +85,17 @@
         background-repeat: no-repeat;
         background-size: 50% center;
 
+        &:hover {
+            position: relative;
+            z-index: 10;
+        }
+
         &:nth-child(1) {
             background-image: url(./../img/delivery_1.png);
 
             &:hover {
             background-image: url(./../img/delivery1c.png);
-
+            
             }
         }
 

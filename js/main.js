@@ -20,11 +20,12 @@ $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
 
-$(".card-product__about-item").hover(function(e) {
-    e.preventDefault();
-    $(".card-product__about-item").removeClass('active');
-    $(this).addClass('active');
-})
+// $(".card-product__about-item").hover(function(e) {
+//     e.preventDefault();
+//     $(".card-product__about-item").removeClass('active');
+//     $(this).addClass('active');
+    
+// })
 
 
 
@@ -91,7 +92,8 @@ const activitySlider = new Swiper('#activity-slider', {
     speed: 800,
     slidesPerColumn: 2,
     spaceBetween: 30,
-    loop: true,
+    // loop: true,
+    // loopedSlides: 2,
     // loopPreventsSlide: true,
     navigation: {
       nextEl: '.categories__arrow-next',
@@ -298,6 +300,8 @@ new Swiper('.clients__content', {
         769: {
             slidesPerView: 1,
             spaceBetween: 70,
+            speed: 1500,
+
         }
     }
 });
@@ -500,15 +504,39 @@ document.querySelector('.tab-btn').click();
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     var margin = 100; // переменная для контроля докрутки
-    $("a").click(function() { // условия, для всех ссылок или для конкретных
-       $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top-margin+ "px" // .top+margin -  минус, если нужно увеличить отступ
-       }, {
-          duration: 1600, // тут можно контролировать скорость
-          easing: "swing"
-       });
-       return false;
+    $("a").click(function () { // условия, для всех ссылок или для конкретных
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top - margin + "px" // .top+margin -  минус, если нужно увеличить отступ
+        }, {
+            duration: 1600, // тут можно контролировать скорость
+            easing: "swing"
+        });
+        return false;
     });
- });
+});
+
+
+// Табы при наведении на странице карточка товара
+function openTab(evt, cityName) {
+    // Объявить все переменные
+    var i, tabcontent, tablinks;
+
+    // Получить все элементы с class="tabcontent" и скрыть их
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Получить все элементы с class="tablinks" и снять класс "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Показать на текущей вкладке, и добавить класс "active" по ссылке, которая откроется вкладка
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
