@@ -142,6 +142,11 @@
     }
 
 
+    &__checkbox-wrap {
+        margin-bottom: 5rem;
+    }
+
+
     &__checkbox-item {
         display: flex;
         align-items: center;
@@ -154,6 +159,18 @@
             margin-bottom: 7.8rem;
         }
 
+    }
+
+    .filter-reset {
+        color: $brendColor;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .reset-btn {
+        border-bottom: 0.1rem solid $brendColor;
     }
 
     &__checkbox-label {

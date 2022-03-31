@@ -3047,6 +3047,17 @@ input[type=number] {
 .brend__product-more {
   margin-bottom: 6rem;
 }
+.brend .filter-reset {
+  color: #285f5b;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: auto;
+  margin-bottom: 5rem;
+  padding-left: 4rem;
+}
+.brend .reset-btn {
+  border-bottom: 0.1rem solid #285f5b;
+}
 
 .product-card {
   width: 29.15rem;
@@ -4194,7 +4205,7 @@ input[type=number] {
 }
 .service-banner {
   position: relative;
-  height: 40rem;
+  height: 42rem;
   margin-bottom: -0.5rem;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -4266,7 +4277,7 @@ input[type=number] {
 }
 .service__toggle {
   width: 34.6rem;
-  height: 9.2rem;
+  height: 8rem;
   background-color: #285f5b;
   font-size: 2.2rem;
   font-weight: 400;
@@ -5630,6 +5641,9 @@ input[type=number] {
   font-weight: 600;
   color: #292729;
 }
+.catalog__checkbox-wrap {
+  margin-bottom: 5rem;
+}
 .catalog__checkbox-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5643,6 +5657,16 @@ input[type=number] {
 }
 .catalog__checkbox-item:last-child {
   margin-bottom: 7.8rem;
+}
+.catalog .filter-reset {
+  color: #285f5b;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: auto;
+  text-align: center;
+}
+.catalog .reset-btn {
+  border-bottom: 0.1rem solid #285f5b;
 }
 .catalog__checkbox-label {
   font-size: 1.8rem;
@@ -9369,5 +9393,15 @@ input[type=number] {
   .accepted__left-subtitle {
     font-size: 3rem;
     width: 70rem;
+  }
+
+  .brend .filter-reset {
+    font-size: 3.2rem;
+    padding-left: 8rem;
+  }
+
+  .catalog .filter-reset {
+    font-size: 3.2rem;
+    margin: 7rem 0;
   }
 }/*# sourceMappingURL=style.css.map */

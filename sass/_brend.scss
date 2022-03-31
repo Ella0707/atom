@@ -215,4 +215,19 @@
     &__product-more {
         margin-bottom: 6rem;
     }
+
+    .filter-reset {
+        color: $brendColor;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-left: auto;
+        margin-bottom: 5rem;
+        padding-left: 4rem;
+    }
+    
+    .reset-btn {
+        border-bottom: 0.1rem solid $brendColor;
+    }
 }
+
+
