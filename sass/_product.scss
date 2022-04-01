@@ -60,8 +60,12 @@
             transform: scale(1.13, 1.05);
 
 
-            .product__img {
-                transform: scaleX(0.96);
+            // .product__img {
+            //     transform: scale(0.87, 0.95);
+            // }
+
+            .product__box-slide {
+                transform: scale(0.87, 0.95);
             }
         }
     }
@@ -69,6 +73,7 @@
 
     &__box-slide {
         padding: 3rem;
+        transition: 0.5s;
     }
 
 

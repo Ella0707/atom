@@ -3984,12 +3984,14 @@ input[type=number] {
   -webkit-transform: scale(1.13, 1.05);
           transform: scale(1.13, 1.05);
 }
-.product:hover .product__content:hover .product__img {
-  -webkit-transform: scaleX(0.96);
-          transform: scaleX(0.96);
+.product:hover .product__content:hover .product__box-slide {
+  -webkit-transform: scale(0.87, 0.95);
+          transform: scale(0.87, 0.95);
 }
 .product__box-slide {
   padding: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .product__brend-img {
   width: 5.6rem;
