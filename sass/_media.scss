@@ -24,8 +24,14 @@
         &__top {
             margin-bottom: 0;
             height: 9.2rem;
-            padding: 1rem 0rem 1rem 0rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10000;
+            width: 100%;
+            padding: 0 3rem;
         }
+        
 
 
         &__top-mob-left {
@@ -67,7 +73,7 @@
 
         &__search-body {
             top: 9rem;
-            right: 3rem;
+            right: 0rem;
             width: 100%;
         }
 
@@ -100,10 +106,10 @@
             padding-left: 0;
             padding-right: 5rem;
             padding-top: 17.4rem;
-            padding-bottom: 2rem;
+            margin-bottom: 5rem;
             background-color: rgba(255, 255, 255, 1);
             width: 47.6rem;
-            height: 127.4rem;
+            height: 100%;
             position: absolute;
             left: 0;
             z-index: 99;
@@ -113,6 +119,8 @@
 
             &.active {
                 transform: translateX(0%);
+                overflow: auto;
+                padding-bottom: 5rem;
             }
         }
 
@@ -139,17 +147,63 @@
                 margin-bottom: 8.35rem;
             }
 
+            &:last-child {
+                margin-bottom: 7rem;
+            }
+
             &:first-child {
                 a {
-                    width: max-content;
-                    height: max-content;
                     background-color: transparent;
-
-                    display: block;
-
+                    display: flex;
+                    align-items: center;
                     color: $textColor;
+
+                    svg {
+                        width: 3rem;
+                        height: 3rem;
+                        object-fit: contain;
+                        stroke: $brendColor;
+                        transform: rotateX(180deg);
+                        margin-left: 2rem;
+                        transition: 0.5s;
+                    }
                 }
             }
+        }
+
+
+        .menu-item-open  {
+            &.active {
+                svg {
+                    transform: rotateX(0deg);
+                }
+            }
+
+        }
+        &__nav-sub-list {
+            position: static;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            column-gap: 3rem;
+            padding: 3rem 0rem 0rem 0;
+            background: #ffffff;
+    
+            display: none;
+
+            &.active {
+                display: grid;
+            }
+        }
+
+
+        &__nav-sub-item-title {
+            font-size: 2.2rem;
+        }
+        
+        &__nav-sub-link {
+            font-size: 2.2rem;
         }
     }
 

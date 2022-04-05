@@ -1,4 +1,22 @@
 
+
+// мобильное меню
+$('.header__burger').on('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('lock');
+    $('.header__burger').toggleClass("active");
+    $('.header__bottom').toggleClass("active");
+});
+
+
+// открытие субменю в мобильной версии
+$(".menu-item-open").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+    $(this).next(".header__nav-sub-list").toggleClass('active');
+})
+
+
 // каталог стрелки
 $(".arrow-custom").click(function(e) {
     e.preventDefault();
@@ -6,27 +24,9 @@ $(".arrow-custom").click(function(e) {
     $(this).addClass('active');
   })
 
-
-
-$(".categories__sort-link").click(function(e) {
-    e.preventDefault();
-    $(".categories__sort-link").removeClass('active');
-    $(this).addClass('active');
-  })
-
-
-
 $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
-
-// $(".card-product__about-item").hover(function(e) {
-//     e.preventDefault();
-//     $(".card-product__about-item").removeClass('active');
-//     $(this).addClass('active');
-    
-// })
-
 
 
 $('.popup-link').click(function (e) {
@@ -64,17 +64,6 @@ $('.close-popup').click(function () {
 });
 
 
-// мобильное меню
-$('.header__burger').on('click', function (e) {
-    e.preventDefault();
-    document.body.classList.toggle('lock');
-    $('.header__burger').toggleClass("active");
-    $('.header__bottom').toggleClass("active");
-});
-
-
-
-
 function handleClick() {
     $(".catalog__select-list").each(function() {
       const $li = $(this).find(".catalog__select-item")
@@ -87,14 +76,11 @@ function handleClick() {
   handleClick()
 
 
-const activitySlider = new Swiper('#activity-slider', {
+const activitySlider = new Swiper('#destroy_1', {
     slidesPerView: 1,
     speed: 800,
     slidesPerColumn: 2,
     spaceBetween: 30,
-    // loop: true,
-    // loopedSlides: 2,
-    // loopPreventsSlide: true,
     navigation: {
       nextEl: '.categories__arrow-next',
       prevEl: '.categories__arrow-prev',
@@ -118,11 +104,50 @@ const activitySlider = new Swiper('#activity-slider', {
 },
   });
   
-  if ($('#activity-slider').length) {
+  if ($('#destroy_1').length) {
     if ($(window).width() >= 769) {
       activitySlider.destroy();
     }
   }
+
+
+  const activitySlider2 = new Swiper('#destroy_1', {
+    slidesPerView: 1,
+    speed: 800,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+
+    navigation: {
+      nextEl: '.categories__arrow-next',
+      prevEl: '.categories__arrow-prev',
+    },
+  
+    pagination: {
+      el: '.categories__pagination',
+      type: 'fraction',
+      formatFractionCurrent: function (number) {
+        if (number < 10) {
+            number = "0" + number;
+        }
+        return number;
+    },
+    formatFractionTotal: function (number) {
+        if (number < 10) {
+            number = "0" + number;
+        }
+        return number;
+    },
+},
+  });
+  
+  if ($('#destroy_2').length) {
+    if ($(window).width() >= 769) {
+      activitySlider2.destroy();
+    }
+  }
+
+
+
 
 // Поиск
   $(document).ready(function () {
@@ -380,8 +405,7 @@ new Swiper('.card-product__description-slider', {
 
 
 
-
-  let reviewsSlider = new Swiper('.reviews__slider', {
+let reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 1,
     spaceBetween: 30,
     speed: 800,
@@ -472,8 +496,14 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 });
 
 
+// табы на странице "главная" в блоке "категории"
+$(".categories__top .tab-btn-category").click(function() {
+	$(".categories__top .tab-btn-category").removeClass("active").eq($(this).index()).addClass("active");
+	$(".categories__content").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 
+// табф на странице сервиса
 const tabsBtn   = document.querySelectorAll(".tab-btn");
 const tabsItems = document.querySelectorAll(".tab-item");
 
@@ -539,4 +569,7 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+
 

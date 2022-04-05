@@ -67,14 +67,40 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="header__bottom">
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="">Каталог
-                            <img class="desctop" src="./img/catalog-burger.svg" alt="">
-                        </a>
+                        <div class="header__nav-item-main menu-item-open">
+                            <a class="header__nav-link" href="">Каталог
+                                <img class="desctop" src="./img/catalog-burger.svg" alt="">
+                                <svg class="mobile" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 8L8 2L2 8" stroke="" stroke-width="2" stroke-linecap="square"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <ul class="header__nav-sub-list">
+                            <li class="header__nav-sub-item">
+                                <div class="header__nav-sub-item-title">Контрольно-измерительное оборудование</div> 
+                                <a class="header__nav-sub-link" href="">Анализаторы качества электроэнергии</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                            </li>
+                            <li class="header__nav-sub-item"> 
+                                <div class="header__nav-sub-item-title">Контрольно-измерительное оборудование</div> 
+                                <a class="header__nav-sub-link" href="">Анализаторы качества электроэнергии</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                            </li>
+                            <li class="header__nav-sub-item"> 
+                                <div class="header__nav-sub-item-title">Геодезическое оборудование</div> 
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                                <a class="header__nav-sub-link" href="">Электроизмерительные приборы</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="header__nav-item">
                         <a class="header__nav-link" href="">Услуги</a>
@@ -313,12 +339,12 @@
                 <div class="categories__top">
                     <div class="categories__title">Популярные категории</div>
                     <div class="categories__sort-wrap">
-                        <a class="categories__sort-link" href="">По товарам</a>
-                        <a class="categories__sort-link active" href="">По категориям</a>
+                        <button class="categories__sort-link tab-btn-category active">По товарам</button>
+                        <button class="categories__sort-link tab-btn-category">По категориям</button>
                     </div>
                 </div>
             
-                <div class="categories__content swiper-slider" id="activity-slider">
+                <div class="categories__content swiper-slider  active" id="destroy_1">
                     <div class="categories__content-wrap swiper-wrapper">
                         <div class="categories__box swiper-slide">
                             <div class="categories__box-start">
@@ -403,6 +429,16 @@
                                     <img src="./img/arrow-black.svg" alt="">
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories__content swiper-slider " id="destroy_2">
+                    <div class="categories__content-wrap swiper-wrapper">
+                        <div class="categories__box swiper-slide">
+                            <div class="categories__box-two">
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
