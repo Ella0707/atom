@@ -4,7 +4,7 @@
         &.catalog2 {
             margin-bottom: 6rem;
         }
-        
+
     }
 
     &__content {
@@ -22,78 +22,76 @@
         margin-bottom: 5rem;
     }
 
-.categories {
+    .categories {
 
 
-    &__box {
-        width: 36rem;
-        height: 24.6rem;
+        &__box {
+            width: 36rem;
+            height: 24.6rem;
 
-        &:nth-child(n+4) {
-            margin-bottom: 4rem;
+            &:nth-child(n+4) {
+                margin-bottom: 4rem;
+            }
+
+            &:nth-child(n+6) {
+                margin-bottom: 0rem;
+            }
+
+            &:nth-child(3n) {
+                margin-right: 4rem;
+            }
+
+            &:nth-child(4n) {
+                margin-right: 0rem;
+            }
         }
 
-        &:nth-child(n+6) {
-            margin-bottom: 0rem;
-        }
 
-        &:nth-child(3n) {
-            margin-right: 4rem;
-        }
-
-        &:nth-child(4n) {
-            margin-right: 0rem;
-        }
-    }
-
-
-    &__box-start {
-        padding: 3rem 2.3rem 3rem 3rem;
-        background: rgba(#000000, 0.3);
-
-
-        &:hover {
+        &__box-start {
             padding: 3rem 2.3rem 3rem 3rem;
-            background-color: rgb(40, 95, 91);
+            background: rgba(#000000, 0.3);
 
 
-            .categories__box-subtitle {
-                font-size: 1.3rem;
-                padding-right: 6.5rem;
-                margin-bottom: 0.5rem;
+            &:hover {
+                padding: 3rem 2.3rem 3rem 3rem;
+                background-color: rgb(40, 95, 91);
+
+
+                .categories__box-subtitle {
+                    font-size: 1.3rem;
+                    padding-right: 6.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .categories__box-title {
+                    font-size: 2.3rem;
+                    padding-right: 6.5rem;
+                    margin-bottom: 1.6rem;
+                    line-height: 1.25;
+
+                    width: 100%;
+                }
             }
+        }
 
-            .categories__box-title {
-                font-size: 2.3rem;
-                padding-right: 6.5rem;
-                margin-bottom: 1.6rem;
-                line-height: 1.25;
-
-                width: 100%;
-            }
-        } 
-    }
-
-    &__box-subtitle {
-        font-size: 1.3rem;
-    }
+        &__box-subtitle {
+            font-size: 1.3rem;
+        }
 
 
-    &__box-title {
-        font-size: 2.3rem;
-        width: 100%;
-    }
+        &__box-title {
+            font-size: 2.3rem;
+            width: 100%;
+        }
 
-    &__hover-text {
-        width: 100%;
-        line-height: 1.1;
-    }
+        &__hover-text {
+            width: 100%;
+            line-height: 1.1;
+        }
 
-    &__hover-link {
-        width: 7.4rem;
-        height: 6.5rem;
+        &__hover-link {
+            width: 7.4rem;
+            height: 6.5rem;
+        }
     }
 }
-}
-
-

@@ -111,40 +111,40 @@ const activitySlider = new Swiper('#destroy_1', {
   }
 
 
-  const activitySlider2 = new Swiper('#destroy_1', {
-    slidesPerView: 1,
-    speed: 800,
-    slidesPerColumn: 2,
-    spaceBetween: 30,
+//   const activitySlider2 = new Swiper('#destroy_2', {
+//     slidesPerView: 1,
+//     speed: 800,
+//     slidesPerColumn: 2,
+//     spaceBetween: 30,
 
-    navigation: {
-      nextEl: '.categories__arrow-next',
-      prevEl: '.categories__arrow-prev',
-    },
+//     navigation: {
+//       nextEl: '.categories__arrow-next',
+//       prevEl: '.categories__arrow-prev',
+//     },
   
-    pagination: {
-      el: '.categories__pagination',
-      type: 'fraction',
-      formatFractionCurrent: function (number) {
-        if (number < 10) {
-            number = "0" + number;
-        }
-        return number;
-    },
-    formatFractionTotal: function (number) {
-        if (number < 10) {
-            number = "0" + number;
-        }
-        return number;
-    },
-},
-  });
+//     pagination: {
+//       el: '.categories__pagination',
+//       type: 'fraction',
+//       formatFractionCurrent: function (number) {
+//         if (number < 10) {
+//             number = "0" + number;
+//         }
+//         return number;
+//     },
+//     formatFractionTotal: function (number) {
+//         if (number < 10) {
+//             number = "0" + number;
+//         }
+//         return number;
+//     },
+// },
+//   });
   
-  if ($('#destroy_2').length) {
-    if ($(window).width() >= 769) {
-      activitySlider2.destroy();
-    }
-  }
+//   if ($('#destroy_2').length) {
+//     if ($(window).width() >= 769) {
+//       activitySlider2.destroy();
+//     }
+//   }
 
 
 
@@ -343,6 +343,15 @@ new Swiper('.product__box-slider', {
     },
 });
 
+new Swiper('.categories__box-category', {
+    slidesPerView: 1,
+    speed: 800,
+
+    pagination: {
+        el: '.categories__slide-pagination',
+        clickable: true,
+    },
+});
 
 new Swiper('.product-card', {
     slidesPerView: 1,
@@ -499,7 +508,7 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 // табы на странице "главная" в блоке "категории"
 $(".categories__top .tab-btn-category").click(function() {
 	$(".categories__top .tab-btn-category").removeClass("active").eq($(this).index()).addClass("active");
-	$(".categories__content").hide().eq($(this).index()).fadeIn()
+	$(".categories__content-wrap").hide().eq($(this).index()).fadeIn(500)
 }).eq(0).addClass("active");
 
 
