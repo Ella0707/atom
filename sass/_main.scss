@@ -825,7 +825,7 @@ overflow: hidden;
 
     &__top {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         margin-bottom: 7rem;
     }
 
@@ -862,17 +862,30 @@ overflow: hidden;
         //     display: block;
         // }
 
+      
+
+    }
+
+    &__content-tab {
         display: none;
 
         &.active {
             display: block;
         }
-
     }
 
     &__content-wrap {
         display: flex;
-        flex-wrap: wrap;
+    }
+
+    &__content-inner {
+        // display: flex;
+        width: 49.3rem;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
     }
 
     &__box {
@@ -882,11 +895,15 @@ overflow: hidden;
 
         cursor: pointer;
 
-        &:not(:nth-child(3n)) {
-            margin-right: 4rem;
-        }
+        // &:not(:nth-child(3n)) {
+        //     margin-right: 4rem;
+        // }
 
-        &:not(:nth-child(n+4)) {
+        // &:not(:nth-child(n+4)) {
+        //     margin-bottom: 4rem;
+        // }
+
+        &:not(:last-child) {
             margin-bottom: 4rem;
         }
 
@@ -1022,7 +1039,6 @@ overflow: hidden;
         font-size: 2rem;
         font-weight: 700;
         color: $brendColor;
-        margin-bottom: 1.5rem;
     }
 
     &__subtitle {

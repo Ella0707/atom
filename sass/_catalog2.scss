@@ -1,97 +1,108 @@
 .catalog {
-    &__title-wrap {
 
-        &.catalog2 {
-            margin-bottom: 6rem;
+    &.catalog2 {
+        &__title-wrap {
+
+            &.catalog2 {
+                margin-bottom: 6rem;
+            }
+    
         }
-
-    }
-
-    &__content {
-        margin-bottom: 13rem;
-    }
-
-    &__cotnent-slider {
-        overflow: hidden;
-    }
-
-    &__content-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-
-        margin-bottom: 5rem;
-    }
-
-    .categories {
-
-
-        &__box {
-            width: 36rem;
-            height: 24.6rem;
-
-            &:nth-child(n+4) {
-                margin-bottom: 4rem;
-            }
-
-            &:nth-child(n+6) {
-                margin-bottom: 0rem;
-            }
-
-            &:nth-child(3n) {
-                margin-right: 4rem;
-            }
-
-            &:nth-child(4n) {
-                margin-right: 0rem;
-            }
+    
+        .catalog__content {
+            margin-bottom: 13rem;
+            // display: flex;
+            // flex-wrap: wrap;
         }
+    
+        .catalog__cotnent-slider {
+            overflow: hidden;
+        }
+    
+        .catalog__content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+    
+            margin-bottom: 5rem;
+        }
+    
+        .categories {
+    
+    
+            &__box {
+                width: 36rem;
+                height: 24.6rem;
 
+                &:not(:nth-child(4n+4)) {
+                    margin-right: 4rem;
+                }
 
-        &__box-start {
-            padding: 3rem 2.3rem 3rem 3rem;
-            background: rgba(#000000, 0.3);
-
-
-            &:hover {
+    
+                // &:nth-child(n+4) {
+                //     margin-bottom: 4rem;
+                // }
+    
+                // &:nth-child(n+6) {
+                //     margin-bottom: 0rem;
+                // }
+    
+                // &:nth-child(3n) {
+                //     margin-right: 4rem;
+                // }
+    
+                // &:nth-child(4n+4) {
+                //     margin-right: 3rem;
+                // }
+            }
+    
+    
+            &__box-start {
                 padding: 3rem 2.3rem 3rem 3rem;
-                background-color: rgb(40, 95, 91);
-
-
-                .categories__box-subtitle {
-                    font-size: 1.3rem;
-                    padding-right: 6.5rem;
-                    margin-bottom: 0.5rem;
-                }
-
-                .categories__box-title {
-                    font-size: 2.3rem;
-                    padding-right: 6.5rem;
-                    margin-bottom: 1.6rem;
-                    line-height: 1.25;
-
-                    width: 100%;
+                background: rgba(#000000, 0.3);
+    
+    
+                &:hover {
+                    padding: 3rem 2.3rem 3rem 3rem;
+                    background-color: rgb(40, 95, 91);
+    
+    
+                    .categories__box-subtitle {
+                        font-size: 1.3rem;
+                        padding-right: 6.5rem;
+                        margin-bottom: 0.5rem;
+                    }
+    
+                    .categories__box-title {
+                        font-size: 2.3rem;
+                        padding-right: 6.5rem;
+                        margin-bottom: 1.6rem;
+                        line-height: 1.25;
+    
+                        width: 100%;
+                    }
                 }
             }
-        }
-
-        &__box-subtitle {
-            font-size: 1.3rem;
-        }
-
-
-        &__box-title {
-            font-size: 2.3rem;
-            width: 100%;
-        }
-
-        &__hover-text {
-            width: 100%;
-            line-height: 1.1;
-        }
-
-        &__hover-link {
-            width: 7.4rem;
-            height: 6.5rem;
+    
+            &__box-subtitle {
+                font-size: 1.3rem;
+            }
+    
+    
+            &__box-title {
+                font-size: 2.3rem;
+                width: 100%;
+            }
+    
+            &__hover-text {
+                width: 100%;
+                line-height: 1.1;
+            }
+    
+            &__hover-link {
+                width: 7.4rem;
+                height: 6.5rem;
+            }
         }
     }
+   
 }

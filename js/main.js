@@ -18,11 +18,11 @@ $(".menu-item-open").click(function (e) {
 
 
 // каталог стрелки
-$(".arrow-custom").click(function(e) {
+$(".arrow-custom").click(function (e) {
     e.preventDefault();
     $(".arrow-custom").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
 $('.catalog__filter-open').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
@@ -59,56 +59,93 @@ $('.close-popup').click(function () {
 
 
 
-  $('.catalog__select-title').click(function (event) {
+$('.catalog__select-title').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
 
 
 function handleClick() {
-    $(".catalog__select-list").each(function() {
-      const $li = $(this).find(".catalog__select-item")
-      if ($li.length > 14) {
-        $(this).addClass('grid-display')
-      }
+    $(".catalog__select-list").each(function () {
+        const $li = $(this).find(".catalog__select-item")
+        if ($li.length > 14) {
+            $(this).addClass('grid-display')
+        }
     })
-  }
+}
 
-  handleClick()
+handleClick()
 
 
 const activitySlider = new Swiper('#destroy_1', {
     slidesPerView: 1,
     speed: 800,
-    slidesPerColumn: 2,
+    // slidesPerColumn: 2,
+    // loop: true,
     spaceBetween: 30,
     navigation: {
-      nextEl: '.categories__arrow-next',
-      prevEl: '.categories__arrow-prev',
+        nextEl: '.categories__arrow-next',
+        prevEl: '.categories__arrow-prev',
     },
-  
+
     pagination: {
-      el: '.categories__pagination',
-      type: 'fraction',
-      formatFractionCurrent: function (number) {
-        if (number < 10) {
-            number = "0" + number;
-        }
-        return number;
+        el: '.categories__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
     },
-    formatFractionTotal: function (number) {
-        if (number < 10) {
-            number = "0" + number;
-        }
-        return number;
-    },
-},
-  });
-  
-  if ($('#destroy_1').length) {
+});
+
+if ($('#destroy_1').length) {
     if ($(window).width() >= 769) {
-      activitySlider.destroy();
+        activitySlider.destroy();
     }
-  }
+}
+
+
+const activitySlider2 = new Swiper('#destroy_2', {
+    slidesPerView: 1,
+    speed: 800,
+    // slidesPerColumn: 2,
+    // loop: true,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.categories__arrow-next',
+        prevEl: '.categories__arrow-prev',
+    },
+
+    pagination: {
+        el: '.categories__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                number = "0" + number;
+            }
+            return number;
+        },
+    },
+});
+
+if ($('#destroy_2').length) {
+    if ($(window).width() >= 769) {
+        activitySlider2.destroy();
+    }
+}
 
 
 //   const activitySlider2 = new Swiper('#destroy_2', {
@@ -505,10 +542,10 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 });
 
 
-// табы на странице "главная" в блоке "категории"
+// табы на странице "главная" в блоке "категории"   УБРАТЬ ПРИ УСТАНОВКЕ ФИЛЬТРОВ СДЕЛАНЫ ДЛЯ ПРИМЕРА
 $(".categories__top .tab-btn-category").click(function() {
 	$(".categories__top .tab-btn-category").removeClass("active").eq($(this).index()).addClass("active");
-	$(".categories__content-wrap").hide().eq($(this).index()).fadeIn(500)
+	$(".categories__tab").hide().eq($(this).index()).fadeIn(500)
 }).eq(0).addClass("active");
 
 
