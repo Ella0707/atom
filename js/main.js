@@ -147,35 +147,6 @@ if ($('#destroy_2').length) {
     }
 }
 
-//   // табф на странице каталог3
-  const tabsBtn   = document.querySelectorAll(".tab-button");
-  const tabsItems = document.querySelectorAll(".tab-content");
-  
-  tabsBtn.forEach(onTabClick);
-  
-  function onTabClick(item) {
-      // window.open("","", "top");
-      item.addEventListener("click", function() {
-          let currentBtn = item;
-          let tabId = currentBtn.getAttribute("data-tab");
-          let currentTab = document.querySelector(tabId);
-  
-          if( ! currentBtn.classList.contains('active') ) {
-              tabsBtn.forEach(function(item) {
-                  item.classList.remove('active');
-              });
-  
-              tabsItems.forEach(function(item) {
-                  item.classList.remove('active');
-              });
-  
-              currentBtn.classList.add('active');
-              currentTab.classList.add('active');
-          }
-      });
-  }
-  
-  document.querySelector('.tab-button').click();
 
 //   const activitySlider2 = new Swiper('#destroy_2', {
 //     slidesPerView: 1,
@@ -633,3 +604,32 @@ $('.tab-btn').on('click', function(evt) {
 
 
 
+//   // табф на странице каталог3
+const tabsBtn   = document.querySelectorAll(".tab-button");
+const tabsItems = document.querySelectorAll(".tab-content");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    // window.open("","", "top");
+    item.addEventListener("click", function() {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if( ! currentBtn.classList.contains('active') ) {
+            tabsBtn.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            tabsItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+
+document.querySelector('.tab-button').click();
