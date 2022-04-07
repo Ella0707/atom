@@ -3909,7 +3909,7 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 .product__price {
   font-size: 3rem;
@@ -6034,7 +6034,7 @@ input[type=number] {
     font-size: 3rem;
   }
   .header__search-body {
-    top: 9rem;
+    top: 7rem;
     right: 0rem;
     width: 100%;
   }
@@ -6124,18 +6124,7 @@ input[type=number] {
         -ms-flex-align: center;
             align-items: center;
     color: rgb(41, 39, 41);
-  }
-  .header__nav-item:first-child a svg {
-    width: 3rem;
-    height: 3rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-    stroke: rgb(40, 95, 91);
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
-    margin-left: 2rem;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    width: 100%;
   }
   .header .menu-item-open.active svg {
     -webkit-transform: rotateX(0deg);

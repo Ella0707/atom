@@ -10,11 +10,11 @@ $('.header__burger').on('click', function (e) {
 
 
 // открытие субменю в мобильной версии
-$(".menu-item-open").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-    $(this).next(".header__nav-sub-list").toggleClass('active');
-})
+// $(".menu-item-open").click(function (e) {
+//     e.preventDefault();
+//     $(this).toggleClass('active');
+//     $(this).next(".header__nav-sub-list").toggleClass('active');
+// })
 
 
 // каталог стрелки
@@ -147,6 +147,35 @@ if ($('#destroy_2').length) {
     }
 }
 
+//   // табф на странице каталог3
+  const tabsBtn   = document.querySelectorAll(".tab-button");
+  const tabsItems = document.querySelectorAll(".tab-content");
+  
+  tabsBtn.forEach(onTabClick);
+  
+  function onTabClick(item) {
+      // window.open("","", "top");
+      item.addEventListener("click", function() {
+          let currentBtn = item;
+          let tabId = currentBtn.getAttribute("data-tab");
+          let currentTab = document.querySelector(tabId);
+  
+          if( ! currentBtn.classList.contains('active') ) {
+              tabsBtn.forEach(function(item) {
+                  item.classList.remove('active');
+              });
+  
+              tabsItems.forEach(function(item) {
+                  item.classList.remove('active');
+              });
+  
+              currentBtn.classList.add('active');
+              currentTab.classList.add('active');
+          }
+      });
+  }
+  
+  document.querySelector('.tab-button').click();
 
 //   const activitySlider2 = new Swiper('#destroy_2', {
 //     slidesPerView: 1,
@@ -158,7 +187,7 @@ if ($('#destroy_2').length) {
 //       nextEl: '.categories__arrow-next',
 //       prevEl: '.categories__arrow-prev',
 //     },
-  
+
 //     pagination: {
 //       el: '.categories__pagination',
 //       type: 'fraction',
@@ -176,7 +205,7 @@ if ($('#destroy_2').length) {
 //     },
 // },
 //   });
-  
+
 //   if ($('#destroy_2').length) {
 //     if ($(window).width() >= 769) {
 //       activitySlider2.destroy();
@@ -187,7 +216,7 @@ if ($('#destroy_2').length) {
 
 
 // Поиск
-  $(document).ready(function () {
+$(document).ready(function () {
     $('.header__search').click(function (event) {
         $(this).toggleClass('active').next().slideToggle(300);
     });
@@ -419,9 +448,9 @@ new Swiper('.catalog__product-slider', {
     spaceBetween: 0,
 
     pagination: {
-    el: '.catalog__product-pagination',
-    clickable: true,
-},
+        el: '.catalog__product-pagination',
+        clickable: true,
+    },
 });
 
 
@@ -436,15 +465,15 @@ new Swiper('.card-product__description-slider', {
 });
 
 
-    new Swiper('.product-card', {
+new Swiper('.product-card', {
     slidesPerView: 1,
     speed: 800,
     spaceBetween: 0,
 
     pagination: {
-    el: '.product-card__pagination',
-    clickable: true,
-},
+        el: '.product-card__pagination',
+        clickable: true,
+    },
 });
 
 
@@ -492,7 +521,7 @@ let imageSlider = new Swiper('.command__photo-pipl-slider', {
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 800,
-    
+
     slidesPerGroup: 1,
     loop: true,
     breakpoints: {
@@ -510,7 +539,7 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
     speed: 800,
     effect: 'fade',
     fadeEffect: {
-      crossFade: true
+        crossFade: true
     },
     loop: true,
     navigation: {
@@ -543,46 +572,16 @@ let textSlider = new Swiper('.command__about-pipl-slider', {
 
 
 // табы на странице "главная" в блоке "категории"   УБРАТЬ ПРИ УСТАНОВКЕ ФИЛЬТРОВ СДЕЛАНЫ ДЛЯ ПРИМЕРА
-$(".categories__top .tab-btn-category").click(function() {
-	$(".categories__top .tab-btn-category").removeClass("active").eq($(this).index()).addClass("active");
-	$(".categories__tab").hide().eq($(this).index()).fadeIn(500)
-}).eq(0).addClass("active");
+// $(".categories__top .tab-btn-category").click(function() {
+// 	$(".categories__top .tab-btn-category").removeClass("active").eq($(this).index()).addClass("active");
+// 	$(".categories__tab").hide().eq($(this).index()).fadeIn(500)
+// }).eq(0).addClass("active");
 
 
-// табф на странице сервиса
-const tabsBtn   = document.querySelectorAll(".tab-btn");
-const tabsItems = document.querySelectorAll(".tab-item");
-
-tabsBtn.forEach(onTabClick);
-
-function onTabClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
-
-        if( ! currentBtn.classList.contains('active') ) {
-            tabsBtn.forEach(function(item) {
-                item.classList.remove('active');
-            });
-    
-            tabsItems.forEach(function(item) {
-                item.classList.remove('active');
-            });
-    
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
-        }
-    });
-}
-
-document.querySelector('.tab-btn').click();
-
-
-
-$(document).ready(function () {
+$(".service").ready(function () {
     var margin = 100; // переменная для контроля докрутки
-    $("a").click(function () { // условия, для всех ссылок или для конкретных
+    $(".service__toggle").click(function () { // условия, для всех ссылок или для конкретных
+        $(".service__toggle").removeClass("active").eq($(this).index()).addClass("active");
         $("html, body").animate({
             scrollTop: $($(this).attr("href")).offset().top - margin + "px" // .top+margin -  минус, если нужно увеличить отступ
         }, {
@@ -592,6 +591,12 @@ $(document).ready(function () {
         return false;
     });
 });
+
+
+
+
+
+
 
 
 // Табы при наведении на странице карточка товара
@@ -616,6 +621,15 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+
+
+
+$('.tab-btn').on('click', function(evt) {
+    evt.preventDefault();
+    $(this).toggleClass('active');
+    var sel = this.getAttribute('data-toggle-target');
+    $('.tab-item').removeClass('active').filter(sel).addClass('active');
+  });
 
 
 

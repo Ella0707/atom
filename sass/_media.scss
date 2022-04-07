@@ -72,7 +72,7 @@
         }
 
         &__search-body {
-            top: 9rem;
+            top: 7rem;
             right: 0rem;
             width: 100%;
         }
@@ -157,16 +157,17 @@
                     display: flex;
                     align-items: center;
                     color: $textColor;
+                    width: 100%;
 
-                    svg {
-                        width: 3rem;
-                        height: 3rem;
-                        object-fit: contain;
-                        stroke: $brendColor;
-                        transform: rotateX(180deg);
-                        margin-left: 2rem;
-                        transition: 0.5s;
-                    }
+                    // svg {
+                    //     width: 3rem;
+                    //     height: 3rem;
+                    //     object-fit: contain;
+                    //     stroke: $brendColor;
+                    //     transform: rotateX(180deg);
+                    //     margin-left: 2rem;
+                    //     transition: 0.5s;
+                    // }
                 }
             }
         }
