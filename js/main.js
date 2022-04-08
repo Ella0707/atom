@@ -79,8 +79,6 @@ handleClick()
 const activitySlider = new Swiper('#destroy_1', {
     slidesPerView: 1,
     speed: 800,
-    // slidesPerColumn: 2,
-    // loop: true,
     spaceBetween: 30,
     navigation: {
         nextEl: '.categories__arrow-next',
@@ -115,8 +113,6 @@ if ($('#destroy_1').length) {
 const activitySlider2 = new Swiper('#destroy_2', {
     slidesPerView: 1,
     speed: 800,
-    // slidesPerColumn: 2,
-    // loop: true,
     spaceBetween: 30,
     navigation: {
         nextEl: '.categories__arrow-next',
@@ -146,44 +142,6 @@ if ($('#destroy_2').length) {
         activitySlider2.destroy();
     }
 }
-
-
-//   const activitySlider2 = new Swiper('#destroy_2', {
-//     slidesPerView: 1,
-//     speed: 800,
-//     slidesPerColumn: 2,
-//     spaceBetween: 30,
-
-//     navigation: {
-//       nextEl: '.categories__arrow-next',
-//       prevEl: '.categories__arrow-prev',
-//     },
-
-//     pagination: {
-//       el: '.categories__pagination',
-//       type: 'fraction',
-//       formatFractionCurrent: function (number) {
-//         if (number < 10) {
-//             number = "0" + number;
-//         }
-//         return number;
-//     },
-//     formatFractionTotal: function (number) {
-//         if (number < 10) {
-//             number = "0" + number;
-//         }
-//         return number;
-//     },
-// },
-//   });
-
-//   if ($('#destroy_2').length) {
-//     if ($(window).width() >= 769) {
-//       activitySlider2.destroy();
-//     }
-//   }
-
-
 
 
 // Поиск
@@ -277,9 +235,6 @@ new Swiper('.services__slider', {
         }
     }
 });
-
-
-
 
 
 new Swiper('.distributor__our-distr-slider', {
@@ -449,8 +404,6 @@ new Swiper('.product-card', {
 
 
 
-
-
 let reviewsSlider = new Swiper('.reviews__slider', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -565,11 +518,6 @@ $(".service").ready(function () {
 
 
 
-
-
-
-
-
 // Табы при наведении на странице карточка товара
 function openTab(evt, cityName) {
     // Объявить все переменные
@@ -611,7 +559,6 @@ const tabsItems = document.querySelectorAll(".tab-content");
 tabsBtn.forEach(onTabClick);
 
 function onTabClick(item) {
-    // window.open("","", "top");
     item.addEventListener("click", function() {
         let currentBtn = item;
         let tabId = currentBtn.getAttribute("data-tab");
