@@ -95,6 +95,8 @@
 
             &:hover {
             background-image: url(./../img/delivery1c.png);
+            position: relative;
+            z-index: 10;
             
             }
         }
@@ -104,15 +106,20 @@
 
             &:hover {
             background-image: url(./../img/delivery2c.png);
+            position: relative;
+            z-index: 10;
 
             }
         }
 
         &:nth-child(3) {
             background-image: url(./../img/delivery_6.png);
+            
 
             &:hover {
             background-image: url(./../img/delivery3c.png);
+            position: relative;
+            z-index: 10;
 
             }
         }
@@ -122,6 +129,8 @@
 
             &:hover {
             background-image: url(./../img/delivery4c.png);
+            position: relative;
+            z-index: 10;
 
             }
         }
@@ -131,6 +140,8 @@
 
             &:hover {
             background-image: url(./../img/delivery5c.png);
+            position: relative;
+            z-index: 10;
 
             }
         }
@@ -140,6 +151,8 @@
 
             &:hover {
             background-image: url(./../img/delivery6c.png);
+            position: relative;
+            z-index: 10;
 
             }
         }
