@@ -4310,6 +4310,7 @@ input[type=number] {
   width: 39rem;
   height: 18.8rem;
   cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4321,196 +4322,33 @@ input[type=number] {
           align-items: center;
   background-color: #ffffff;
   border: 1px solid #E4E4E4;
-  border-collapse: collapse;
   -webkit-transition: 1s;
   transition: 1s;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50% center;
 }
-.brends__brend-box:nth-child(1) {
-  background-image: url(./../img/brends/1g.png);
+.brends__brend-box img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-.brends__brend-box:nth-child(1):hover {
-  background-image: url(./../img/brends/1.png);
+.brends__brend-box .hover {
+  opacity: 0;
 }
-.brends__brend-box:nth-child(2) {
-  background-image: url(./../img/brends/2g.png);
-}
-.brends__brend-box:nth-child(2):hover {
-  background-image: url(./../img/brends/2.png);
-}
-.brends__brend-box:nth-child(3) {
-  background-image: url(./../img/brends/3g.png);
-}
-.brends__brend-box:nth-child(3):hover {
-  background-image: url(./../img/brends/3.png);
-}
-.brends__brend-box:nth-child(4) {
-  background-image: url(./../img/brends/4g.png);
-}
-.brends__brend-box:nth-child(4):hover {
-  background-image: url(./../img/brends/4.png);
-}
-.brends__brend-box:nth-child(5) {
-  background-image: url(./../img/brends/5g.png);
-}
-.brends__brend-box:nth-child(5):hover {
-  background-image: url(./../img/brends/5.png);
-  position: relative;
+.brends__brend-box:hover {
   z-index: 10;
 }
-.brends__brend-box:nth-child(6) {
-  background-image: url(./../img/brends/6g.png);
+.brends__brend-box:hover .hover {
+  opacity: 1;
 }
-.brends__brend-box:nth-child(6):hover {
-  background-image: url(./../img/brends/6.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(7) {
-  background-image: url(./../img/brends/7g.png);
-}
-.brends__brend-box:nth-child(7):hover {
-  background-image: url(./../img/brends/7.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(8) {
-  background-image: url(./../img/brends/8g.png);
-}
-.brends__brend-box:nth-child(8):hover {
-  background-image: url(./../img/brends/8.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(9) {
-  background-image: url(./../img/brends/9g.png);
-}
-.brends__brend-box:nth-child(9):hover {
-  background-image: url(./../img/brends/9.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(10) {
-  background-image: url(./../img/brends/10g.png);
-}
-.brends__brend-box:nth-child(10):hover {
-  background-image: url(./../img/brends/10.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(11) {
-  background-image: url(./../img/brends/11g.png);
-}
-.brends__brend-box:nth-child(11):hover {
-  background-image: url(./../img/brends/11.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(12) {
-  background-image: url(./../img/brends/12g.png);
-}
-.brends__brend-box:nth-child(12):hover {
-  background-image: url(./../img/brends/12.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(13) {
-  background-image: url(./../img/brends/13g.png);
-}
-.brends__brend-box:nth-child(13):hover {
-  background-image: url(./../img/brends/13.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(14) {
-  background-image: url(./../img/brends/14g.png);
-}
-.brends__brend-box:nth-child(14):hover {
-  background-image: url(./../img/brends/14.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(15) {
-  background-image: url(./../img/brends/15g.png);
-}
-.brends__brend-box:nth-child(15):hover {
-  background-image: url(./../img/brends/15.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(16) {
-  background-image: url(./../img/brends/16g.png);
-}
-.brends__brend-box:nth-child(16):hover {
-  background-image: url(./../img/brends/16.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(17) {
-  background-image: url(./../img/brends/17g.png);
-}
-.brends__brend-box:nth-child(17):hover {
-  background-image: url(./../img/brends/17.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(18) {
-  background-image: url(./../img/brends/18g.png);
-}
-.brends__brend-box:nth-child(18):hover {
-  background-image: url(./../img/brends/18.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(19) {
-  background-image: url(./../img/brends/19g.png);
-}
-.brends__brend-box:nth-child(19):hover {
-  background-image: url(./../img/brends/19.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(20) {
-  background-image: url(./../img/brends/20g.png);
-}
-.brends__brend-box:nth-child(20):hover {
-  background-image: url(./../img/brends/20.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(21) {
-  background-image: url(./../img/brends/21g.png);
-}
-.brends__brend-box:nth-child(21):hover {
-  background-image: url(./../img/brends/21.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(22) {
-  background-image: url(./../img/brends/22g.png);
-}
-.brends__brend-box:nth-child(22):hover {
-  background-image: url(./../img/brends/22.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(23) {
-  background-image: url(./../img/brends/23g.png);
-}
-.brends__brend-box:nth-child(23):hover {
-  background-image: url(./../img/brends/23.png);
-  position: relative;
-  z-index: 10;
-}
-.brends__brend-box:nth-child(24) {
-  background-image: url(./../img/brends/24g.png);
-}
-.brends__brend-box:nth-child(24):hover {
-  background-image: url(./../img/brends/24.png);
-  position: relative;
-  z-index: 10;
+.brends__brend-box:hover .start {
+  opacity: 0;
 }
 @media (min-width: 48em) {
   .brends__brend-box:hover {
@@ -4626,62 +4464,33 @@ input[type=number] {
   background-color: #ffffff;
   -webkit-transition: 1s;
   transition: 1s;
+  position: relative;
   cursor: pointer;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50% center;
+}
+.delivery__box img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.delivery__box .hover {
+  opacity: 0;
 }
 .delivery__box:hover {
-  position: relative;
   z-index: 10;
 }
-.delivery__box:nth-child(1) {
-  background-image: url(./../img/delivery_1.png);
+.delivery__box:hover .hover {
+  opacity: 1;
 }
-.delivery__box:nth-child(1):hover {
-  background-image: url(./../img/delivery1c.png);
-  position: relative;
-  z-index: 10;
-}
-.delivery__box:nth-child(2) {
-  background-image: url(./../img/delivery_7.png);
-}
-.delivery__box:nth-child(2):hover {
-  background-image: url(./../img/delivery2c.png);
-  position: relative;
-  z-index: 10;
-}
-.delivery__box:nth-child(3) {
-  background-image: url(./../img/delivery_6.png);
-}
-.delivery__box:nth-child(3):hover {
-  background-image: url(./../img/delivery3c.png);
-  position: relative;
-  z-index: 10;
-}
-.delivery__box:nth-child(4) {
-  background-image: url(./../img/delivery_5.png);
-}
-.delivery__box:nth-child(4):hover {
-  background-image: url(./../img/delivery4c.png);
-  position: relative;
-  z-index: 10;
-}
-.delivery__box:nth-child(5) {
-  background-image: url(./../img/delivery_4.png);
-}
-.delivery__box:nth-child(5):hover {
-  background-image: url(./../img/delivery5c.png);
-  position: relative;
-  z-index: 10;
-}
-.delivery__box:nth-child(6) {
-  background-image: url(./../img/delivery_3.png);
-}
-.delivery__box:nth-child(6):hover {
-  background-image: url(./../img/delivery6c.png);
-  position: relative;
-  z-index: 10;
+.delivery__box:hover .start {
+  opacity: 0;
 }
 .delivery__box.pickup {
   -webkit-box-orient: vertical;
@@ -4697,6 +4506,9 @@ input[type=number] {
 .delivery__box.pickup img {
   width: 3.2rem;
   height: 4.5rem;
+  position: static;
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 @media (min-width: 48em) {
   .delivery__box:hover {

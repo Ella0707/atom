@@ -79,84 +79,38 @@
         border: 1px solid #E4E4E4;
         background-color: #ffffff;
         transition: 1s;
+        position: relative;
         cursor: pointer;
 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 50% center;
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+        }
+
+        .hover {
+            opacity: 0;
+        }
 
         &:hover {
-            position: relative;
             z-index: 10;
-        }
 
-        &:nth-child(1) {
-            background-image: url(./../img/delivery_1.png);
+            .hover {
+                opacity: 1;
+            }
 
-            &:hover {
-            background-image: url(./../img/delivery1c.png);
-            position: relative;
-            z-index: 10;
-            
+            .start {
+                opacity: 0;
             }
         }
 
-        &:nth-child(2) {
-            background-image: url(./../img/delivery_7.png);
 
-            &:hover {
-            background-image: url(./../img/delivery2c.png);
-            position: relative;
-            z-index: 10;
-
-            }
-        }
-
-        &:nth-child(3) {
-            background-image: url(./../img/delivery_6.png);
-            
-
-            &:hover {
-            background-image: url(./../img/delivery3c.png);
-            position: relative;
-            z-index: 10;
-
-            }
-        }
-
-        &:nth-child(4) {
-            background-image: url(./../img/delivery_5.png);
-
-            &:hover {
-            background-image: url(./../img/delivery4c.png);
-            position: relative;
-            z-index: 10;
-
-            }
-        }
-
-        &:nth-child(5) {
-            background-image: url(./../img/delivery_4.png);
-
-            &:hover {
-            background-image: url(./../img/delivery5c.png);
-            position: relative;
-            z-index: 10;
-
-            }
-        }
-
-        &:nth-child(6) {
-            background-image: url(./../img/delivery_3.png);
-
-            &:hover {
-            background-image: url(./../img/delivery6c.png);
-            position: relative;
-            z-index: 10;
-
-            }
-        }
-        
         &.pickup {
             flex-direction: column;
             
@@ -169,6 +123,8 @@
             img {
                 width: 3.2rem;
                 height: 4.5rem;
+                position: static;
+                transform: translate(0);
             }
         }
 
@@ -179,9 +135,8 @@
             }
         }
 }
-   
-    
-    
+
+
     &__informations {
         display: flex;
     }
