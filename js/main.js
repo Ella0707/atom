@@ -57,9 +57,8 @@ $('.close-popup').click(function () {
     $('.accepted').fadeOut(800);
 });
 
-
-
-$('.catalog__select-title').click(function (event) {
+// страница каталог раскрытие списка
+$('.catalog__select-btn').click(function (event) {
     $(this).toggleClass('active').next().slideToggle(300);
 });
 
